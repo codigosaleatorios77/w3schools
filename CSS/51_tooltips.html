@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="_css/51_tooltips.css">
+</head>
+<body>
+    <h1>Tooltip</h1>
+    <h2>Basic Tooltip</h2>
+    <p>Create a tooltip that appears when the user moves the mouse over an element:</p>
+    <p>Move the mouse over the text below:</p>
+    <div class="tooltip-01">Hover over me 
+        <span class="tooltiptext-01">Tooltip text</span>
+    </div>
+    <p>Note that the position of the tooltip text isn't very good.</p>
+    <p>Example Explained</p>
+    <p><b>HTML</b>: Use a container element (like &lt;div&gt;) and add the "<strong>tooltip</strong>" class to it. When the user mouse over this &lt;div&gt;, it will show the tooltip text.</p>
+    <p>The tooltip text is placed inside an inline element (like &lt;span&gt;) with class="tooltiptext".</p>
+    <p><b>CSS</b>: The <strong>tooltip</strong> class use position:relative, which is needed to position the tooltip text (position:absolute). Note: See examples below on how to position the tooltip.</p>
+    <p>The <strong>tooltiptext</strong> class holds the actual tooltip text. It is hidden by default, and will be visible on hover (see below). We have also added some basic styles to it: 120px width, black background color, white text color, centered text, and 5px top and bottom padding. </p>
+    <p>The CSS <strong>border-radius</strong> property is used to add rounded corners to the tooltip text.</p>
+    <p>The <strong>:hover</strong> selector is used to show the tooltip text when the user moves the mouse over the &lt;div&gt; with <strong>class="tooltip"</strong>.</p>
+    <hr>
+    <h2>Positioning Tooltips</h2>
+    <h2>Right Tooltip</h2>
+    <div class="tooltip-01">Hover over me 
+        <span class="tooltiptext-01" style="top: -5px; left: 105%;">Tooltip text</span>
+    </div>
+    <div style="margin-left: 170px;">
+        <h2>Left Tooltip</h2>
+        <div class="tooltip-01">Hover over me
+            <span class="tooltiptext-01" style="top: -5px; right: 105%;">Tooltip text</span>
+        </div>
+    </div>
+    <div style="margin-left: 170px;">
+        <h2>Top Tooltip</h2>
+        <div class="tooltip-01">Hover over me
+            <span class="tooltiptext-01" style="width: 120px; bottom: 100%; left: 50%; margin-left: -60px;">Tooltip text</span>
+        </div>
+    </div>
+    <h2>Bottom Tooltip</h2>
+    <div class="tooltip-01">Hover over me
+        <span class="tooltiptext-01" style="width: 120px; top: 100%; left: 50%; margin-left: -60px;">Tooltip text</span>
+    </div>
+    <hr>
+    <h2>Tooltip Arrows</h2>
+    <p>To create an arrow that should appear from a specific side of the tooltip, add "empty" content after tooltip, with the pseudo-element class <b>::after</b> together with the <b>content</b> property. The arrow itself is created using borders. This will make the tooltip look like a speech bubble.</p>
+    <div style="text-align: center;">
+        <div class="tooltip-02">Hover over me
+            <span class="tooltiptext-02">Tooltip text</span>
+        </div>
+    </div>
+
+</body>
+</html>

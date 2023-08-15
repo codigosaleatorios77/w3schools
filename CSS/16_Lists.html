@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        ul.a{
+            list-style-type: circle;
+        }
+        ul.b{
+            list-style-type: square;
+        }
+        ol.c{
+            list-style-type: upper-roman;
+        }
+        ol.d{
+            list-style-type: lower-alpha;
+        }
+        ul.e{
+            list-style-image: url(_images/sqpurple.gif);
+        }
+        ul.f{
+            list-style-position: outside;
+        }
+        .f li{
+            border: 1px solid black;
+        }
+        ul.g{
+            list-style-position: inside;
+        }
+        .g li{
+            border: 1px solid black;
+        }
+        ul.h{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.i{
+            list-style: square inside url(_images/sqpurple.gif);
+        }
+        .i li{
+            border: 1px solid black ;
+        }
+        ol.j {
+            background: #ff9999;
+            padding: 20px;
+        }
+        ul.k {
+            background: #3399ff;
+            padding: 20px;
+        }
+        ol.j li {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+        ul.k li {
+            background: #cce5ff;
+            color: darkblue;
+            margin: 5px;
+        }
+        ul.l{
+            border-left: 5px solid red;
+            background-color: rgb(199, 192, 192);
+            list-style-type: none;
+            padding: 10px 20px;
+        }
+        ul.m {
+            list-style-type: none;
+            padding: 0;
+            border: 1px solid #ddd;
+        }
+        ul.m li {
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd;
+        }
+        ul.m li:last-child {
+            border-bottom: none
+        }
+        ul.ex01 {list-style-type: circle;}
+        ul.ex02 {list-style-type: disc;}
+        ul.ex03 {list-style-type: square;}
+
+        ol.ex04 {list-style-type: armenian;}
+        ol.ex05 {list-style-type: cjk-ideographic;}
+        ol.ex06 {list-style-type: decimal;}
+        ol.ex07 {list-style-type: decimal-leading-zero;}
+        ol.ex08 {list-style-type: georgian;}
+        ol.ex09 {list-style-type: hebrew;}
+        ol.ex10 {list-style-type: hiragana;}
+        ol.ex11 {list-style-type: hiragana-iroha;}
+        ol.ex12 {list-style-type: katakana;}
+        ol.ex13 {list-style-type: katakana-iroha;}
+        ol.ex14 {list-style-type: lower-alpha;}
+        ol.ex15 {list-style-type: lower-greek;}
+        ol.ex16 {list-style-type: lower-latin;}
+        ol.ex17 {list-style-type: lower-roman;}
+        ol.ex18 {list-style-type: upper-alpha;}
+        ol.ex19 {list-style-type: upper-latin;}
+        ol.ex20 {list-style-type: upper-roman;}
+        ol.ex21 {list-style-type: none;}
+        ol.ex22 {list-style-type: inherit;}
+    </style>
+</head>
+<body>
+    <h1>CSS Lists</h1>
+    <h2>HTML Lists and CSS List Properties</h2>
+    <p>In HTML, there are two main types of lists:</p>
+    <ul>
+        <li>unordered lists (<b>&lt;ul&gt;</b>) - the list items are marked with bullets</li>
+        <li>ordered lists (<b>&lt;ol&gt;</b>) - the list items are marked with numbers or letters</li>
+    </ul>
+    <p>The CSS list properties allow you to:</p>
+    <ul>
+        <li>Set different list item markers for ordered lists</li>
+        <li>Set different list item markers for unordered lists</li>
+        <li>Set an image as the list item marker</li>
+        <li>Add background colors to lists and list items</li>
+    </ul>
+    <hr>
+    <h2>Different List Item Markers</h2>
+    <p>The list-style-type property specifies the type of list item marker.</p>
+    <h2>The list-style-type Property</h2>
+    <p>Example of unordered lists:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>Example of ordered lists:</p>
+    <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <hr>
+    <h2>An Image as The List Item Marker</h2>
+    <p>The <b>list-style-image</b> property specifies an image as the list item marker:</p>
+    <h3>The list-style-image Property</h3>
+    <ul class="e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <hr>
+    <h2>Position The List Item Markers</h2>
+    <p>The <strong>list-style-position</strong> property specifies the position of the list-item markers (bullet points).</p>
+    <h3>list-style-position: outside (default):</h3>
+    <p><b>"list-style-position: outside;"</b> means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:</p>
+    <ul class="f">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+    <h3>list-style-position: inside:</h3>
+    <p><b>"list-style-position: inside;"</b> means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start:</p>
+    <ul class="g">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+    <hr>
+    <h2>Remove Default Settings</h2>
+    <p>The <strong>list-style-type:none</strong> property can also be used to remove the markers/bullets. Note that the list also has default <b>margin</b> and <b>padding</b>. To remove this, add <b>margin:0</b> and <b>padding:0</b> to <b>&lt;ul&gt;</b> or <b>&lt;ol&gt;</b>:</p>
+    <p>Default list:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>Remove bullets, margin and padding from list:</p>
+    <ul class="h">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <hr>
+    <h2>List - Shorthand property</h2>
+    <p>The <strong>list-style</strong> property is a shorthand property. It is used to set all the list properties in one declaration:</p>
+    <p>When using the shorthand property, the order of the property values are:</p>
+    <ul>
+        <li><b>list-style-type</b> (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)</li>
+        <li><b>list-style-position</b> (specifies whether the list-item markers should appear inside or outside the content flow)</li>
+        <li><b>list-style-image</b> (specifies an image as the list item marker)</li>
+    </ul>
+    <ul class="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>If one of the property values above is missing, the default value for the missing property will be inserted, if any</p>
+    <hr>
+    <h2>Styling List With Colors</h2>
+    <p>can also style lists with colors, to make them look a little more interesting.</p>
+    <p>Anything added to the &lt;ol&gt; or &lt;ul&gt; tag, affects the entire list, while properties added to the &lt;li&gt; tag will affect the individual list items:</p>
+    <h1>Styling Lists With Colors</h1>
+    <ol class="j">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ul class="k">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <hr>
+    <h2>More Examples</h2>
+    <p>A list with a red left border:</p>
+    <ul class="l">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>Abordered list without bullets:</p>
+    <ul class="m">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>All the different list-item markers in CSS:</p>
+    <ul class="ex01">
+        <li>Circle type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ul class="ex02">
+        <li>Disc type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ul class="ex03">
+        <li>Square type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ol class="ex04">
+        <li>Armenian type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex05">
+        <li>Cjk-ideographic type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex06">
+        <li>Decimal type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>   
+    <ol class="ex07">
+        <li>Decimal-leading-zero type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex08">
+        <li>Georgian type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex09">
+        <li>Hebrew type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex10">
+        <li>Hiragana type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex11">
+        <li>Hiragana-iroha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex12">
+        <li>Katakana type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex13">
+        <li>Katakana-iroha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex14">
+        <li>Lower-alpha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>  
+    <ol class="e015">
+        <li>Lower-greek type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex16">
+        <li>Lower-latin type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex17">
+        <li>Lower-roman type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex18">
+        <li>Upper-alpha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex19">
+        <li>Upper-latin type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex20">
+        <li>Upper-roman type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex21">
+        <li>None type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="ex22">
+        <li>inherit type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+</body>
+</html>

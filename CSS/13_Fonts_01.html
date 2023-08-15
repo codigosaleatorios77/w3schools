@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: center;
+            border: 1px solid black;
+        }
+        .p1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+
+        }
+        .p2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+        }
+        .p3{
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Fonts</h1>
+    <h2>Generic Font Families</h2>
+    <p>In CSS there are five generic font families:</p>
+    <ol type="1">
+        <li><b>Serif</b> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
+        <li><b>Sans-serif</b> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+        <li><b>Monospace</b> fonts - here all the letters have the same fixed width. They create a mechanical look. </li>
+        <li><b>Cursive</b> fonts imitate human handwriting.</li>
+        <li><b>Fantasy</b> fonts are decorative/playful fonts.</li>
+    </ol>
+    <p>All the different font names belong to one of the generic font families. </p>
+    <p>On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p>
+    <h2>Some Font Examples</h2>
+    <table>
+        <tr>
+            <th>Generic Font Family</th>
+            <th>Examples of Font Names</th>
+        </tr>
+        <tr>
+            <td>Serif</td>
+            <td>Times New Roman <br>
+                Georgia <br>
+                Garamond
+            </td>
+        </tr>
+        <tr>
+            <td>Sans-serif</td>
+            <td>
+                Arial <br>
+                Verdana <br>
+                Helvetica
+            </td>
+        </tr>
+        <tr>
+            <td>Monospace</td>
+            <td>
+                Courier New <br>
+                Lucida Console <br>
+                Monaco
+            </td>
+        </tr>
+        <tr>
+            <td>Cursive</td>
+            <td>
+                Brush Script MT <br>
+                Lucida Handwriting
+            </td>
+        </tr>
+        <tr>
+            <td>Fantasy</td>
+            <td>
+                Copperplate <br>
+                Papyrus
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>The CSS font-family Property</h2>
+    <p>In CSS, the <strong>font-family</strong> property is used to specify the font of a text.</p>
+    <p>The <strong>font-family</strong> property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.</p>
+    <h2>CSS font-family</h2>
+    <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+    <p class="p2">This is a paragraph, shown in the Arial font.</p>
+    <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+</body>
+</html>

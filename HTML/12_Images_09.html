@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map and JavaScript</title>
+</head>
+<body>
+    <h2>Image MAps</h2>
+    <p>Clinck on the cup of coffee to execute a JavaScript function:</p>
+    <img src="workplace.jpg" alt="workplace" style="width: 400px; height: 379px;" usemap="#workmap">
+    <map name="workmap">
+        <area shape="circle" coords="337,300,44" href="12_Images_08_coffee.html" alt="cup of coffee" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction(){
+            alert("You clicked the coffee cup !!!")
+        }
+    </script>
+</body>
+</html>

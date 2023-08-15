@@ -1,0 +1,35 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+}
+
+
+:root{
+    --blue: #1e90ff;
+    --white: #faf0e6 /*#ffffff*/;
+}
+
+body{
+    background-color: var(--blue);
+}
+
+.container{
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+}
+
+.container h2{
+    border-bottom: 2px solid var(--blue);
+}
+
+.container button{
+    background: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+}

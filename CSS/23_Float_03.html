@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Float Examples</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+        }
+        .img_box{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float Examples</h1>
+    <p></p>
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+    <div class="clearfix">
+        <div class="box" style="background-color: #bbb;">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color: #ccc;">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color: #ddd;">
+            <p>Some text inside the box.</p>
+        </div>
+    </div>
+    <p> Here, we use the clearfix hack to take care of the layout flow. We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+    <h3>What is box-sizing?</h3>
+    <p>You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The <strong>box-sizing</strong> property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.</p>
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+    <div class="clearfix">
+        <div class="img_box">
+            <img src="_images/img_5terre.jpg" alt="Italy" style="width: 100%;">
+        </div>
+        <div class="img_box">
+            <img src="_images/img_forest.jpg" alt="Forest" style="width: 100%;">
+        </div>
+        <div class="img_box">
+            <img src="_images/img_mountains.jpg" alt="Mountaisn" style="width: 100%;">
+        </div>
+    </div>
+</body>
+</html>

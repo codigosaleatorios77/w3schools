@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Backgrounds Color</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        div{
+            background-color: lightseagreen;
+        }
+        .back-white{
+            background-color: white;
+            padding: 7px;
+            margin: -8px;
+        }
+        .first{
+            opacity: 0.1;
+            background-color: green;
+        }
+        .second{
+            opacity: 0.3;
+            background-color: green;
+        }
+        .third{
+            opacity: 0.6;
+            background-color: green;
+        }
+        .fourth{
+            opacity: 1;
+            background-color: green;
+        }
+        .one{
+            background: rgba(0, 128, 0, 0.1);
+        }
+        .two{
+            background: rgba(0, 128, 0, 0.3);
+        }
+        .three{
+            background: rgba(0, 128, 0, 0.6);
+        }
+        .four{
+            background: rgba(0, 128, 0, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS background-color</h1>
+    <p>The <strong>background-color</strong> property specifies the background color of an element.</p>
+    <p>With CSS, a color is most often specified by:</p>
+    <ul>
+        <li>a valid color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>an RGB value - like "rgb(255,0,0)"</li>
+    </ul>
+    <h3>Hello World !!!</h3>
+    <p>This page has a light blue background color!</p>
+    <hr>
+    <h2>Other Elements</h2>
+    <p>You can set the background color for any HTML elements</p>
+    <h3 style="background-color: green;">CSS background-color example!</h3>
+    <div>
+        This is a text inside a div element.
+        <p style="background-color: yellow;">This paragraph has its own background color.</p>
+        We are still in the div element.
+    </div>
+    <hr>
+    <div class="back-white">
+        <h2>Opacity / Transparency</h2>
+        <p>The <strong>opacity</strong> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent</p>
+        <h3>Transparent Boxes</h3>
+        <p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+        <div class="first">
+            <h3>opacity 0.1</h3>
+        </div>
+        <div class="second">
+            <h3>opacity 0.3</h3>
+        </div>
+        <div class="third">
+            <h3>opacity 0.6</h3>
+        </div>
+        <div class="fourth">
+            <h3>opacity 1 (default)</h3>
+        </div>
+        <hr>
+        <h2>Transparency using RGBA</h2>
+        <p>If you do not want to apply opacity to child elements, like in the example above, use <strong>RGBA</strong> color values.</p>
+        <p>In addition to RGB, you can use an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color.</p>
+        <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+        <div class="one">
+            <h3>10% opacity</h3>
+        </div>
+        <div class="two">
+            <h3>30% opacity</h3>
+        </div>
+        <div class="three">
+            <h3>60% opacity</h3>
+        </div>
+        <div class="four">
+            <h3>default</h3>
+        </div>
+    </div>
+</body>
+</html>

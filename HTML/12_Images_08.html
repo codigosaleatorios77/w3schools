@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Maps</title>
+</head>
+<body>
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+    <!--
+        The image is inserted using the <img> tag. 
+        The only difference from other images is that you must add a usemap attribute
+
+        The usemap value starts with a hash tag # followed by the name of the image map,
+        and is used to create a relationship between the image and the image map.
+    -->
+    <img src="workplace.jpg" alt="workplace" usemap="#workplace" style="width: 400px; height: 379px;">
+    <!--
+        The <map> element is used to create an image map, and is linked to the image by using the required name attribute
+        The name attribute must have the same value as the <img>'s usemap attribute.
+    -->
+    <map name="workplace">
+        <!--
+            A clickable area is defined using an <area> element.
+
+            You must define the shape of the clickable area, and you can choose one of these values:
+                rect - defines a rectangular region
+                circle - defines a circular region
+                poly - defines a polygonal region
+                default - defines the entire region
+        -->
+        <area shape="rect" coords="34,44,270,350" href="12_Images_08_computer.html" alt="computer">
+        <area shape="circle" coords="337,300,44" href="12_Images_08_coffee.html" alt="coffee">
+        <area shape="rect" coords="190,173,335,246" href="12_Images_08_phone.html" alt="phone">
+    </map>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.original{
+    width: 300px;
+    height: 100px;
+    background-color: goldenrod;
+    border: 1px solid black;
+}
+
+#ex-01{
+    transform:rotateX(150deg)
+}
+
+#ex-02{
+    transform: rotateY(150deg);
+}
+
+#ex-03{
+    transform: rotateZ(150deg);
+}

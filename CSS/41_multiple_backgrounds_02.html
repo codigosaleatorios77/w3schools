@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Size Background Image</title>
+    <link rel="stylesheet" href="_css/41_multiple_backgrounds_02.css">
+</head>
+<body>
+    <h1>Full Size Background Image</h1>
+    <p>Now we want to have a background image on a website that covers the entire browser window at all times.</p>
+    <p>The requirements are as follows:</p>
+    <ul>
+        <li>Fill the entire page with the image (no white space)</li>
+        <li>Scale image as needed</li>
+        <li>Center image on page</li>
+        <li>Do not cause scrollbars</li>
+    </ul>
+    <p>The following example shows how to do it; Use the <html> element (the <html> element is always at least the height of the browser window). Then set a fixed and centered background on it. Then adjust its size with the background-size property:</p>
+    <pre>
+    <code>
+    html {
+        background: url(img_man.jpg) no-repeat center fixed;
+        background-size: cover;
+    }
+    </code>
+    </pre>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa fugiat in impedit repellat nemo corrupti, rerum sunt totam recusandae adipisci delectus voluptate distinctio maiores beatae, esse nobis autem. Vel, illo.
+    Sit dignissimos sequi autem fugiat maxime incidunt, expedita obcaecati fugit hic harum ratione quam cumque blanditiis esse optio atque voluptates iure dicta dolore provident exercitationem ex. Reprehenderit officia rerum repellat.
+    Voluptatibus odio enim, laudantium eveniet at, ad perspiciatis atque sapiente ut rem nulla dolorum voluptatum perferendis pariatur natus ipsa eligendi! Aspernatur odio laboriosam aperiam sequi nulla, sunt ullam vitae saepe.</p>
+</body>
+</html>

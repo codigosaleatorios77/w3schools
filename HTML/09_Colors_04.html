@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors - Colors Values</title>
+</head>
+<body>
+    <p>Same as color name: Tomato</p>
+    <div style="text-align: center; color: white;">
+        <!-- RGB: rgb(red, green, blue), black = rgb(0, 0, 0) - white = rgb(255, 255, 255) -->
+        <h1 style="background-color: rgb(255, 99, 71);">rgb(255,88,71)</h1> 
+        <!-- HEX: #rrggbb rr (red), gg (green) and bb (blue), black = #000000 - white = #ffffff -->
+        <h1 style="background-color: #ff6347;">#ff6347</h1>
+        <!-- 
+            HSL: hsl(hue, saturation, lightness) 
+            Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+            Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+            Lightness is also a percentage value. 0% is black, and 100% is white.
+        -->
+        <h1 style="background-color: hsl(9, 100%, 64%);">hls(9, 100%,64%)</h1>
+    </div>
+    <p>Same as a color name: Tomato, but 50% transparent:</p>
+    <div style="color: white; text-align: center;">
+        <!-- RGBA: rgba(red, green, blue, alpha), the alpha 0.0 (fully transparent) and 1.0 (not transparent at all) -->
+        <h1 style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <!-- HSLA: hsla(hue, saturation, lightness, alpha), the alpha 0.0 (fully transparent) and 1.0 (not transparent at all)  -->
+        <h1 style="background-color: hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+    </div>
+</body>
+</html>

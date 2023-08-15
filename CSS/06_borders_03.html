@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Color</title>
+    <style>
+        p.one{
+            border-style: solid;
+            border-color: red;
+        }
+        p.two{
+            border-style: solid;
+            border-color: green;
+        }
+        p.three{
+            border-style: dotted;
+            border-color: blue;
+        }
+        p.four{
+            border-style: solid;
+            border-color: red green blue yellow;
+        }
+        p.hex-one{
+            border-style: solid;
+            border-color: #ff0000;
+        }
+        p.hex-two{
+            border-style: solid;
+            border-color: #0000ff;
+        }
+        p.hex-three{
+            border-style: solid;
+            border-color: #bbbbbb;
+        }
+        p.rgb-one{
+            border-style: solid;
+            border-color: rgb(255, 0, 0);
+        }
+        p.rgb-two{
+            border-style: solid;
+            border-color: rgb(0, 0, 255);
+        }
+        p.rgb-three{
+            border-style: solid;
+            background-color: rgb(187, 187, 187);
+        }
+        p.hls-one{
+            border-style: solid;
+            border-color: hsl(0, 100%, 50%);
+        }
+        p.hls-two{
+            border-style: solid;
+            border-color: hsl(240, 100%, 50%);
+        }
+        p.hls-three{
+            border-style: solid;
+            border-color: hsl(0, 0%, 73%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Border Color</h1>
+    <p>The <strong>border-color</strong> property is used to set the color of the four borders.</p>
+    <p>The color can be set by:</p>
+    <ul>
+        <li>name - specify a color name, like "red"</li>
+        <li>HEX - specify a HEX value, like "#ff0000"</li>
+        <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+        <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+        <li>transparent</li>
+    </ul>
+    <p>If <b>border-color </b>is not set, it inherits the color of the element.</p>
+    <hr>
+    <h2>The border-color Property</h2>
+    <p>This property specifies the color of the four borders:</p>
+    <p class="one">A solid red border</p>
+    <p class="two">A solid green border</p>
+    <p class="three">A dotted blue border</p>
+    <hr>
+    <h2>Specific Side Colors</h2>
+    <p>The <b>border-color</b> property can have from one to four values (for <b>the top border, right border, bottom border, and the left border</b>). </p>
+    <p class="four">A solid multicolor border</p>
+    <hr>
+    <h2>The border-color Property HEX</h2>
+    <p>The color of the border can also be specified using a hexadecimal value (<b>HEX</b>):</p>
+    <p class="hex-one">A solid red border</p>
+    <p class="hex-two">A solid blue border</p>
+    <p class="hex-three">A solid grey border</p>
+    <hr>
+    <h2>The border-color Property RGB</h2>
+    <p>The color of the border can also be specified using <b>RGB</b> values:</p>
+    <p class="rgb-one">A solid red border</p>
+    <p class="rgb-two">A solid blue border</p>
+    <p class="rgb-three">A solid grey border</p>
+    <hr>
+    <h2>The border-color Property HSL</h2>
+    <p>The color of the border can also be specified using <b>HSL</b> values:</p>
+    <p class="hls-one">A solid red border</p>
+    <p class="hls-two">A solid blue border</p>
+    <p class="hls-three">A solid grey border</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables - The var() Function</title>
+    <link rel="stylesheet" href="_css/59_variables_01.css">
+</head>
+<body>
+    <h1>Variables</h1>
+    <p>The <strong>var()</strong> function is used to insert the value of a CSS variable.</p>
+    <p>CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.</p>
+    <p>A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.</p>
+    <h2>Syntax of the var() Function</h2>
+    <p>The <strong>var()</strong> function is used to insert the value of a CSS variable.</p>
+    <p>The syntax of the <strong>var()</strong> function is as follows:</p>
+    <code>
+        var(--name, value)
+    </code>
+    <br>
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Required. The variable name (must start with two dashes)</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>Optional. The fallback value (used if the variable is not found)</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>How var() Works</h2>
+    <p>First of all: CSS variables can have a global or local scope.</p>
+    <p>Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.</p>
+    <p>To create a variable with global scope, declare it inside the <strong>:root</strong> selector. The <strong>:root</strong> selector matches the document's root element.</p>
+    <p>To create a variable with local scope, declare it inside the selector that is going to use it.</p>
+    <p>The following example is equal to the example above, but here we use the <b>var()</b> function.</p>
+    <p>First, we declare two global variables (--blue and --white). Then, we use the <b>var()</b> function to insert the value of the variables later in the style sheet:</p>
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque at voluptate nisi odio fuga eveniet id repudiandae perspiciatis ea? Vero omnis natus soluta nobis mollitia pariatur possimus tenetur laboriosam culpa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti dolor facere quas suscipit dicta. Maiores officia possimus cupiditate voluptates ipsa recusandae quae nihil tempore, inventore ad error in commodi.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+    <p>Advantages of using var() are: </p>
+    <ul>
+        <li>makes the code easier to read (more understandable)</li>
+        <li>makes it much easier to change the color values</li>
+    </ul>
+    <p>To change the blue and white color to a softer blue and white, you just need to change the two variable values</p>
+</body>
+</html>

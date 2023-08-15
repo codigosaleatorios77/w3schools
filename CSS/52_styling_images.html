@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Images</title>
+    <link rel="stylesheet" href="_css/52_styling_images.css">
+</head>
+<body>
+    <h1>Styling Images</h1>
+    <h2>Rounded Images</h2>
+    <p>Use the <strong>border-radius</strong> property to create rounded images:</p>
+    <img src="_images/paris.jpg" alt="Paris" style="border-radius: 8px;">
+    <img src="_images/paris.jpg" alt="Paris" style="border-radius: 50%; margin-left: 200px;">
+    <hr>
+    <h2>Thumbnail Images</h2>
+    <p>Use the border property to create thumbnail images.</p>
+    <img src="_images/paris.jpg" alt="Paris" class="thumb-01" style="width: 150px;">
+    <h3>Thumbnail Image as Link:</h3>
+    <p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+    <a href="_images/paris.jpg" target="_blank">
+        <img src="_images/paris.jpg" alt="Paris" class="thumb-02" style="width: 150px;">
+    </a>
+    <hr>
+    <h2>Responsive Images</h2>
+    <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+    <p>Resize the browser window to see the effect:</p>
+    <img src="_images/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300" class="resp">
+    <hr>
+    <h2>Center an Image</h2>
+    <p>To center an image, set <b>left</b> and <b>right</b> margin to auto and make it into a <b>block</b> element:</p>
+    <img src="_images/paris.jpg" alt="Paris" class="center-img" width="50%">
+    <hr>
+    <h2>Polaroid Images / Cards</h2>
+    <div id="container-polaroid" style="margin: 25px;">
+        <div class="polaroid">
+            <img src="_images/img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
+            <div class="container">
+                <p>Cinque Terre</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="_images/img_lights.jpg" alt="Norther Lights" style="width: 100%;">
+            <div class="container">
+                <p>Northern Lights</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>Transparent Image</h2>
+    <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+    <p>The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+    <p>Image with 20%, 50%, 100%(default) opacity:</p>
+    <img src="_images/img_forest.jpg" alt="Forest" width="170" height="100" style="opacity: 0.2;">
+    <img src="_images/img_forest.jpg" alt="Forest" width="170" height="100" style="opacity: 0.5;">
+    <img src="_images/img_forest.jpg" alt="Forest" width="170" height="100" style="opacity: 1.0;">
+    <hr>
+    <h2>Image Text</h2>
+    <p>Position text in an image:</p>
+    <div class="container-position">
+        <img class="img-text" src="_images/img_5terre_wide.jpg" alt="5 Terre" width="1000" height="300">
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+    </div>
+    <hr>
+    <h2>Image Filters</h2>
+    <p>The CSS <strong>filter</strong> property adds visual effects (like blur and saturation) to an element.</p>
+    <p>The filter property is not supported in Internet Explorer or Edge 12.</p>
+    <img src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="blur" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="brightness" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="contrast" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="greyscal" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="huerotate" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="invert" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="opacity" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="saturate" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="sepia" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <img class="shadow" src="_images/pineapple.jpg" alt="Pinneapple" width="300" height="300">
+    <hr>
+    <h2>Image Hover Overlay</h2>
+    <p>Create an overlay effect on hover:</p>
+    <h3>Fade in Overlay</h3>
+    <div class="container-overlay">
+        <img src="_images/img_avatar.png" alt="Avatar" class="imageoverlay-01">
+        <div class="overlay-01">
+            <div class="textoverlay-01"> Hello World</div>
+        </div>
+    </div>
+    <h3>Fade in a Box</h3>
+    <div class="containerhover-02">
+        <img src="_images/img_avatar.png" alt="Avatar" class="imagehover-02" style="width: 100%;">
+        <div class="middle">
+            <div class="texthover-02">John Doe</div>
+        </div>
+    </div>
+    <h3>Slide in Overlay from the Bottom</h3>
+    <div class="containerhover-03">
+        <img src="_images/img_avatar.png" alt="Avatar" class="imagehover-03">
+        <div class="overlay-03">
+            <div class="textoverlay-03">Hello World</div>
+        </div>
+    </div>
+    <h3>SSlide in Overlay from the Left</h3>
+    <div class="containerhover-04">
+        <img src="_images/img_avatar.png" alt="Avatar" class="imagehover-04">
+        <div class="overlay-04">
+            <div class="textoverlay-04">Hello World</div>
+        </div>
+    </div>
+    <h3>Slide in Overlay from the Right</h3>
+    <div class="containerhover-05">
+        <img src="_images/img_avatar.png" alt="Avatar" class="imagehover-05">
+        <div class="overlay-05">
+            <div class="textoverlay-05">Hello World</div>
+        </div>
+    </div>
+    <hr>
+    <h2>Flip an Image</h2>
+    <p>Move your mouse over the image:</p>
+    <img class="img-flip" src="_images/paris.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <h2>Responsive Image Gallery</h2>
+    <p>CSS can be used to create image galleries. This example use media queries to re-arrange the images on different screen sizes. Resize the browser window to see the effect:</p>
+    <div style="box-sizing: border-box;">
+        <div class="responsive-gallery">
+            <div class="gallery">
+                <a href="_images/img_5terre.jpg" target="_blank">
+                    <img src="_images/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+            </div>
+            <div class="desc-galley">Add a description of the image here</div>
+        </div>
+        <div class="responsive-gallery">
+            <div class="gallery">
+                <a href="_images/img_forest.jpg" target="_blank">
+                    <img src="_images/img_forest.jpg" alt="Forest" width="600" height="400">
+                </a>
+            </div>
+            <div class="desc-galley">Add a description of the image here</div>
+        </div>
+        <div class="responsive-gallery">
+            <div class="gallery">
+                <a href="_images/img_lights.jpg" target="_blank">
+                    <img src="_images/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+            </div>
+            <div class="desc-galley">Add a description of the image here</div>
+        </div>
+        <div class="responsive-gallery">
+            <div class="gallery">
+                <a href="_images/img_mountains.jpg" target="_blank">
+                    <img src="_images/img_mountains.jpg" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+            <div class="desc-galley">Add a description of the image here</div>
+        </div>    
+    <div class="clearfix"></div>-
+    </div>
+    <hr>
+    <h2>Image Modal (Advanced)</h2>
+    <p>This is an example to demonstrate how CSS and JavaScript can work together.</p>
+    <p>First, use CSS to create a modal window (dialog box), and hide it by default.</p>
+    <p>Then, use a JavaScript to show the modal window and to display the image inside the modal, when a user clicks on the image:</p>
+    <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+
+    <img id="myImg" src="_images/img_lights.jpg" alt="Northern Lights, Norway" width="300" height="200">
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01-modal">
+        <div id="caption"></div>
+    </div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
+</body>
+</html>

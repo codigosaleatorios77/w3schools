@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit Property</title>
+    <link rel="stylesheet" href="_css/54_object_fit.css">
+</head>
+<body>
+    <h1>object-fit Property</h1>
+    <p>The CSS <strong>object-fit</strong> property is used to specify how an &lt;img&gt; or &lt;video&gt; should be resized to fit its container.</p>
+    <p>This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".</p>
+    <p>Look at the following image from Paris. This image is 400 pixels wide and 300 pixels high:</p>
+    <img src="_images/paris.jpg" alt="Paris" width="400" height="300">
+    <p>However, if we style the image above to be half its width (200 pixels) and same height (300 pixels), it will look like this:</p>
+    <img src="_images/paris.jpg" alt="Paris" class="img-01">
+    <p>We see that the image is being squished to fit the container of 200x300 pixels (its original aspect ratio is destroyed).</p>
+    <p>Here is where the <strong>object-fit </strong>property comes in. The <strong>object-fit</strong> property can take one of the following values:</p>
+    <ul>
+        <li><strong>fill </strong>This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit</li>
+        <li><strong>contain </strong>The image keeps its aspect ratio, but is resized to fit within the given dimension</li>
+        <li><strong>cover </strong>The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit</li>
+        <li><strong>none </strong>The image is not resized</li>
+        <li><strong>scale-down </strong>the image is scaled down to the smallest version of <b>none</b> or <b>contain</b></li>
+    </ul>
+    <hr>
+    <h2>Using object-fit: contain; </h2>
+    <p>If we use <strong>object-fit: contain;</strong> the image keeps its aspect ratio, but is resized to fit within the given dimension:</p>
+    <img src="_images/paris.jpg" alt="Paris" class="img-contain" width="400" height="300">
+    <h2>Using object-fit: fill; </h2>
+    <p>If we use <strong>object-fit: fill;</strong> the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit:</p>
+    <img src="_images/paris.jpg" alt="Paris" class="img-fill" width="400" height="300">
+    <h2>Using object-fit: none; </h2>
+    <p>If we use <strong>object-fit: none;</strong> the image is not resized:</p>
+    <img src="_images/paris.jpg" alt="Paris" class="img-none" width="400" height="300">
+    <h2>Using object-fit: scale-down; </h2>
+    <p>If we use <strong>object-fit: scale-down;</strong> the image is scaled down to the smallest version of <b>none</b> or <b>contain</b>:</p>
+    <img src="_images/paris.jpg" alt="Paris" class="img-scale" width="400" height="300">
+    <hr>
+    <h2>Another Example</h2>   
+    <p>Here we have two images and we want them to fill the width of 50% of the browser window and 100% of the height.</p>
+    <p>In the following example we do NOT use <b>object-fit,</b> so when we resize the browser window, the aspect ratio of the images will be destroyed:</p>
+    <div class="ex-01">
+        <img src="_images/rock600x400.jpg" alt="Norway" class="img-e01">
+        <img src="_images/paris.jpg" alt="Paris" class="img-e02">
+    </div>
+    <p>In the next example, we use <b>object-fit: cover;</b>, so when we resize the browser window, the aspect ratio of the images is preserved:</p>
+    <div class="ex-01">
+        <img src="_images/rock600x400.jpg" alt="Norway" class="img-e03">
+        <img src="_images/paris.jpg" alt="Paris" class="img-e04">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        div.descendant p{
+            background-color: lightcoral;
+        }
+        div.child > p{
+            background-color: lightslategray;
+        }
+        div.adjacent + p{
+            background-color: lightseagreen;
+        }
+        div.general ~ p{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <p>A combinator is something that explains the relationship between the selectors.</p>
+    <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+    <p>There are four different combinators in CSS:</p>
+    <ul>
+        <li>descendant selector (space)</li>
+        <li>child selector (>)</li>
+        <li>adjacent sibling selector (+)</li>
+        <li>general sibling selector (~)</li>
+    </ul>
+    <hr>
+    <h2>Descendant Selector</h2>
+    <p>Descendant Selector</p>
+    <p>The following example selects all &lt;p&gt; elements inside &lt;div&gt; elements: </p>
+    <div class="descendant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eius eaque nemo possimus, neque ipsam at? Quod hic quaerat omnis atque, delectus nihil porro quos velit similique, quidem quis aut!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo quos hic rem pariatur, voluptatibus repudiandae aliquid ratione voluptate ad, sint quibusdam dolorum. Distinctio, esse commodi qui praesentium sit rerum fugiat.</p>
+        <section><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptate obcaecati delectus modi exercitationem consequuntur magnam cupiditate ullam illo excepturi eveniet, aut voluptates, explicabo accusamus, possimus pariatur totam atque. Tempore.</p></section>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint fuga dolor temporibus et autem laudantium nobis? Aut minima cumque sit in tempore quae ipsa aperiam delectus consequatur. Necessitatibus, temporibus?
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla eum. Iste minus quo quod et sunt ex nesciunt, iusto velit corporis rem dicta qui odio, similique ratione aspernatur laborum.</p>
+    <hr>
+    <h2>Child Selector (>)</h2>
+    <p>The child selector (<b>></b>) selects all elements that are the children of a specified element.</p>
+    <p>The following example selects all &lt;p&gt; elements that are children of a &lt;div&gt; element:</p>
+    <div class="child">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat aperiam, in, eligendi amet ipsam reprehenderit, qui debitis ad commodi fugiat veniam rem iste harum. Maiores odit dolore culpa ipsum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius nobis doloremque illo officiis ea, asperiores iste dicta similique quas aliquam expedita harum earum dolorum dolorem quasi inventore. Consectetur, corrupti?</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maiores dolore est, illo minus repellat. Itaque maxime doloremque commodi aliquam neque voluptas maiores aspernatur impedit? Repudiandae natus velit cum debitis.</p>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos amet mollitia alias ullam inventore repellendus distinctio quisquam, facilis sed officiis deserunt ut sit ad sequi voluptas et aperiam iure?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste rerum ipsam quasi inventore sunt fuga tenetur, asperiores odit, porro aliquid ea officiis deserunt omnis architecto rem quisquam facere placeat!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, similique eligendi explicabo vitae accusamus, velit iusto molestiae dignissimos, rem maiores dolorum corrupti nam ducimus quaerat facilis? Eveniet laborum laudantium nam.</p>
+    <hr>
+    <h2>Adjacent Sibling Selector (+)</h2>
+    <p>The adjacent sibling selector (<b>+</b>) is used to select an element that is directly after another specific element.</p>
+    <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+    <p>The following example selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements:</p>
+    <div class="adjacent">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptates quia dicta obcaecati tempora minus cum ratione vitae iure labore maxime, perferendis hic nulla amet minima ad mollitia at dolorum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio rerum, cupiditate error totam consequuntur ratione sequi placeat tenetur laboriosam aliquid esse sit necessitatibus eveniet ea blanditiis deleniti architecto quo ab.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore impedit adipisci at voluptatibus. Quas atque reiciendis quo rem cupiditate corrupti molestias optio dolorum est, et enim velit qui repudiandae!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, minima velit? Exercitationem, officia sed quidem unde provident dolores aperiam veniam illum optio? Velit sequi ullam ab at odit! Officiis, enim?</p>
+    <div class="adjacent">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dolor corrupti veritatis aspernatur id consequuntur aliquam ipsam harum deleniti, repudiandae doloremque doloribus debitis sint voluptas eos odio quaerat earum atque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos error laboriosam saepe officia expedita quam sed? Suscipit fugiat, ut perferendis soluta et dolor dolore cum mollitia. Minima totam saepe ipsum?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita ipsam aperiam recusandae deserunt debitis, tempora fugit optio facilis molestiae quis, laborum exercitationem eaque quod cupiditate illo? Porro, dolores commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum id at asperiores voluptate in corporis alias consectetur, esse harum enim suscipit exercitationem, reprehenderit dolores ipsa pariatur hic dicta ratione.</p>
+    <hr>
+    <h2>General Sibling Selector (~)</h2>
+    <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+    <p>The following example selects all &lt;p&gt; elements that are next siblings of &lt;div&gt; elements: </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem illum architecto a magni aperiam dolorum sunt explicabo provident, ab quibusdam quam, doloribus quidem rem illo molestiae ipsa temporibus! Voluptates, vel.</p>
+    <div class="general">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, omnis dicta et dignissimos perferendis esse sequi, nemo magnam molestias nam error tempora provident quos facere dolore? Laboriosam accusamus ipsum debitis.</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil commodi perferendis sed atque blanditiis ad obcaecati, incidunt error, neque, ab corporis. Quis est recusandae veniam! Illo omnis magnam autem molestiae.</p>
+    <code>Some code ...</code>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam iste numquam error facilis incidunt quo exercitationem vitae, totam libero nesciunt reiciendis dignissimos, cupiditate minima eius molestias impedit at, veniam corrupti.</p>
+</body>
+</html>

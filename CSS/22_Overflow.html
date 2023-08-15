@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Overflow</title>
+    <style>
+        .id-box{
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: visible;
+            margin-bottom: 50px;
+        }
+        .id-box-02{
+            background-color: coral;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        .div-03{
+            background-color: coral;
+            width: 100px;
+            height: 65px;
+            border: 1px solid black;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow</h1>
+    <p>The <strong>overflow</strong> property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p>
+    <p>The <b>overflow</b> property has the following values:</p>
+    <ul>
+        <li><b>visible</b> - Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li><b>hidden</b> - The overflow is clipped, and the rest of the content will be invisible</li>
+        <li><b>scroll</b> - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+        <li><b>auto</b> - Similar to scroll, but it adds scrollbars only when necessary</li>
+    </ul>
+    <p>The overflow property only works for block elements with a specified height.</p>
+    <p>In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).</p>
+    <hr>
+    <h2>overflow: visible</h2>
+    <p>By default, the <b>overflow is visible</b>, meaning that it is not clipped and it renders outside the element's box:</p>
+    <div class="id-box">
+        You can use the overflow property when you want to have better control of the layout.
+        The overflow property specifies what happens if content overflows an element's box.
+    </div>
+    <br>
+    <hr>
+    <h2>overflow: hidden</h2>
+    <p>With the <b>hidden</b> value, the overflow is clipped, and the rest of the content is hidden:</p>
+    <div class="id-box" style="overflow: hidden;">
+        You can use the overflow property when you want to have better control of the layout.
+        The overflow property specifies what happens if content overflows an element's box.
+    </div>
+    <br>
+    <hr>
+    <h2>overflow: scroll</h2>
+    <p>Setting the value to scroll, the overflow is clipped and a <b>scrollbar</b> is added to scroll inside the box.
+        Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+    <div class="id-box-02" style="overflow: scroll;">
+        You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </div>
+    <br>
+    <hr>
+    <h2>overflow: auto</h2>
+    <p>The <b>auto</b> value is similar to <b>scroll</b>, but it adds scrollbars only when necessary:</p>
+    <div class="id-box" style="overflow: auto;" >
+        You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+    </div>
+    <br>
+    <hr>
+    <h2>overflow-x and overflow-y</h2>
+    <p>The <b>overflow-x</b> and <b>overflow-y</b> properties specifies whether to change the overflow of content just horizontally or vertically (or both):</p>
+    <p><b>overflow-x</b> specifies what to do with the left/right edges of the content.</p>
+    <p><b>overflow-y</b> specifies what to do with the top/bottom edges of the content.</p>
+    <div class="div-03">
+        You can use the overflow property when you want to have better control of the layout.
+        The overflow property specifies what happens if content overflows an element's box.
+    </div>
+
+</body>
+</html>

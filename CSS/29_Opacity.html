@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity / Transparency</title>
+    <style>
+        .opacity_01{
+            opacity: 0.2;
+        }
+        .opacity_02{
+            opacity: 0.5;
+        }
+        .opacity_03{
+            opacity: 1.0;
+        }
+        .op_hover img{
+            opacity: 0.5;
+        }
+        .op_hover img:hover{
+            opacity: 1.0;
+        }
+        .background{
+            background: url(_images/klematis.jpg) repeat;
+            border: 3px solid purple;
+        }
+        .tbox{
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+        div.tbox p{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opacity / Transparency</h1>
+    <p>The <strong>opacity</strong> property specifies the opacity/transparency of an element.</p>
+    <h2>Transparent Image</h2>
+    <p>The <b>opacity</b> property can take a value from 0.0 - 1.0. The lower the value, the more transparent:</p>
+    <img class="opacity_01" src="_images/img_forest.jpg" alt="Forest" width="240">
+    <img class="opacity_02" src="_images/img_forest.jpg" alt="Forest" width="240">
+    <img class="opacity_03" src="_images/img_forest.jpg" alt="Forest" width="240">
+    <hr>
+    <h2>Transparent Hover Effect</h2>
+    <p>The <strong>opacity</strong> property is often used together with the <strong>:hover</strong> selector to change the opacity on mouse-over:</p>
+    <div class="op_hover">
+        <img src="_images/img_forest.jpg" alt="Forest" width="240">
+        <img src="_images/img_mountains.jpg" alt="Mountains" width="240">
+        <img src="_images/img_5terre.jpg" alt="Italy" width="240">
+    </div>
+    <hr>
+    <h2>Text in Transparent Box</h2>
+    <p>First, create a <b>&lt;div&gt;</b> element (<b>class="background"</b>) with a <b>background image</b>, and a <b>border</b>. </p>
+    <p>Then create another <b>&lt;div&gt;</b> (<b>class="transbox"</b>) inside the first <b>&lt;div&gt;</b>.</p>
+    <p>The <b>&lt;div class="transbox"&gt;</b> have a <b>background color</b>, and a <b>border</b> - the div is transparent. </p>
+    <p>Inside the transparent <b>&lt;div&gt;</b>, add some text inside a <b>&lt;p&gt;</b> element.</p>
+    <div class="background">
+        <div class="tbox">
+            <p>This is some text that is placed in the transparent box.</p>
+        </div>
+    </div>
+</body>
+</html>

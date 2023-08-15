@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Input form Attributes</title>
+</head>
+<body>
+    <h1>Input form Attributes</h1>
+    <h2>The form Attribute</h2>
+    <p>The<strong> input form attribute</strong> specifies the form the <strong>&lt;input&gt;</strong> element belongs to.</p>
+    <p>The value of this attribute must be equal to the id attribute of the <b>&lt;form&gt;</b> element it belongs to.</p>
+    <form action="action_page.php" id="form1">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+    <hr>
+    <h2>The formaction Attribute</h2>
+    <p>The input <strong>formaction</strong> attribute specifies the URL of the file that will process the input when the form is submitted.</p>
+    <p>This attribute overrides the <b>action</b> attribute of the <strong>&lt;form&gt;</strong> element.</p>
+    <p>The <b>formaction</b> attribute works with the following input types: <b>submit and image.</b></p>
+    <form action="action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="action_page2.php" value="Submit as Admin">
+    </form>
+    <hr>
+    <h2>The formenctype Attribute</h2>
+    <p>The input <strong>formenctype</strong> attribute specifies how the form-data should be encoded when submitted (only for forms with method="post").</p>
+    <p>Note: This attribute overrides the enctype attribute of the &lt;form&gt; element.</p>
+    <p>The <b>formenctype</b> attribute works with the following input types: submit and image.</p>
+    <form action="action_page_binary.php" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form>
+    <hr>
+    <h2>The formmethod Attribute</h2>
+    <p>The input <strong>formmethod</strong> attribute defines the HTTP method for sending form-data to the action URL.</p>
+    <p>This attribute overrides the method attribute of the &lt;form&gt; element</p>
+    <p>The <b>formmethod</b> attribute works with the following input types: <b>submit and image.</b></p>
+    <p>The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").</p>
+    <p>Notes on the "get" method:</p>
+    <ul>
+        <li>This method appends the form-data to the URL in name/value pairs</li>
+        <li>This method is useful for form submissions where a user want to bookmark the result</li>
+        <li>There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred</li>
+        <li>Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)</li>
+    </ul>
+    <p>Notes on the "post" method:</p>
+    <ul>
+        <li>This method sends the form-data as an HTTP post transaction</li>
+        <li>Form submissions with the "post" method cannot be bookmarked</li>
+        <li>The "post" method is more robust and secure than "get", and "post" does not have size limitations</li>
+    </ul>
+    <form action="action_page.php" method="get" target="_blank">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit using GET">
+        <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
+    <hr>
+    <h2>The formtarget Attribute</h2>
+    <p>The input <strong>formtarget</strong> attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+    <p>The formtarget attribute works with the following input types: submit and image.</p>
+    <form action="action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+    </form>
+    <hr>
+    <h2>The formnovalidate Attribute</h2>
+    <p>The input <strong>formnovalidate</strong> attribute specifies that an &lt;input&gt; element should not be validated when submitted.</p>
+    <p>The formnovalidate attribute works with the following input types: submit.</p>
+    <form action="action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+    </form>
+    <hr>
+    <h2>The novalidate Attribute</h2>
+    <p>The <strong>novalidate</strong> attribute is a &lt;form&gt; attribute.</p>
+    <p>When present, novalidate specifies that all of the form-data should not be validated when submitted.</p>
+    <form action="action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

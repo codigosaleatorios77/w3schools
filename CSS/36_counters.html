@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <link rel="stylesheet" href="_css/36_counters.css">
+</head>
+<body>
+    <h1>CSS Counters</h1>
+    <p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.</p>
+    <h2>Automatic Numbering With Counters</h2>
+    <p>CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).</p>
+    <p>To work with CSS counters we will use the following properties:</p>
+    <ul>
+        <li><b>counter-reset</b> - Creates or resets a counter</li>
+        <li><b>counter-increment</b> - Increments a counter value</li>
+        <li><b>content</b> - Inserts generated content</li>
+        <li><b>counter() or counters() function</b> - Adds the value of a counter to an element</li>
+    </ul>
+    <p>To use a CSS counter, it must first be created with counter-reset.</p>
+    <p>The following example creates a counter for the page (in the body selector), then increments the counter value for each &lt;h2&gt; element and adds "Section &lt;value of the counter&gt;:" to the beginning of each &lt;h2&gt; element:</p>
+    <div id="contador-01">
+        <h1>Using CSS Counters</h1>
+        <h2>HTML Tutorial</h2>
+        <h2>CSS Tutorial</h2>
+        <h2>JavaScript Tutorial</h2>
+        <h2>Python Tutorial</h2>
+        <h2>SQL Tutorial</h2>
+    </div>
+    <hr>
+    <h2>Nesting Counters</h2>
+    <p>The following example creates one counter for the page (section) and one counter for each &lt;h1&gt; element (subsection). The "section" counter will be counted for each &lt;h1&gt; element with "Section &lt;value of the section counter&gt;.", and the "subsection" counter will be counted for each &lt;h2&gt; element with "&lt;value of the section counter&gt;.&lt;value of the subsection counter&gt;":</p>
+    <div id="contador-02">
+        <h1>HTML/CSS Tutorials</h1>
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>Bootstrap</h2>
+        <h2>W3.CSS</h2>
+        <h1>Scripting Tutorials</h1>
+        <h2>JavaScript</h2>
+        <h2>jQuery</h2>
+        <h2>React</h2>
+        <h1>Programming Tutorials</h1>
+        <h2>Python</h2>
+        <h2>Java</h2>
+        <h2>C++</h2>
+        <p>A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child elements. Here we use the <b>counters()</b> function to insert a string between different levels of nested counters:</p>
+        <ol>
+            <li>item</li>
+            <li>item   
+                <ol>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                    </li>
+                    <li>item</li>
+                </ol>
+            </li>
+            <li>item</li>
+            <li>item</li>
+            </ol>
+          <ol>
+            <li>item</li>
+            <li>item</li>
+          </ol>
+    </div>
+    <hr>
+    <h2>The content Property</h2>
+    <p>The content property is used to insert generated content.</p>
+    <p>
+        <a href="https://www.w3schools.com/css/">CSS Tutorial</a><br>
+        <a href="https://www.w3schools.com/cssref/">CSS Reference</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients - Linear Gradients</title>
+    <link rel="stylesheet" href="_css/43_gradients_01.css">
+</head>
+<body>
+    <h1>Gradients</h1>
+    <p>CSS <strong>gradients</strong> let you display smooth transitions between two or more specified colors.</p>
+    <p>CSS defines three types of gradients:</p>
+    <ul>
+        <li><b>Linear Gradients (goes down/up/left/right/diagonally)</b></li>
+        <li><b>Radial Gradients (defined by their center)</b> </li>
+        <li><b>Conic Gradients (rotated around a center point)</b></li>
+    </ul>
+    <h2>CSS Linear Gradients</h2>
+    <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+    <h3>Syntax</h3>
+    <code>
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...); 
+    </code>
+    <p><b>Direction - Top to Bottom (this is default)</b></p>
+    <p>The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow:</p>
+    <div id="grad-01">top to bottom (default)</div>
+    <p><b>Direction - Left to Right</b></p>
+    <p>The following example shows a linear gradient that starts from the left. It starts red, transitioning to yellow:</p>
+    <div id="grad-02">left to right</div>
+    <p><b>Direction - Diagonal</b></p>
+    <p>You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.</p>
+    <p>The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning to yellow:</p>
+    <div id="grad-03">top left to bottom right</div>
+    <hr>
+    <h2>Using Angles</h2>
+    <p>If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".</p>
+    <h3>Syntax</h3>
+    <code>background-image: linear-gradient(angle, color-stop1, color-stop2); </code>
+    <p>The following example shows how to use angles on linear gradients:</p>
+    <div id="grad-04">180deg</div>
+    <hr>
+    <h2>Using Multiple Color Stops</h2>
+    <p>The following example shows a linear gradient (from top to bottom) with multiple color stops:</p>
+    <div id="grad-05"></div>
+    <p>The following example shows how to create a linear gradient (from left to right) with the color of the rainbow and some text:</p>
+    <div id="grad-06" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">Rainbow Background</div>
+    <hr>
+    <h2>Using Transparency</h2>
+    <p>CSS gradients also support transparency, which can be used to create fading effects.</p>
+    <p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+    <p>The following example shows a linear gradient that starts from the left. It starts fully transparent, transitioning to full color blue:</p>
+    <div id="grad-07"></div>
+    <hr>
+    <h2>Repeating a linear-gradient</h2>
+    <p>The <b>repeating-linear-gradient()</b> function is used to repeat linear gradients:</p>
+    <div id="grad8"></div>
+    <p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+    <div id="grad9"></div>
+    <p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+    <div id="grad10"></div>
+    <p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+    <div id="grad11"></div>
+    <p>A repeating linear gradient with solid stripes:</p>
+    <div id="grad12"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: fontToxType;
+    src: url(../_fonts/tox_typewriter.ttf);
+}
+
+@font-face {
+    font-family: fontToxType;
+    src: url(../_fonts/voyager_bold.otf);
+    font-weight: bold;
+}
+#container-01{
+    font-family: fontToxType;
+}
+
+#container-02{
+    font-family: fontToxType;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline Color</title>
+    <style>
+        #out{
+            border: 2px solid black;
+        }
+        p.ex01{
+            outline-style: solid;
+            outline-color: red;
+        }
+        p.ex02{
+            outline-style: dotted;
+            outline-color: blue;
+        }
+        p.ex03{
+            outline-style: outset;
+            outline-color: grey;
+        }
+        p.ex04{
+            outline-style: solid;
+            outline-color: #ff0000;
+        }
+        p.ex05{
+            outline-style: dotted;
+            outline-color: #0000ff;
+        }
+        p.ex06{
+            outline-style: solid;
+            outline-color: #bbbbbb;
+        }
+        p.ex07{
+            outline-style: solid;
+            outline-color: rgb(255, 0, 0);
+        }
+        p.ex08{
+            outline-style: dotted;
+            outline-color: rgb(0, 0, 255);
+        }
+        p.ex09{
+            outline-style: solid;
+            outline-color: rgb(187, 187, 187);
+        }
+        p.ex10{
+            outline-style: solid;
+            outline-color: hsl(0, 100%, 50%);
+        }
+        p.ex11{
+            outline-style: dotted;
+            outline-color: hsl(240, 100%, 50%);
+        }
+        p.ex12{
+            outline-style: solid;
+            outline-color: hsl(0, 0%, 73%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Outline Color</h1>
+    <p>The <strong>outline-color</strong> property is used to set the color of the outline.</p>
+    <p>The color can be set by:</p>
+    <ul>
+        <li>name - specify a color name, like "red"</li>
+        <li>HEX - specify a hex value, like "#ff0000"</li>
+        <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+        <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+        <li>invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)</li>
+    </ul>
+    <h2>The outline-color Property</h2>
+    <p>The <strong>outline-color</strong> property is used to set the <b>color</b> of the outline.</p>
+    <p class="ex01" id="out">A solid red outline.</p>
+    <p class="ex02" id="out">A dotted blue outline</p>
+    <p  class="ex03" id="out">An outset grey outline.</p>
+    <hr>
+    <h2>The outline-color Property</h2>
+    <p>The color of the outline can also be specified using a <b>hexadecimal value (HEX)</b>:</p>
+    <p class="ex04" id="out">A solid red outline.</p>
+    <p class="ex05" id="out">A dotted blue outline.</p>
+    <p class="ex06" id="out">A solid grey outline.</p>
+    <hr>
+    <h2>The outline-color Property</h2>
+    <p>The color of the outline can also be specified using <b>RGB values</b>:</p>
+    <p class="ex07" id="out">A solid red outline.</p>
+    <p class="ex08" id="out">A dotted blue outline.</p>
+    <p class="ex09" id="out">A solid grey outline.</p>
+    <hr>
+    <h2>The outline-color Property</h2>
+    <p>The color of the outline can also be specified using <b>HSL values</b>:</p>
+    <p class="ex10" id="out">A solid red outline.</p>
+    <p class="ex11" id="out">A dotted blue outline.</p>
+    <p class="ex12" id="out">A solid grey outline.</p>
+</body>
+</html>

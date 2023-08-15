@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - display: inline-block</title>
+    <style>
+        span{
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid purple;
+            background-color: skyblue;
+        }
+        span.a{
+            display: inline; /* the default for span */
+        }
+        span.b{
+            display: block;
+        }
+        span.c{
+            display: inline-block;
+        }
+        .nav{
+            background-color: lightseagreen;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .nav li{
+            display: inline-block;
+            font-size: 1.25em;
+            padding: 20px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav a:hover{
+            background-color: rgb(22, 122, 117);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The display: inline-block Value</h1>
+    <p>Compared to <b>display: inline</b>, the major difference is that <strong>display: inline-block </strong>allows to set a width and height on the element.</p>
+    <p>Also, with <strong>display: inline-block</strong>, the top and bottom margins/paddings are respected, but with <b>display: inline</b> they are not.</p>
+    <p>Compared to <b>display: block</b>, the major difference is that <strong>display: inline-block</strong> does not add a line-break after the element, so the element can sit next to other elements.</p>
+    <h2>The display Property</h2>
+    <h3>display: inline</h3>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam tempore cumque reprehenderit beatae, voluptatem libero, sapiente dicta, esse nesciunt architecto ipsa dolore cupiditate consequuntur molestiae sit pariatur harum corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="a">Fuga</span> <span class="a">in doloribus</span> exercitationem magni, ea eligendi! Non, libero consequuntur minima quasi aliquam, rerum recusandae fugiat obcaecati quidem est quod magni enim.
+    </div>
+    <h3>display: block</h3>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam tempore cumque reprehenderit beatae, voluptatem libero, sapiente dicta, esse nesciunt architecto ipsa dolore cupiditate consequuntur molestiae sit pariatur harum corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="b">Fuga</span> <span class="b">in doloribus</span> exercitationem magni, ea eligendi! Non, libero consequuntur minima quasi aliquam, rerum recusandae fugiat obcaecati quidem est quod magni enim.
+    </div>
+    <h3>display: inline-block</h3>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam tempore cumque reprehenderit beatae, voluptatem libero, sapiente dicta, esse nesciunt architecto ipsa dolore cupiditate consequuntur molestiae sit pariatur harum corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="c">Fuga</span> <span class="c">in doloribus</span> exercitationem magni, ea eligendi! Non, libero consequuntur minima quasi aliquam, rerum recusandae fugiat obcaecati quidem est quod magni enim.
+    </div>
+    <hr>
+    <h2>Using inline-block to Create Navigation Links</h2>
+    <p>One common use for d<strong>isplay: inline-block</strong> is to display list items horizontally instead of vertically. </p>
+    <p>By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+    <p>If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Clients</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>

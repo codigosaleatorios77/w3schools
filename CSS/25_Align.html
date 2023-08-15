@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Horizontal & Vertical Align</title>
+    <style>
+        .center_01{
+            margin: auto;
+            width: 20%;
+            border: 2px solid purple;
+            padding: 5px;
+        }
+        .center_text{
+            text-align: center;
+            border: 2px solid purple;
+        }
+        .center_img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        .center_position_01{
+            position: absolute;
+            right: 0;
+            width: 300px;
+            margin-top: -130px;
+            border: 3px solid purple;
+            padding: 7px;
+        }
+        .center_position_02{
+            float: right;
+            width: 300px;
+            margin-top: -130px;
+            border: 3px solid purple;
+            padding: 7px;
+        }
+        .center_padding_01{
+            padding: 70px 0;
+            border: 3px solid purple;
+        }
+        .center_padding_02{
+            padding: 70px 0;
+            border: 3px solid purple;
+            text-align: center;
+        }
+        .center_height{
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid darkblue;
+            text-align: center;
+        }
+        .center_height p{
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .center_flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal & Vertical Align</h1>
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like &lt;div&gt;), use <b>margin: auto;</b></p>
+    <p>Setting the width of the element will prevent it from stretching out to the edges of its container.</p>
+    <p>The element will then take up the specified width, and the remaining space will be split equally between the two margins:</p>
+    <div class="center_01">
+        <p>Hello World!!!</p>
+    </div>
+    <p>Center aligning has no effect if the width property is not set (or set to 100%).</p>
+    <hr>
+    <h2>Center Align Text</h2>
+    <p>To just center the text inside an element, use <b>text-align: center;</b></p>
+    <div class="center_text">
+        <p>This text is centered</p>
+    </div>
+    <hr>
+    <h2>Center an Image</h2>
+    <p>To center an image, set <b>left and right margin to auto</b> and <b>make it into a block element</b>:</p>
+    <img class="center_img" src="_images/paris.jpg" alt="Paris">
+    <hr>
+    <h2>Left and Right Align - Using position</h2>
+    <p>One method for aligning elements is to use <b>position: absolute;</b></p>
+    <p>How to right align elements with the position property:</p>
+    <div class="center_position_01">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente esse deserunt consequuntur sint suscipit praesentium, ipsum quis quidem ipsa unde impedit, a et. At quas sunt libero consequatur adipisci.</p>
+    </div>
+    <p>Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+    <hr>
+    <h2>Left and Right Align - Using float</h2>
+    <p>Another method for aligning elements is to use the <b>float</b> property</p>
+    <p>How to right align elements with the float property:</p>
+    <div class="center_position_02">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam quas fugit quod obcaecati quia inventore exercitationem. Fuga reiciendis asperiores cupiditate molestias doloremque dicta odio suscipit atque nihil maxime! Labore!</p>
+    </div>
+    <hr>
+    <h2>Center Vertically - Using padding</h2>
+    <p>There are many ways to center an element vertically in CSS. A simple solution is to use <b>top and bottom padding</b>:</p>
+    <div class="center_padding_01">
+        <p>I am vertically centered.</p>
+    </div>
+    <p>To center both vertically and horizontally, use <b>padding and text-align: center</b>:</p>
+    <div class="center_padding_02">
+        <p>I am vertically centered.</p>
+    </div>
+    <hr>
+    <h2>Center Vertically - Using line-height</h2>
+    <p>Use the <b>line-height</b> property with a value that is equal to the <b>height</b> property:</p>
+    <div class="center_height">
+        <p>I am vertically centered.</p>
+    </div>
+    <hr>
+    <h2>Center Vertically - Using Flexbox</h2>
+    <p>A container with both the <b>justify-content</b> and the <b>align-items</b> properties set to <b>center</b> will align the item(s) in the center (in both axis).</p>
+    <div class="center_flex">
+        <p>I am vertically centered.</p>
+    </div>
+</body>
+</html>

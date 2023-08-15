@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media - Vídeos</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Video</h1>
+    <p>The HTML <strong>&lt;video&gt;</strong> element is used to show a video on a web page.</p>
+    <h2>The HTML &lt;video&gt; Element</h2>
+    <p>To show a video in HTML, use the &lt;video&gt; element</p>
+    <p>The <b>controls</b> attribute adds video controls, like play, pause, and volume.</p>
+    <p>It is a good idea to always include <b>width</b> and <b>height</b> attributes. If height and width are not set, the page might flicker while the video loads.</p>
+    <p>The <b>&lt;source&gt;</b> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.</p>
+    <p>The text between the <b>&lt;video&gt;</b> and <b>&lt;/video&gt;</b> tags will only be displayed in browsers that do not support the &lt;video&gt; element.</p>
+    <video width="480" height="320" controls>
+        <source src="_videos/VID_20200220_161525127.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <h2>HTML &lt;video&gt; Autoplay</h2>
+    <p>To start a video automatically, use the <b>autoplay</b> attribute</p>
+    <p>Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+    <p>Add muted after autoplay to let your video start playing automatically (but muted):</p>
+    <video width="480" height="320" controls autoplay muted>
+        <source src="_videos/VID_20200220_161525127.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <h2>HTML &lt;track&gt; Tag</h2>
+    <p>The <strong>&lt;track&gt;</strong> tag specifies text tracks for <b>&lt;audio&gt;</b> or <b>&lt;video&gt;</b> elements.</p>
+    <p>This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.</p>
+    <p>Tracks are formatted in WebVTT format (.vtt files).</p>
+    <video width="480" height="320" controls>
+        <source src="_videos/VID_20200220_161525127.mp4" type="video/mp4">
+        <track kind="captions" src="VID_20200220_161525127.vtt" srclang="en" label="English" default>
+    </video>
+    <h2>HTML Video - Media Types</h2>
+    <table>
+        <tr>
+            <th>File Format</th>
+            <th>Media Type</th>
+        </tr>
+        <tr>
+            <td>MP4</td>
+            <td>video/mp4</td>
+        </tr>
+        <tr>
+            <td>WebM</td>
+            <td>video/webm</td>
+        </tr>
+        <tr>
+            <td>Ogg</td>
+            <td>video/ogg</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Others Optional Attributes</h2>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>loop</td>
+            <td>loop</td>
+            <td>Specifies that the video will start over again, every time it is finished</td>
+        </tr>
+        <tr>
+            <td>poster</td>
+            <td>URL</td>
+            <td>Specifies an image to be shown while the video is downloading, or until the user hits the play button</td>
+        </tr>
+        <tr>
+            <td>preload</td>
+            <td>auto<br>metadata<br>none</td>
+            <td>Specifies if and how the author thinks the video should be loaded when the page loads</td>
+        </tr>
+    </table>
+</body>
+</html>

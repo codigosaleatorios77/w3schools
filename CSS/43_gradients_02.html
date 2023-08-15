@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients - Radial Gradients</title>
+    <link rel="stylesheet" href="_css/43_gradients_02.css">
+</head>
+<body>
+    <h1>Radial Gradients</h1>
+    <p>A radial gradient is defined by its center.</p>
+    <p>To create a radial gradient you must also define at least two color stops.</p>
+    <h3>Syntax</h3>
+    <code>
+        background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+    </code>
+    <p>By default, shape is ellipse, size is farthest-corner, and position is center.</p>
+    <p><b>Radial Gradient - Evenly Spaced Color Stops (this is default)</b></p>
+    <p>The following example shows a radial gradient with evenly spaced color stops:</p>
+    <div class="grad-01"></div>
+    <p><b>Radial Gradient - Differently Spaced Color Stops</b></p>
+    <p>The following example shows a radial gradient with differently spaced color stops:</p>
+    <div id="grad-02"></div>
+    <hr>
+    <h2>Set Shape</h2>
+    <p>The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse.</p>
+    <p>Ellipse (this is default):</p>
+    <div class="grad-01"></div>
+    <p>The following example shows a radial gradient with the shape of a circle:</p>
+    <p>Circle:</p>
+    <div id="grad-03"></div>
+    <hr>
+    <h2>Use of Different Size Keywords</h2>
+    <p>The size parameter defines the size of the gradient. It can take four values:</p>
+    <ul>
+        <li>closest-side</li>
+        <li>farthest-side</li>
+        <li>closest-corner</li>
+        <li>farthest-corner</li>
+    </ul>
+    <p>A radial gradient with different size keywords:</p>
+    <p>closest-side:</p>
+    <div id="grad-04"></div>
+    <p>farthest-side:</p>
+    <div id="grad-05"></div>
+    <p>closest-corner:</p>
+    <div id="grad-06"></div>
+    <p>farthest-corner (default):</p>
+    <div id="grad-07"></div>
+    <hr>
+    <h2>Repeating a radial-gradient</h2>
+    <p>The <b>repeating-radial-gradient()</b> function is used to repeat radial gradients:</p>
+    <p>A repeating radial gradient:</p>
+    <div id="grad-08"></div>
+</body>
+</html>

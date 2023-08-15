@@ -1,0 +1,65 @@
+p.ex-01{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.ex-02{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.ex-03{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;   
+}
+
+p.ex-03:hover{
+    overflow: visible;
+}
+
+p.ex-04{
+    width: 11em;
+    border: 1px solid black;
+}
+
+p.ex-05{
+    width: 11em;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+p.ex-06{
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+p.ex-07{
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+
+p.ex-08{
+    writing-mode: horizontal-tb;
+}
+
+span.ex-09{
+    writing-mode: vertical-rl;
+}
+
+p.ex-10{
+    writing-mode: vertical-lr;
+}
+p.ex-11{
+    text-align: justify;
+    text-justify: inter-word;
+}

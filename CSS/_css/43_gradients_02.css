@@ -1,0 +1,55 @@
+.grad-01{
+    height: 150px;
+    width: 200px;
+    background-color: red;/* For browsers that do not support gradients */
+    background-image: radial-gradient(red,yellow,green);
+}
+
+#grad-02{
+    height: 150px;
+    width: 200px;
+    background-color: red;/* For browsers that do not support gradients */
+    background-image: radial-gradient(red 5%,yellow 15%,green 60%);
+}
+
+#grad-03{
+    height: 150px;
+    width: 200px;
+    background-color: red;/* For browsers that do not support gradients */
+    background-image: radial-gradient( circle,red,yellow,green);
+}
+
+#grad-04{
+    height: 350px;
+    width: 650px;
+    background-color: red;
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow,black );
+}
+
+#grad-05{
+    height: 350px;
+    width: 650px;
+    background-color: red;
+    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow,black );
+}
+
+#grad-06{
+    height: 350px;
+    width: 650px;
+    background-color: red;
+    background-image: radial-gradient(closest-corner at 60% 55%, red, yellow,black );
+}
+
+#grad-07{
+    height: 350px;
+    width: 650px;
+    background-color: red;
+    background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow,black );
+}
+
+#grad-08{
+    height: 250px;
+    width: 350px;
+    background-color: red;
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}

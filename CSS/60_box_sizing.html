@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <link rel="stylesheet" href="_css/60_box_sizing.css">
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <p>The CSS <strong>box-sizing </strong>property allows us to include the padding and border in an element's total width and height.</p>
+    <h2>Without the CSS box-sizing Property</h2>
+    <p>By default, the width and height of an element is calculated like this:</p>
+    <p>width + padding(or padding-left,padding-right) + border = actual width of an element <br>
+        height + padding(or padding-top,padding-bottom) + border = actual height of an element</p>
+    <p>This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).</p>
+    <p>The following illustration shows two &lt;div&gt; elements with the same specified width and height:</p>
+    <div class="ex-01">
+        This div is smaller (width is 300px and height is 100px).
+    </div>
+    <br>
+    <div class="ex-02">
+        This div is bigger (width is also 300px and height is 100px, padding is 50px). 
+    </div>
+    <p>The two &lt;div&gt; elements above end up with different sizes in the result (because ex-02 has a padding specified):</p>
+    <p>The <strong>box-sizing</strong> property solves this problem.</p>
+    <hr>
+    <h2>With the CSS box-sizing Property</h2>
+    <p>The <strong>box-sizing</strong> property allows us to include the padding and border in an element's total width and height.</p>
+    <p>If you set <strong>box-sizing: border-box;</strong> on an element, padding and border are included in the width and height:</p>
+    <div class="ex-01" style="box-sizing: border-box;">
+        Both divs are the same size now!
+    </div>
+    <br>
+    <div class="ex-02" style="box-sizing: border-box;">
+        Both divs are the same size now!
+    </div>
+    <p>Here is the same example as above, with <strong>box-sizing: border-box;</strong> added to both &lt;div&gt; elements</p>
+    <p>Since the result of using the <strong>box-sizing: border-box;</strong> is so much better, many developers want all elements on their pages to work this way.</p>
+    <p>Many browsers already use box-sizing: border-box; for many form elements (but not all - which is why inputs and text areas look different at width: 100%;). </p>
+    <div class="form">
+        <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="firstname" value="Anna"><br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Bella"><br>
+            Comments:<br>
+            <textarea name="message" rows="5" cols="30">
+            </textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </div>
+</body>
+</html>

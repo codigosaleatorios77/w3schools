@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Four Column Layout</title>
+    <link rel="stylesheet" href="_css/61_media_queries_ex03.css">
+</head>
+<body>
+    <h1>Responsive Four Column Layout</h1>
+    <h2>Media Queries For Columns</h2>
+    <p>A common use of media queries, is to create a flexible layout. In this example, we create a layout that varies between four, two and full-width columns, depending on different screen sizes:</p>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column" style="background-color:#bbb;">
+          <h2>Column 2</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column" style="background-color:#ccc;">
+          <h2>Column 3</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column" style="background-color:#ddd;">
+          <h2>Column 4</h2>
+          <p>Some text..</p>
+        </div>
+    </div>
+    <p>A more modern way of creating column layouts, is to use CSS Flexbox (see example below). However, it is not supported in Internet Explorer 10 and earlier versions. If you require IE6-10 support, use floats</p>
+</body>
+</html>

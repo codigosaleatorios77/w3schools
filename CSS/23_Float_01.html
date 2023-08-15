@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        img{
+            width: 170px;
+            height: 170px;
+        }
+        div{
+            padding: 15px;
+            float: left;
+        }
+        .d1{
+            background-color: red;
+        }
+        .d2{
+            background-color: yellow;
+        }
+        .d3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout - float and clear</h1>
+    <p>The CSS <strong>float</strong> property specifies how an element should float.</p>
+    <p>The CSS <strong>clear</strong> property specifies what elements can float beside the cleared element and on which side.</p>
+    <h2>The float Property</h2>
+    <p>The <strong>float</strong> property is used for positioning and formatting content e.g. let an image float left to the text in a container.</p>
+    <p>The float property can have one of the following values:</p>
+    <ul>
+        <li><strong>left</strong> - The element floats to the left of its container</li>
+        <li><strong>right</strong> - The element floats to the right of its container</li>
+        <li><strong>none</strong> - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+        <li><strong>inherit</strong> - The element inherits the float value of its parent</li>
+    </ul>
+    <p>In its simplest use, the <strong>float</strong> property can be used to wrap text around images.</p>
+    <h3>Example - float: right;</h3>
+    <p>The following example specifies that an image should float to the <b>right</b> in a text:</p>
+    <p><img src="_images/pineapple.jpg" alt="Pineapple" style="float: right; margin-left: 15px;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint asperiores praesentium consequatur, fugiat dicta accusantium voluptas repudiandae esse, perspiciatis, iure accusamus. Vero tenetur exercitationem voluptate blanditiis, recusandae dolorem accusamus?
+    Velit harum vero, quas commodi voluptatum perspiciatis molestias nihil laborum ratione vel nam sequi iusto sed officia molestiae, quisquam inventore sit fugiat perferendis dolore magnam ad! Neque reprehenderit perferendis alias!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est inventore culpa quidem ea, consequatur quis aspernatur beatae repudiandae praesentium excepturi, ab quae iure! Ullam porro, atque labore ea quo asperiores.
+    Inventore molestias adipisci placeat veniam ut maxime pariatur ea rem eveniet, tempore illo, tempora magni quia quidem repudiandae modi consectetur? Labore pariatur dolor ut, vel maiores nobis placeat doloremque quam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et consequuntur sequi aliquam accusamus praesentium excepturi quod atque, minus aperiam corrupti. Rem, fuga. Nulla odit magnam, quos nobis labore quaerat!
+    Molestiae quia magni perferendis labore sed consectetur vitae sunt vero eos consequatur id eligendi minima delectus dolorum, optio repellat ducimus sit cum deleniti alias quae. Iusto labore dolorum ipsam doloremque?
+    </p>
+    <h3>Example - float: left;</h3>
+    <p>The following example specifies that an image should float to the <b>left</b> in a text:</p>
+    <p><img src="_images/pineapple.jpg" alt="Pineapple" style="float: left; margin-right: 15px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint asperiores praesentium consequatur, fugiat dicta accusantium voluptas repudiandae esse, perspiciatis, iure accusamus. Vero tenetur exercitationem voluptate blanditiis, recusandae dolorem accusamus?
+        Velit harum vero, quas commodi voluptatum perspiciatis molestias nihil laborum ratione vel nam sequi iusto sed officia molestiae, quisquam inventore sit fugiat perferendis dolore magnam ad! Neque reprehenderit perferendis alias!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est inventore culpa quidem ea, consequatur quis aspernatur beatae repudiandae praesentium excepturi, ab quae iure! Ullam porro, atque labore ea quo asperiores.
+        Inventore molestias adipisci placeat veniam ut maxime pariatur ea rem eveniet, tempore illo, tempora magni quia quidem repudiandae modi consectetur? Labore pariatur dolor ut, vel maiores nobis placeat doloremque quam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et consequuntur sequi aliquam accusamus praesentium excepturi quod atque, minus aperiam corrupti. Rem, fuga. Nulla odit magnam, quos nobis labore quaerat!
+        Molestiae quia magni perferendis labore sed consectetur vitae sunt vero eos consequatur id eligendi minima delectus dolorum, optio repellat ducimus sit cum deleniti alias quae. Iusto labore dolorum ipsam doloremque?
+    </p>
+    <h3>Example - No float</h3>
+    <p>In the following example the image will be displayed just where it occurs in the text (<b>float: none;</b>):</p>
+    <p><img src="_images/pineapple.jpg" alt="Pineapple" style="float: none;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint asperiores praesentium consequatur, fugiat dicta accusantium voluptas repudiandae esse, perspiciatis, iure accusamus. Vero tenetur exercitationem voluptate blanditiis, recusandae dolorem accusamus?
+        Velit harum vero, quas commodi voluptatum perspiciatis molestias nihil laborum ratione vel nam sequi iusto sed officia molestiae, quisquam inventore sit fugiat perferendis dolore magnam ad! Neque reprehenderit perferendis alias!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est inventore culpa quidem ea, consequatur quis aspernatur beatae repudiandae praesentium excepturi, ab quae iure! Ullam porro, atque labore ea quo asperiores.
+        Inventore molestias adipisci placeat veniam ut maxime pariatur ea rem eveniet, tempore illo, tempora magni quia quidem repudiandae modi consectetur? Labore pariatur dolor ut, vel maiores nobis placeat doloremque quam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et consequuntur sequi aliquam accusamus praesentium excepturi quod atque, minus aperiam corrupti. Rem, fuga. Nulla odit magnam, quos nobis labore quaerat!
+        Molestiae quia magni perferendis labore sed consectetur vitae sunt vero eos consequatur id eligendi minima delectus dolorum, optio repellat ducimus sit cum deleniti alias quae. Iusto labore dolorum ipsam doloremque?
+    </p>
+    <hr>
+    <h3>Float Next To Each Other</h3>
+    <p>Normally div elements will be displayed on top of each other. However, if <b>float: left</b> is used can let elements float next to each other:</p>
+    <div class="d1">Div 1</div>
+    <div class="d2">Div 2</div>
+    <div class="d3">Div 3</div>
+    
+</body>
+</html>

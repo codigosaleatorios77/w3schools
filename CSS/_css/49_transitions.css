@@ -1,0 +1,100 @@
+#ex-01{
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    transition: width 2s;
+}
+
+#ex-01:hover{
+    width: 300px;
+}
+
+#ex-02{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    transition: width 2s, height 4s;
+}
+
+#ex-02:hover{
+    width: 300px;
+    height: 300px;
+}
+
+#timing div{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    transition: width 2s, height 4s;
+}
+
+#ex-t-01 {
+    transition-timing-function: linear;
+}
+#ex-t-02 {
+    transition-timing-function: ease;
+}
+#ex-t-03 {
+    transition-timing-function: ease-in;
+}
+#ex-t-04 {
+    transition-timing-function: ease-out;
+}
+#ex-t-05 {
+    transition-timing-function: ease-in-out;
+}
+
+#timing div:hover{
+    width: 300px;
+}
+
+#delay{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+#delay:hover{
+    width: 300px;
+}
+
+#transform{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    border: 1px solid black;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#transform:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+#transition_2{
+    width: 100px;
+    height: 100px;
+    background: seagreen;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#transition_2:hover{
+    width: 300px;
+}
+
+#transition_3{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 2s linear 1s;
+}
+
+#transition_3:hover{
+    width: 300px;
+}

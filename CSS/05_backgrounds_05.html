@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Shorthand</title>
+    <style>
+        /*Instead of writing:
+        body{
+            background-color: #ffffff;
+            background-image: url(_images/img_tree.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        */
+        /*Use the shorthand property to set the background properties in one declaration: */
+        body{
+            background: #ffffff url(_images/img_tree.png) no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+   <h1>CSS background - Shorthand property</h1> 
+   <p>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</p>
+   <p> When using the shorthand property the order of the property values is:</p>
+   <ul>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+   </ul>
+   <p>It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Forms</title>
+    <link rel="stylesheet" href="_css/35_forms.css">
+</head>
+<body>
+    <h1>CSS Forms</h1>
+    <h2>Styling Input Fields</h2>
+    <p>Use the width property to determine the width of the input field:</p>
+    <h3>A full-width input field</h3>
+    <form class="form_1">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+    </form>
+    <p>The example above applies to all &lt;input&gt; elements. If you only want to style a specific input type, you can use attribute selectors:</p>
+    <ul>
+        <li><b>input[type=text]</b> - will only select text fields</li>
+        <li><b>input[type=password]</b> - will only select password fields</li>
+        <li><b>input[type=number]</b> - will only select number fields</li>
+        <li>etc..</li>
+    </ul>
+    <hr>
+    <h2>Padded Inputs</h2>
+    <p>Use the <b>padding</b> property to add space inside the text field.</p>
+    <p>When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:</p>
+    <h3>Padded input fields</h3>
+    <form class="form_2">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+    </form>
+    <p>Set the <b>box-sizing</b> property to <b>border-box</b>. This makes sure that the padding and eventually borders are included in the total width and height of the elements. </p>
+    <hr>
+    <h2>Bordered Inputs</h2>
+    <p>Use the <b>border</b> property to change the border size and color, and use the border-radius property to add rounded corners:</p>
+    <h3>Input fields with borders</h3>
+    <form class="form_3">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+    </form>
+    <p>If you only want a bottom border, use the border-bottom property:</p>
+    <h3>Input fields with bottom border</h3>
+    <form class="form_4">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+    </form>
+    <h2>Colored Inputs</h2>
+    <p>Use the <b>background-color</b> property to add a background color to the input, and the <b>color</b> property to change the text color:</p>
+    <h3>Input fields with color</h3>
+    <form class="form_5">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" value="Anna">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" value="Bella">
+    </form>
+    <hr>
+    <h2>Focused Inputs</h2>
+    <p>By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding <b>outline: none;</b> to the input.</p>
+    <p>Use the <b>:focus</b> selector to do something with the input field when it gets focus:</p>
+    <h3>Input fields with color on :focus</h3>
+    <form class="form_6">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" value="Cristina">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" value="Dellus">
+    </form>
+    <h3>Input fields with color on :focus</h3>
+    <p>Input fields with black border on :focus</p>
+    <p>Here, the input field gets a black border color when it gets focus (clicked on). We have also added the CSS transition property to animate the border color (takes 0.5 seconds to change the color on focus):</p>
+    <form class="form_7">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" value="Elise">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" value="Fields">
+    </form>
+    <h2>Input with icon/image</h2>
+    <p>If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:</p>
+    <h3>Input field with an icon inside</h3>
+    <form class="form_8">
+        <input type="text" name="search" placeholder="Search...">
+    </form>
+    <h2>Animated Search Input</h2>
+    <p>In this example we use the CSS <b>transition</b> property to animate the width of the search input when it gets focus.</p>
+    <h3>Animate width of search input</h3>
+    <form class="form_9">
+        <input type="text" name="search" placeholder="Search...">
+    </form>
+    <hr>
+    <h2>Styling Textareas</h2>
+    <p>Use the <b>resize</b> property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):</p>
+    <form >
+        <textarea>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis totam repellendus tenetur eum nobis ut, tempora nihil excepturi? Dolorem, blanditiis. Cupiditate alias facere quidem itaque placeat in incidunt eaque sed?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis autem at ipsum ex quae reiciendis praesentium odio iure impedit ut harum molestias tempora corporis, voluptatibus modi assumenda nemo hic.
+        Cumque, harum quam quod veniam enim ipsa sed, dignissimos totam est omnis reiciendis fugiat quibusdam nam alias blanditiis. Maxime ullam, aliquid optio sunt similique accusamus laboriosam minus assumenda deserunt nesciunt!
+        </textarea>
+    </form>
+    <hr>
+    <h2>Styling Select Menus</h2>
+    <form>
+        <select name="country" id="country">
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="it" selected>Italy</option>
+            <option value="jp">Japan</option>
+            <option value="af">South Africa</option>
+        </select>
+    </form>
+    <hr>
+    <h2>Styling Input Buttons</h2>
+    <input type="button" value="Button">
+    <input type="reset" value="Reset">
+    <p>use width: 100% for full-width buttons</p>
+    <input type="submit" value="Submit" style="width: 100%;">
+</body>
+</html>

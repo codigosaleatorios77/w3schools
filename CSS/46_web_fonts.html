@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Fonts</title>
+    <link rel="stylesheet" href="_css/46_web_fonts.css">
+</head>
+<body>
+    <h1>Web Fonts</h1>
+    <h2>The CSS @font-face Rule</h2>
+    <p>Web fonts allow Web designers to use fonts that are not installed on the user's computer.</p>
+    <p>When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.</p>
+    <p>Your "own" fonts are defined within the CSS <strong>@font-face</strong> rule.</p>
+    <h2>Using The Font You Want</h2>
+    <p>In the <strong>@font-face</strong> rule; first define a name for the font (font-tox-type) and then point to the font file.</p>
+    <p>Always use lowercase letters for the font URL. Uppercase letters can give unexpected results in IE</p>
+    <p>To use the font for an HTML element, refer to the name of the font (font-tox-type) through the font-family property:</p>
+    <div id="container-01">
+        <h1>The @font-face Rule</h1>
+        <p>With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.</p>
+    </div>
+    <hr>
+    <h2>Using Bold Text</h2>
+    <p>You must add another @font-face rule containing descriptors for bold text:</p>
+    <div id="container-02">
+        <h1>The @font-face Rule</h1>
+        <p>With CSS, websites can use <b style="text-transform: capitalize;">fonts other than the pre-selected "web-safe" fonts</b>.</p>
+    </div>
+</body>
+</html>

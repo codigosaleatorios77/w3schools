@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients - Radial Gradients</title>
+    <link rel="stylesheet" href="_css/43_gradients_03.css">
+</head>
+<body>
+    <h1>Gradients</h1>
+    <h2>Conic Gradients</h2>
+    <p>A conic gradient is a gradient with color transitions rotated around a center point.</p>
+    <p>To create a conic gradient you must define at least two colors.</p>
+    <h3>Syntax</h3>
+    <code>
+        background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+    </code>
+    <p>By default, angle is 0deg and position is center.</p>
+    <p>If no degree is specified, the colors will be spread equally around the center point.</p>
+    <h2>Conic Gradient: Three Colors</h2>
+    <p>The following example shows a conic gradient with three colors:</p>
+    <div id="grad-01"></div>
+    <h2>Conic Gradient: Five Colors</h2>
+    <p>The following example shows a conic gradient with five colors:</p>
+    <div id="grad-02"></div>
+    <h2>Conic Gradient: Three Colors and Degrees</h2>
+    <p>The following example shows a conic gradient with three colors and a degree for each color:</p>
+    <div id="grad-03"></div>
+    <h2>Create Pie Charts</h2>
+    <p>Just add <b>border-radius: 50%</b> to make the conic gradient look like a pie:</p>
+    <div id="grad-04"></div>
+    <p>Here is another pie chart with defined degrees for all the colors:</p>
+    <div id="grad-05"></div>
+    <h2>Conic Gradient With Specified From Angle</h2>
+    <p>The [from angle] specifies an angle that the entire conic gradient is rotated by.</p>
+    <p>The following example shows a conic gradient with a from angle of 90deg:</p>
+    <div id="grad-06"></div>
+    <h2>Repeating a Conic Gradient</h2>
+    <p>The <b>repeating-conic-gradient() </b>function is used to repeat conic gradients:</p>
+    <div id="grad-07"></div>
+    <p>Here is a repeating conic gradient with defined color-starts and color-stops:</p>
+    <div id="grad-08"></div>
+
+</body>
+</html>

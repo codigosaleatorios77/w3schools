@@ -1,0 +1,40 @@
+#contador-01{
+    counter-reset: contador01;
+}
+
+#contador-01 h2::before{
+    counter-increment: contador01;
+    content: "Section " counter(contador01) ": ";
+}
+
+#contador-02{
+    counter-reset: contador-externo;
+}
+
+#contador-02 h1{
+    counter-reset: contador-interno;
+}
+
+#contador-02 h1::before{
+    counter-increment: contador-externo;
+    content: "Section "counter(contador-externo)". ";
+}
+
+#contador-02 h2::before{
+    counter-increment: contador-interno;
+    content: counter(contador-externo)"."counter(contador-interno)" ";
+}
+
+#contador-02 ol {
+    counter-reset: contador-lista;
+    list-style-type: none;
+}
+
+#contador-02 li::before{
+    counter-increment: contador-lista;
+    content: counters(contador-lista,".")" ";
+}
+
+a::after{
+    content: " - (" attr(href) ")";
+}

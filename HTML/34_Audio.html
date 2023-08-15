@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media - Audio</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Audio</h1>
+    <p>The HTML <strong>&lt;audio&gt;</strong> element is used to play an audio file on a web page.</p>
+    <h2>The HTML &lt;audio&gt; Element</h2>
+    <p>To play an audio file in HTML, use the &lt;audio&gt; element</p>
+    <p>The <b>controls</b> attribute adds audio controls, like play, pause, and volume.</p>
+    <p>The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</p>
+    <p>The text between the <b>&lt;audio&gt;</b> and <b>&lt;/audio&gt; </b>tags will only be displayed in browsers that do not support the <b>&lt;audio&gt;</b> element.</p>
+    <audio controls>
+        <source src="_audio/wilhelm_scream.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <hr>
+    <h2>HTML &lt;audio&gt; Autoplay</h2>
+    <p>To start an audio file automatically, use the <b>autoplay attribute</b>:</p>
+    <p>Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+    <p>Add <b>muted</b> after <b>autoplay</b> to let your audio file start playing automatically (but muted):</p>
+    <audio controls autoplay muted loop>
+        <source src="_audio/wilhelm_scream.mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    <h2>HTML Audio - Media Types</h2>
+    <table>
+        <tr>
+            <th>File Format</th>
+            <th>Media Type</th>
+        </tr>
+        <tr>
+            <td>MP3</td>
+            <td>audio/mpeg</td>
+        </tr>
+        <tr>
+            <td>OGG</td>
+            <td>audio/ogg</td>
+        </tr>
+        <tr>
+            <td>WAV</td>
+            <td>audio/wav</td>
+        </tr>
+    </table>
+</body>
+</html>

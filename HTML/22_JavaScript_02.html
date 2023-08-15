@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>Some example of what JavaScript</h2>
+    <h3>JavaScript can change content:</h3>
+    <p>JavaScript can change the content of an HTML element:</p>
+    <button type="button" onclick="myFunction()">Click Me !!!</button>
+    <p id="change">This is a demonstration.</p>
+    <hr>
+    <h3>JavaScript can change styles:</h3>
+    <p id="style">Javascript can change the style of an HTML element.</p>
+    <button type="button" onclick="myFunctionStyle()">Clcik Me !!!</button>
+    <hr>
+    <h3>JavaScript can change attributes:</h3>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+    <img src="_images/pic_bulboff.gif" alt="lightbulb off" id="myImage" width="100" height="180">
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <hr>
+    <h3> the HTML &lt;noscript&gt; tag</h3>
+    <p>The HTML <strong>&lt;noscript&gt;</strong> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts.</p>
+    <p id="aviso"></p>
+    <script>
+        document.getElementById("aviso").innerHTML = "Hello JavaScript !!!";
+    </script>
+    <noscript>Sorry, you browser does not support JavaScript!</noscript>
+    <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("change").innerHTML = "Hello JavaScript !!!";
+        }
+
+        function myFunctionStyle() {
+            document.getElementById("style").style.fontSize = "25px";
+            document.getElementById("style").style.color = "red";
+            document.getElementById("style").style.backgroundColor = "yellow";
+        }
+
+        function light(sw) {
+            var pic;
+            if (sw == 0){
+                pic = "_images/pic_bulboff.gif"
+            } else{
+                pic = "_images/pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic
+            
+        }
+    </script>
+
+    <!--
+        <script> 	Defines a client-side script
+        <noscript> 	Defines an alternate content for users that do not support client-side scripts
+    -->
+</body>
+</html>

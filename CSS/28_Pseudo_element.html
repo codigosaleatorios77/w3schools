@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+    <style>
+        p.first_line_01::first-line{
+            color: #c91616;
+            font-variant: small-caps;
+        }
+        p.first_letter::first-letter{
+            color: purple;
+            font-size: xx-large;
+        }
+        p.f_line_letter::first-letter{
+            color: #ff0000;
+            font-size: xx-large;
+        }
+        p.f_line_letter::first-line{
+            color: #0000ff;
+            font-variant: small-caps;
+        }
+        .before_01 h3::before{
+            content: url(_images/smile.gif);
+        }
+        .after_01 h3::after{
+            content: "..........................................................................................." url(_images/smile.gif);
+        }
+        ::marker {
+            color: orangered;
+            font-size: 1.427em;
+        }
+        ::selection{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elements</h1>
+    <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+    <h2>Syntax</h2>
+    <pre>
+        <code>
+selector::pseudo-element {
+    property: value;
+}
+        </code>
+    </pre>
+    <h2>The ::first-line Pseudo-element</h2>
+    <p>The <strong>::first-line</strong> pseudo-element is used to add a special style to the first line of a text.</p>
+    <p>The <strong>::first-line</strong> pseudo-element can only be applied to block-level elements.</p>
+    <p>The following properties apply to the <strong>::first-line</strong> pseudo-element:</p>
+    <ul>
+        <li>font properties</li>
+        <li>color properties</li>
+        <li>background properties</li>
+        <li>word-spacing</li>
+        <li>letter-spacing</li>
+        <li>text-decoration</li>
+        <li>vertical-align</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>clear</li>
+    </ul>
+    <p>The following example formats the first line of the text in the next &lt;p&gt; elements:</p>
+    <p class="first_line_01">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas voluptatibus omnis provident, ipsam iste enim ducimus autem debitis consequatur non accusamus doloremque fuga ipsum odit! Aliquam doloribus molestiae illo.
+    Quasi tempore ullam illo deserunt distinctio? Consequuntur, perferendis voluptatibus maiores fugit, sapiente harum praesentium provident impedit sint eos alias architecto perspiciatis debitis officiis laborum adipisci explicabo distinctio voluptatum pariatur recusandae.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa consequuntur laboriosam est harum explicabo culpa quia corrupti earum quibusdam provident consequatur quo nostrum doloribus dolores alias voluptatibus, dolor facilis.</p>
+    <hr>
+    <h2>The ::first-letter Pseudo-element</h2>
+    <p>The <strong>::first-letter</strong> pseudo-element is used to add a special style to the first letter of a text.</p>
+    <p>The <strong>::first-letter</strong> pseudo-element can only be applied to block-level elements.</p>
+    <p>The following properties apply to the <strong>::first-letter</strong> pseudo- element: </p>
+    <ul>
+        <li> font properties</li>
+        <li> color properties </li>
+        <li>background properties</li>
+        <li>margin properties</li>
+        <li>padding properties</li>
+        <li>border properties</li>
+        <li>text-decoration</li>
+        <li>vertical-align (only if "float" is "none")</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>float</li>
+        <li>clear</li>
+    </ul>
+    <p>The following example formats the first letter of the text in the next &lt;p&gt; elements: </p>
+    <p class="first_letter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, nam consequuntur quasi blanditiis recusandae possimus? Molestias nihil esse laudantium? Eveniet molestias accusamus aut necessitatibus, voluptatum esse unde aperiam dolor est!</p>
+    <hr>
+    <h2>Multiple Pseudo-elements</h2>
+    <p>Several pseudo-elements can also be combined.</p>
+    <p>In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:</p>
+    <p class="f_line_letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit saepe magnam modi repudiandae reiciendis ullam porro, necessitatibus a, voluptatum aperiam eius ipsum voluptates! Et fuga est debitis magni id a?
+    Non eveniet ipsam, praesentium quasi distinctio quia fugiat molestias, esse ipsa assumenda in similique accusantium quidem eum odit autem earum nulla iste nostrum voluptas ea atque. Cupiditate fugiat sunt omnis.</p>
+    <hr>
+    <h2>CSS - The ::before Pseudo-element</h2>
+    <p>The <strong>::before</strong> pseudo-element can be used to insert some content before the content of an element.</p>
+    <div class="before_01">
+        <h3>This is a heading</h3>
+        <p>The <strong>::before</strong> pseudo-element inserts content before the content of an element.</p>
+        <h3>This is a heading</h3>
+    </div>
+    <hr>
+    <h2>CSS - The ::after Pseudo-element</h2>
+    <p>The <strong>::after</strong> pseudo-element can be used to insert some content after the content of an element.</p>
+    <div class="after_01">
+        <h3>This is a heading</h3>
+        <p>The <strong>::before</strong> pseudo-element inserts content before the content of an element.</p>
+        <h3>This is a heading</h3>
+    </div>
+    <hr>
+    <h2>CSS - The ::marker Pseudo-element</h2>
+    <p>The <strong>::marker</strong> pseudo-element selects the markers of list items.</p>
+    <div class="mark">
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>        
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </div>
+    <hr>
+    <h1>Select some text on this page:</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas maiores aut amet laborum natus, illo magnam. Alias totam tempore qui iusto reprehenderit, nesciunt, aut libero nihil molestias voluptatem unde.</p>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi porro, doloribus fuga earum officia repudiandae praesentium vero aspernatur, atque labore. Corrupti eum placeat iusto a similique quisquam laboriosam officia.</div>
+</body>
+</html>

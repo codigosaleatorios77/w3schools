@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding</title>
+    <style>
+        p#p1{
+            padding: 70px;
+            border: 1px solid blue;
+        }
+        div#p2{
+            border: 1px solid black;
+            background-color: lightyellow;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+        .bd{
+            border: 1px solid black;
+        }
+        div#p4l{
+            padding: 25px 50px 75px 100px;
+            background-color: lightsteelblue;
+        }
+        div#p3l{
+            padding: 25px 50px 75px;
+            background-color: lightslategrey;
+        }
+        div#p2l{
+            padding: 25px 50px;
+            background-color: lightslategray;
+        }
+        div#p1l{
+            padding: 25px;
+            background-color: lightseagreen;
+        }
+        div.ex1{
+            width: 300px;
+            background-color: yellow;
+        }
+        div#ex2{
+            width: 300px;
+            padding: 25px;
+            background-color: lightblue;
+        }
+        div#ex3{
+            width: 300px;
+            padding: 25px;
+            background-color: lightblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Padding</h1>
+    <p>The CSS <strong>padding</strong> properties are used to generate space around an element's content, inside of any defined borders.</p>
+    <p id="p1"> This element has a padding of 70px. </p>
+    <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (<b>top, right, bottom, and left</b>).</p>
+    <hr>
+    <h2>Padding - Individual Sides</h2>
+    <p>CSS has properties for specifying the padding for each side of an element:</p>
+    <ul>
+        <li><strong>padding-top</strong></li>
+        <li><strong>padding-right</strong></li>
+        <li><strong>padding-bottom</strong></li>
+        <li><strong>padding-left</strong></li>
+    </ul>
+    <p>All the padding properties can have the following values:</p>
+    <ul>
+        <li>length - specifies a padding in px, pt, cm, etc.</li>
+        <li>% - specifies a padding in % of the width of the containing element</li>
+        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+    </ul>
+    <p>Negative values are not allowed.</p>
+    <h3>Using individual padding properties</h3>
+    <div id="p2">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+    <hr>
+    <h2>Padding - Shorthand Property</h2>
+    <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+    <p>The <strong>padding</strong> property is a shorthand property for the following individual padding properties:</p>
+    <ul>
+        <li><b>padding-top</b></li>
+        <li><b>padding-right</b></li>
+        <li><b>padding-bottom</b></li>
+        <li><b>padding-left</b></li>
+    </ul>
+    <h3>The padding shorthand property - 4 values</h3>
+    <div id="p4l" class="bd">This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.</div>
+    <h3>The padding shorthand property - 3 values</h3>
+    <div id="p3l" class="bd">This div element has a top padding of 25px, a right and left padding of 50px, and a bottom padding of 75px.</div>
+    <h3>The padding shorthand property - 2 values</h3>
+    <div id="p2l" class="bd">This div element has a top and bottom padding of 25px, and a right and left padding of 50px.</div>
+    <h3>The padding shorthand property - 1 value</h3>
+    <div id="p1l" class="bd">This div element has a top, bottom, left, and right padding of 25px.</div>
+    <hr>
+    <h2>Padding and Element Width</h2>
+    <p>The CSS width property specifies the <strong>width</strong> of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p>
+    <p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+    <div class="ex1">This div is 300px wide.</div>
+    <br>
+    <div id="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+    <p>To keep the width at 300px, no matter the amount of padding, you can use the <strong>box-sizing property</strong>. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.</p>
+    <h2>Padding and element width - with box-sizing</h2>
+    <div class="ex1">This div is 300px wide.</div>
+    <br>
+    <div id="ex3">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.</div>
+</body>
+</html>

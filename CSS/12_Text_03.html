@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Decoration</title>
+    <style>
+        h2.ex01{
+            text-decoration: overline;
+        }
+        h3.ex02{
+            text-decoration: line-through;
+        }
+        h4.ex03{
+            text-decoration: underline;
+        }
+        p.ex04{
+            text-decoration: overline underline;
+        }
+        h2.ex05{
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+        h3.ex06{
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+        h4.ex07{
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+        }
+        p.ex08{
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+        }
+        p.ex09{
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+        p.ex10{
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+        }
+        h2.ex11{
+            text-decoration-line: underline;
+            text-decoration-thickness: auto;
+        }
+        h3.ex12{
+            text-decoration-line: underline;
+            text-decoration-thickness: 5px;
+        }
+        h4.ex13{
+            text-decoration-line: underline;
+            text-decoration-thickness: 25%;
+        }
+        p.ex14{
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            text-decoration-thickness: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Text Decoration</h1>
+    <h2>Add a Decoration Line to Text</h2>
+    <p>The <strong>text-decoration-line</strong> property is used to add a <b>decoration line to text</b>.</p>
+    <p>You can combine more than one value, like overline and underline to display lines both over and under a text</p>
+    <h2 class="ex01">Overline text decoration</h2>
+    <h3 class="ex02">ine-through text decoration</h3>
+    <h4 class="ex03">Underline text decoration</h4>
+    <p class="ex04">Overline and underline text decoration.</p>
+    <p>It is not recommended to underline text that is not a link, as this often confuses the reader.</p>
+    <hr>
+    <h2>Specify a Color for the Decoration Line</h2>
+    <p>The <strong>text-decoration-color </strong>property is used to set the <b>color</b> of the decoration line.</p>
+    <h2 class="ex01" style="text-decoration-color: red;">Overline text decoration</h2>
+    <h3 class="ex02" style="text-decoration-color: blue;">ine-through text decoration</h3>
+    <h4 class="ex03" style="text-decoration-color: green;">Underline text decoration</h4>
+    <p class="ex04" style="text-decoration-color: purple;">Overline and underline text decoration.</p>
+    <hr>
+    <h2>Specify a Style for the Decoration Line</h2>
+    <p>The <strong>text-decoration-style</strong> property is used to set the <b>style</b> of the decoration line.</p>
+    <h2 class="ex05">Heading 2</h2>
+    <h3 class="ex06">Heading 3</h3>
+    <h4 class="ex07">Heading 4</h4>
+    <p class="ex08">A paragraph.</p>
+    <p class="ex09">Another paragraph.</p>
+    <p class="ex10">Another paragraph.</p>
+    <hr>
+    <h2>Specify the Thickness for the Decoration Line</h2>
+    <h2 class="ex11">Heading 2</h2>
+    <h3 class="ex12" style="text-decoration-thickness: 5px;">Heading 3</h3>
+    <h4 class="ex13" style="text-decoration-thickness: 25%;">Heading 4</h4>
+    <p class="ex14" style="text-decoration-color: red; text-decoration-style: double; text-decoration-thickness: 5px;">A paragraph.</p>
+    <hr>
+    <h2>The Shorthand Property</h2>
+    <p>The <strong>text-decoration</strong> property is a shorthand property for:</p>
+    <ul>
+        <li><b>text-decoration-line</b> (required)</li>
+        <li><b>text-decoration-color</b> (optional)</li>
+        <li><b>text-decoration-style</b> (optional)</li>
+        <li><b>text-decoration-thickness</b> (optional)</li>
+    </ul>
+    <h2 style="text-decoration: underline;">Heading 2 </h2>
+    <h3 style="text-decoration: underline red;">Heading 3</h3>
+    <h4 style="text-decoration: underline red double;">Heading 4</h4>
+    <p style="text-decoration: underline red double 5px;">A paragraph.</p>
+    <hr>
+    <h2>Using text-decoration: none</h2>
+    <p>All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The <strong>text-decoration: none;</strong> is used to remove the underline from links, like this:</p>
+    <p>A link with no underline: <a href="https://www.w3schools.com" target="_blank">W3Schools.com</a></p>
+</body>
+</html>

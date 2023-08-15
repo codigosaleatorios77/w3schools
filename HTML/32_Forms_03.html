@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <h1>The HTML &lt;form&gt; Elements</h1>
+    <p>The HTML <strong>&lt;form&gt;</strong> element can contain one or more of the following form elements:</p>
+    <ul>
+        <li>&lt;input&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;select&gt;</li>
+        <li>&lt;textarea&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;fieldset&gt;</li>
+        <li>&lt;legend&gt;</li>
+        <li>&lt;datalist&gt;</li>
+        <li>&lt;output&gt;</li>
+        <li>&lt;option&gt;</li>
+        <li>&lt;optgroup&gt;</li>
+    </ul>
+    <h2>The &lt;input&gt; Element</h2>
+    <p>One of the most used form element is the <strong>&lt;input&gt;</strong> element.<br>The &lt;input&gt; element can be displayed in several ways, depending on the type attribute.</p>
+    <form action="serv.php">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h2>The &lt;label&gt; Element</h2>
+    <p>The <strong>&lt;label&gt;</strong> element defines a label for several form elements.</p>
+    <p>The &lt;label&gt; element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.</p>
+    <p>The &lt;label&gt; element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt;label&gt; element, it toggles the radio button/checkbox.</p>
+    <p>The <strong>for attribute</strong> of the &lt;label&gt; tag should be equal to the <strong>id attribute</strong> of the &lt;input&gt; element to bind them together. </p>
+    <hr>
+    <h2>The &lt;select&gt; Element</h2>
+    The <strong>&lt;select&gt;</strong> element defines a drop-down list: <br>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <p>The <strong>&lt;option&gt;</strong>elements defines an option that can be selected. By default, the first item in the drop-down list is selected.<br>To define a pre-selected option, add the selected attribute to the option: </p>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <p>Use the <b>size</b> attribute to specify the number of visible values:</p>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <p>Use the <b>multiple attribute</b> to allow the user to select more than one value:</p>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <hr>
+    <h2>The &lt;optgroup&gt; Element</h2>
+    <p>The <strong>&lt;optgroup&gt;</strong> tag is used to group related options in a <b>select</b> element (drop-down list).If you have a long list of options, groups of related options are easier to handle for a user.</p>
+    <label for="cars">Choose a car:</label>
+    <select  name="cars" id="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi" selected>Audi</option>
+      </optgroup>
+    </select> 
+    <hr>
+    <h2>The &lt;textarea&gt; Element</h2>
+    <p>The <strong>&lt;textarea&gt;</strong> element defines a multi-line input field (a text area)</p>
+    <p>The <b>rows attribute</b> specifies the visible number of lines in a text area.The <b>cols attribute</b> specifies the visible width of a text area.</p>
+    <form action="serv.php">
+        <textarea name="message" id="message" cols="30" rows="10">
+            
+        Hello World !!!
+        </textarea>
+    </form>
+    <p>Can also define the size of the text area by using CSS:</p>
+    <textarea name="message" id="message" style="width: 200px; height: 350px;">
+        Hello World !!! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate minus illum accusantium nobis maxime, officia ea velit sunt expedita atque. Error omnis incidunt reiciendis sequi quos aut sed harum in.
+    </textarea>
+    <hr>
+    <h2>The &lt;button&gt; Element</h2>
+    <p>The <strong>&lt;button&gt;</strong> element defines a clickable button:</p>
+    <button type="button" onclick="alert('Hello World')">Click Me !!!</button>
+    <hr>
+    <h2>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h2>
+    <p>The <strong>&lt;fieldset&gt;</strong> element is used to group related data in a form.</p>
+    <p>The <strong>&lt;legend&gt;</strong> element defines a caption for the &lt;fieldset&gt; element.</p>
+    <form action="serv.php" method="post">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First Name:</label><br>
+            <input type="text" name="fname" id="fname" value="Anna"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname" value="Bella"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <hr>
+    <h2>The &lt;datalist&gt; Element</h2>
+    <p>The <strong>&lt;datalist&gt;</strong> element specifies a list of pre-defined options for an <b>input</b> element.</p>
+    <p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+    <p>The <b>list attribute</b> of the <b>input element</b>, must refer to the <b>id attribute</b> of the &lt;datalist&gt; element.</p>
+    <form action="/action_page.php">
+        <label for="browsers">Choose a web browsers:</label>
+        <input list="browsers" placeholder="Click to choose">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+    <hr>
+    <h2>The &lt;output&gt; Element</h2>
+    <p>The <strong>&lt;output&gt;</strong> element represents the result of a calculation (like one performed by a script).</p>
+    <p><span style="font-size: 20px;">Example</span><br>Perform a calculation and show the result in an <b>&lt;output&gt;</b> element:</p>
+    <form action="serv.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="_css/62_flexbox_04.css">
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Responsive Flexbox</h2>
+    <p>For example, if you want to create a two-column layout for most screen sizes, and a one-column layout for small screen sizes (such as phones and tablets), you can change the flex-direction from row to column at a specific breakpoint (800px in the example below):</p>
+    <p>The "<strong>flex-direction: row;</strong>" stacks the flex items horizontally (from left to right).</p>
+    <p>The "<strong>flex-direction: column;</strong>" stacks the flex items vertically (from top to bottom).</p>
+    <div class="flex-container">
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-right">2</div>
+    </div>
+    <p>Another way is to change the percentage of the flex property of the flex items to create different layouts for different screen sizes. Note that we also have to include flex-wrap: wrap; on the flex container for this example to work:</p>
+    <div class="flex-container-2">
+        <div class="flex-item-left-2">1</div>
+        <div class="flex-item-right-2">2</div>
+    </div>
+</body>
+</html>

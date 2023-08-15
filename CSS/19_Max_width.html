@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - width and max-width</title>
+    <style>
+        div.ex00{
+            border: 3px solid #2157ad;
+        }
+        div.ex01{
+            width: 600px;
+            margin: auto;
+            border: 3px solid #2157ad;
+        }
+        div.ex02{
+            max-width: 600px;
+            margin: auto;
+            border: 3px solid #2157ad;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using width, max-width and margin: auto;</h1>
+    <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+    <p>Setting the <strong>width</strong> of a <b>block-level</b> element will prevent it from stretching out to the edges of its container. Then, you can set the <b>margins to auto</b>, to horizontally center the element within its container. </p>
+    <p>The element will take up the specified width, and the remaining space will be split equally between the two margins</p>
+    <p>The problem with the <b>&lt;div&gt;</b> when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.</p>
+    <p>Using <strong>max-width</strong> instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices</p>
+    <h2>CSS Max-width</h2>
+    <div class="ex00">This div element has <b>no width</b> setting;</div>
+    <br>
+    <div class="ex01">This div element has <b>width</b>:600px;</div>
+    <br>
+    <div class="ex02">This div element has <b>max-width</b>: 600px;</div>
+
+</body>
+</html>

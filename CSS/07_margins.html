@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margins</title>
+    <style>
+        div.mg01{
+            margin: 70px;
+            border: 1px solid #4CAF50;
+        }
+        div.mg02{
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: lightskyblue;
+        }
+        div.mg4l{
+            border:  1px solid black;
+            margin: 25px 50px 75px 100px;
+            background-color: lightcoral;
+        }
+        div.mg3l{
+            border: 1px solid black;
+            margin: 25px 50px 75px;
+            background-color: lightcyan;
+        }
+        div.mg2l{
+            border: 1px solid black;
+            margin: 25px 50px;
+            background-color: lightgoldenrodyellow;
+        }
+        div.mg1l{
+            border: 1px solid black;
+            margin: 25px;
+            background-color: lightgray;
+        }
+        div.mga{
+            width: 300px;
+            margin: auto;
+            border: 1px solid maroon;
+            background-color: lightgreen;
+        }
+        div.mgp{
+            border: 1px solid rebeccapurple;
+            margin-left: 100px;
+        }
+        p.mgi{
+            margin-left: inherit;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Margins</h1>
+    <p>The CSS <strong>margin</strong> properties are used to create space around elements, outside of any defined borders.</p>
+    <div class="mg01">This element has a margin of 70px.</div>
+    <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (<b>top, right, bottom, and left</b>).</p>
+    <hr>
+    <h2>Margin - Individual Sides</h2>
+    <p>CSS has properties for specifying the margin for each side of an element:</p>
+    <ul>
+        <li><b>margin-top</b></li>
+        <li><b>margin-right</b></li>
+        <li><b>margin-bottom</b></li>
+        <li><b>margin-left</b></li>
+    </ul>
+    <p>All the margin properties can have the following values:</p>
+    <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li>length - specifies a margin in px, pt, cm, etc.</li>
+        <li>% - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+    <p>Negative values are allowed.</p>
+    <h3>Using individual margin properties</h3>
+    <div class="mg02">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+    <hr>
+    <h2>Margin - Shorthand Property</h2>
+    <p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+    <p>The <strong>margin</strong> property is a shorthand property for the following individual margin properties:</p>
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+    <h3>The margin shorthand property - 4 values</h3>
+    <div class="mg4l">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px</div>
+    <h3>The margin shorthand property - 3 values</h3>
+    <div class="mg3l">This div element has a top margin of 25px, a right and left margin of 50px, and a bottom margin of 75px.</div>
+    <h3>The margin shorthand property - 2 values</h3>
+    <div class="mg2l">This div element has a top and bottom margin of 25px, and a right and left margin of 50px</div>
+    <h3>The margin shorthand property - 1 value</h3>
+    <div class="mg1l">This div element has a top, bottom, left, and right margin of 25px.</div>
+    <hr>
+    <h2>The auto Value</h2>
+    <p>You can set the margin property to <strong>auto</strong> to horizontally center the element within its container.</p>
+    <p>The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+    <div class="mga">This div will be horizontally centered because it has <b>margin: auto;</b></div>
+    <hr>
+    <h2>The inherit Value</h2>
+    <p>Let the left margin be inherited from the parent element:</p>
+    <div class="mgp">
+        <p class="mgi">This paragraph has an inherited left margin (from the div element).</p>
+    </div>
+</body>
+</html>

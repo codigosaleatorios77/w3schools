@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The z-index Property</title>
+    <style>
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .container-01{
+            position: relative;
+        }
+        .black-box {
+            position: relative;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+        .gray-box {
+            position: absolute;
+            background: lightgray;
+            height: 60px;  
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .green-box {
+            position: absolute;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+        #div-01{
+            position: absolute;
+            width: 300px;
+            height: 150px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        #div-02{
+            position: relative;
+            top: 130px;
+            left: 30px;
+            width: 300px;
+            height: 150px;
+            background-color: coral;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>The z-index Property</h1>
+    <p>When elements are positioned, they can overlap other elements.</p>
+    <p>The <strong>z-index</strong> property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</p>
+    An element can have a positive or negative stack order:
+    <h2>This is a heading</h2>
+    <img src="_images/img_tree.png" alt="tree">
+    <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    <p><b>z-index</b> only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).</p>
+    <hr>
+    <h2>Without z-index</h2>
+    <h3>Overlapping elements</h3>
+    <p>If two positioned elements overlap each other without a <b>z-index</b> specified, the element defined last in the HTML code will be shown on top.</p>
+    <div class="container-01">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+    </div>
+    <h2>With z-index</h2>
+    <p>An element with greater stack order is always above an element with a lower stack order.</p>
+    <div class="container-01">
+        <div class="black-box" style="z-index: 1;">Black box (z-index: 1)</div>
+        <div class="gray-box" style="z-index: 3;">Gray box (z-index: 3)</div>
+        <div class="green-box" style="z-index: 2;">Green box (z-index: 2)</div>
+    </div>
+    <hr>
+    <h2>Change z-index with JavaScript</h2>
+    <p>Click the "Try it" button to change the z-index of the blue DIV element:</p>
+    <button onclick="go()">Try it</button>
+    <div id="div-02">
+        <br>
+        Voila! <br>
+        <span style="text-transform: uppercase;">we have to go back!!!</span>
+        <br><p><button onclick="back()">back</button> &#x1F3DD;</p>
+    </div>
+    <div id="div-01"></div>
+
+    <script>
+        function go() {
+            document.getElementById("div-01").style.zIndex = "-1";
+        }
+        function back() {
+            document.getElementById("div-01").style.zIndex = "1";
+        }
+    </script>
+</body>
+</html>

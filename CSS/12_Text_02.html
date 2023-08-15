@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Alignment</title>
+    <style>
+        h2.center-align{
+            text-align: center;
+        }
+        h3.left-align{
+            text-align: left;
+        }
+        h4.right-align{
+            text-align: right;
+        }
+        div.justify-align{
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: justify;
+        }
+        p.a{
+            text-align-last: right;
+        }
+        p.b{
+            text-align-last: center;
+        }
+        p.c{
+            text-align-last: justify;
+        }
+        p.ex01{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        img.a{
+            vertical-align: baseline;
+        }
+        img.b{
+            vertical-align: top;
+        }
+        img.c{
+            vertical-align: bottom;
+        }
+        img.d{
+            vertical-align: sub;
+        }
+        img.e{
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Alignment and Text Direction</h1>
+    <h2>Text Alignment</h2>
+    <p>The <strong>text-align</strong> property is used to set the <b>horizontal alignment</b> of a text.</p>
+    <p>A text can be <b>left or right aligned, centered, or justified</b>.</p>
+    <p>The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):</p>
+    <h2 class="center-align">Heading 2 (center)</h2>
+    <h3 class="left-align">Heading 3 (left)</h3>
+    <h4 class="right-align">Heading 4 (right)</h4>
+    <p>When the <strong>text-align</strong> property is set to "<b>justify</b>", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</p>
+    <div class="justify-align">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias reiciendis hic qui cupiditate saepe molestias nam nostrum rem. Dolorem tempora recusandae voluptates at nesciunt autem veniam, iusto voluptatum doloremque accusantium!
+    </div>
+    <hr>
+    <h2>Text Align Last</h2>
+    <p>The <strong>text-align-last</strong> property specifies how to align the <b>last line of a text</b>.</p>
+    <h3>text-align-last: right:</h3>
+    <p class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi impedit laborum modi repudiandae reiciendis libero, facere ratione, fugiat quae tenetur qui sequi quis exercitationem recusandae consectetur voluptatem temporibus. Dolorem, nostrum!
+    Hic, inventore dolor. Rem ratione officia corrupti ea nesciunt, illo quisquam. Molestias vitae voluptas numquam, alias repellendus error culpa veniam aspernatur praesentium, ex ducimus vel id magnam! Voluptates, quod numquam!
+    Aspernatur nihil corrupti voluptatem ducimus, suscipit tempore quod illum, beatae blanditiis quo obcaecati. Praesentium, placeat itaque! Obcaecati, eligendi nulla, voluptates possimus veniam aliquam et quaerat rem fugiat, provident assumenda perferendis!
+    Ducimus quaerat necessitatibus perferendis quo sit! Laudantium ipsum suscipit sunt? Facere ullam ad, aut libero autem minima id laboriosam temporibus rem dolores, perferendis commodi ipsam odit reprehenderit adipisci nostrum inventore.
+    Obcaecati dolorum minus velit voluptatum nihil odit impedit quasi illum deleniti aliquid quaerat, perspiciatis rerum a itaque tempora dignissimos mollitia? Maiores suscipit officia alias distinctio illum accusamus corrupti quia voluptas!
+    Totam laborum explicabo temporibus nesciunt accusamus vero recusandae alias, veniam assumenda?</p>
+    <h3>text-align-last: center:</h3>
+    <p class="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda maiores similique numquam corrupti sint consequatur, dolorem nesciunt quam odit labore saepe consectetur adipisci tempore facilis voluptate nostrum pariatur ipsum natus!
+    Accusamus explicabo quos at a eius perspiciatis doloremque aut cum eligendi itaque quisquam veritatis, similique est quod vitae delectus cumque consectetur ipsa accusantium iure sapiente sunt! Non voluptas amet odio?
+    Blanditiis eum nostrum aut nesciunt harum qui, earum nisi, error a minus ducimus cupiditate labore quasi, quos voluptatum assumenda facere aspernatur cum modi sint. Fugit sed atque a possimus? Enim.
+    Totam laborum explicabo temporibus nesciunt accusamus vero recusandae alias, veniam assumenda? Molestiae nobis doloribus delectus officia libero? Exercitationem ipsum, animi quaerat at odio autem, consectetur, magni nulla delectus eos repellat!
+    Dicta numquam error aperiam odio? Sed id minus ad, corporis, eos exercitationem quaerat quisquam. Deleniti accusantium ratione possimus, laborum sed ipsum quae quo cum?</p>
+    <h3>text-align-last: justify:</h3>
+    <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eius nisi incidunt doloribus beatae adipisci est quidem, similique quas natus. Dolores, iusto neque alias iste odit unde nesciunt? Quidem, ipsa.
+    Quod neque illum blanditiis id aspernatur rem modi! Eaque minus, distinctio eos asperiores, ullam ad sed nulla, aperiam ipsam deserunt facere voluptatum sequi culpa labore minima repudiandae consequuntur. Magnam, laboriosam.
+    Qui nulla autem optio, temporibus incidunt ut quod, sint, illo iste natus amet eum? Assumenda blanditiis rem sequi velit cumque ipsa, ullam maiores, soluta necessitatibus, sed error. Praesentium, facere excepturi.
+    Amet adipisci cupiditate dolorum ullam labore alias vel unde suscipit, hic numquam nam porro sit provident, autem dignissimos rem eos iusto architecto saepe maxime non nobis? Ab nulla neque quos!
+    Amet sit animi magni quo corporis error necessitatibus eum magnam ea, obcaecati fugit reiciendis commodi veniam dolor dolore quam ut nostrum quod facere est molestiae impedit hic sequi in. Magnam.</p>
+    <hr>
+    <h2>Text Direction</h2>
+    <p>The <strong>direction</strong> and <strong>unicode-bidi</strong> properties can be used to change the text direction of an element:</p>
+    <p>This is the default text direction.</p>
+    <p class="ex01">This is right-to-left text direction.</p>
+    <hr>
+    <h2>Vertical Alignment</h2>
+    <p>The<strong> vertical-align</strong> property sets the vertical alignment of an element.</p>
+    <h3>vertical-align: baseline (default):</h3>
+    <p>An <img class="a" src="_images/sqpurple.gif" width="9" height="9" alt="purple square"> image with a default alignment.</p>
+    <h3>vertical-align: text-top:</h3>
+    <p>An <img class="b" src="_images/sqpurple.gif" width="9" height="9" alt="purple square"> image with a default alignment.</p>
+    <h3>vertical-align: text-bottom:</h3>
+    <p>An <img class="c" src="_images/sqpurple.gif" width="9" height="9" alt="purple square"> image with a default alignment.</p>
+    <h3>vertical-align: sub:</h3>
+    <p>An <img class="d" src="_images/sqpurple.gif" width="9" height="9" alt="purple square"> image with a default alignment.</p>
+    <h3>vertical-align: sup:</h3>
+    <p>An <img class="e" src="_images/sqpurple.gif" width="9" height="9" alt="purple square"> image with a default alignment.</p>
+</body>
+</html>

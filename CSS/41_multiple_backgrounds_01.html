@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Backgrounds</title>
+    <link rel="stylesheet" href="_css/41_multiple_background_01.css">
+</head>
+<body>
+    <h1>CSS Multiple Backgrounds</h1>
+    <p>CSS allows you to add multiple background images for an element, through the <strong>background-image</strong> property.</p>
+    <p>The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.</p>
+    <p>The following example has two background images, the first image is a flower (aligned to the bottom and right) and the second image is a paper background (aligned to the top-left corner):</p>
+    <pre>
+        <code>
+            #ex1 {
+                background-image: url(img_flwr.gif), url(paper.gif);
+                background-position: right bottom, left top;
+                background-repeat: no-repeat, repeat;
+              }
+        </code>
+    </pre>
+    <div id="imgback-01">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos ex eius ipsam maiores eaque consequuntur. Possimus nemo labore dolorum cupiditate quam quibusdam minima accusamus, modi quod consequatur fuga nulla.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, illum ipsam commodi praesentium ratione provident distinctio repudiandae amet laboriosam modi, ut molestiae esse? Ex vitae fugit expedita dolore, eius libero.</p>
+    </div>
+    <p>Multiple background images can be specified using either the individual background properties (as above) or the background shorthand property.</p>
+    <p>
+        <pre>
+            <code>
+                #example1 {
+                    background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+                  }
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Background Size</h2>
+    <p>The CSS <strong>background-size</strong> property allows you to specify the size of background images.</p>
+    <p>The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.</p>
+    <p>The following example resizes a background image to much smaller than the original image (using pixels):</p>
+    <pre>
+        <code>
+        #div1 {
+            background: url(img_flower.jpg);
+            background-size: 100px 80px;
+            background-repeat: no-repeat;
+        }
+        </code>
+    </pre>
+    <p>Original size of the background-image:</p>
+    <div id="imgback-02">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos ex eius ipsam maiores eaque consequuntur. Possimus nemo labore dolorum cupiditate quam quibusdam minima accusamus, modi quod consequatur fuga nulla.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, illum ipsam commodi praesentium ratione provident distinctio repudiandae amet laboriosam modi, ut molestiae esse? Ex vitae fugit expedita dolore, eius libero.</p>
+    </div>
+    <p>Resized background-image:</p>
+    <div id="imgback-03">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos ex eius ipsam maiores eaque consequuntur. Possimus nemo labore dolorum cupiditate quam quibusdam minima accusamus, modi quod consequatur fuga nulla.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, illum ipsam commodi praesentium ratione provident distinctio repudiandae amet laboriosam modi, ut molestiae esse? Ex vitae fugit expedita dolore, eius libero.</p>
+    </div>
+    <p>The two other possible values for <strong>background-size</strong> are <strong>contain</strong> and <strong>cover</strong>.</p>
+    <p>The <strong>contain</strong> keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.</p>
+    <p>The <strong>cover</strong> keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.</p>
+    <pre>
+        <code>
+        #div1 {
+            background: url(img_flower.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+            
+        #div2 {
+            background: url(img_flower.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        </code>
+    </pre>
+    <p>The following example illustrates the use of <strong>contain</strong> and <strong>cover</strong>:</p>
+    <h3>background-size: contain:</h3>
+    <div id="imgback-04">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <h3>background-size: cover:</h3>
+    <div id="imgback-05">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <h3>No background-size defined:</h3>
+    <div id="imgback-06">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr>
+    <h2>Define Sizes of Multiple Background Images</h2>
+    <p>The <strong>background-size</strong> property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds.</p>
+    <p>The following example has three background images specified, with different background-size value for each image:</p>
+    <code>
+        <pre>
+        #example1 {
+            background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+            background-size: 50px, 130px, auto;
+        }
+        </pre>
+    </code>
+    <div id="imgback-07">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos ex eius ipsam maiores eaque consequuntur. Possimus nemo labore dolorum cupiditate quam quibusdam minima accusamus, modi quod consequatur fuga nulla.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, illum ipsam commodi praesentium ratione provident distinctio repudiandae amet laboriosam modi, ut molestiae esse? Ex vitae fugit expedita dolore, eius libero.</p>
+    </div>
+</body>
+</html>

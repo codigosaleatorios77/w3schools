@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tags - thead,tbody,tfoot</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            font-size: 27px;
+            color: blue;
+        }
+        tbody{
+            font-size: 20px;
+            text-align: left;
+            color: darkgreen;
+        }
+        tfoot{
+            font-size: 37px;
+            text-align: center;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h2>The <strong>thead,tbody</strong> and <strong>tfoot</strong> elements.</h2>
+    <table style="width: 100%;">
+        <!--
+            The <thead> tag is used to group header content in an HTML table.
+            The <thead> element is used in conjunction with the <tbody> and <tfoot> elements to specify each part of a table (header, body, footer).
+            The <thead> tag must be used in the following context: As a child of a <table> element, after any <caption> and <colgroup> elements, and before any <tbody>, <tfoot>, and <tr> elements.
+            
+        -->
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <!--
+            The <tbody> tag is used to group the body content in an HTML table.
+            The <tbody> element is used in conjunction with the <thead> and <tfoot> elements to specify each part of a table (body, header, footer).
+            <tbody> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, and <thead> elements.
+        -->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$90</td>
+            </tr>
+        </tbody>
+        <!--
+            The <tfoot> tag is used to group footer content in an HTML table.
+            The <tfoot> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, <thead>, and <tbody> elements.
+        -->
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$270</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

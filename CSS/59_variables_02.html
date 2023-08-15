@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables - The var() Function</title>
+    <link rel="stylesheet" href="_css/59_variables_02.css">
+</head>
+<body>
+    <h1>Override Global Variable With Local Variable</h1>
+    <p>From the previous page we have learned that global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.</p>
+    <p>Sometimes we want the variables to change only in a specific section of the page.</p>
+    <p>Assume we want a different color of blue for button elements. Then, we can re-declare the --blue variable inside the button selector. When we use var(--blue) inside this selector, it will use the local --blue variable value declared here. </p>
+    <p>We see that the local --blue variable will override the global --blue variable for the button elements:</p>
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque at voluptate nisi odio fuga eveniet id repudiandae perspiciatis ea? Vero omnis natus soluta nobis mollitia pariatur possimus tenetur laboriosam culpa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti dolor facere quas suscipit dicta. Maiores officia possimus cupiditate voluptates ipsa recusandae quae nihil tempore, inventore ad error in commodi.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+    <h2>Add a New Local Variable</h2>
+    <p>If a variable is to be used at only one single place, we could also have declared a new local variable, like this:</p>
+
+</body>
+</html>

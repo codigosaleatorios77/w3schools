@@ -1,0 +1,62 @@
+.img-01{
+    width: 200px;
+    height: 300px;
+}
+
+.img-contain{
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.img-fill{
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.img-none{
+    width: 200px;
+    height: 300px;
+    object-fit: none;
+}
+
+.img-scale{
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+.ex-01{
+    width: 100%;
+    height: 400px;
+}
+.img-e01{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.img-e02{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+.img-e03{
+    float: left;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-e04{
+    float: left;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+

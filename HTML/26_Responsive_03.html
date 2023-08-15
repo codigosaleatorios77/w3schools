@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Different Images Depending on Browser Width</title>
+</head>
+<body>
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>Resize the browser width and the image will change at 600px,1000px and 1001px.</p>
+    <!--
+        The HTML <picture> element allows you to define different images for different browser window sizes.
+    -->
+    <picture>
+        <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="img_flowers.jpg" media="(max-width: 1000px)">
+        <source srcset="img_bigflower.jpg" media="(max-width: 1600px)">
+        <source srcset="flowers.jpg">
+        <img src="img_bigflower.jpg" alt="Flowers" style="width:auto;">
+      </picture>
+</body>
+</html>

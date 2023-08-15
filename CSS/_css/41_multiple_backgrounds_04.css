@@ -1,0 +1,43 @@
+#ex-01{
+    border:  10px solid black;
+    padding: 35px;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+}
+
+#ex-02{
+    border: 10px solid black;
+    padding: 35px;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+#ex-03{
+    border: 10px solid black;
+    padding: 35px;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+#ex-04{
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+}
+
+#ex-05{
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: padding-box;
+}
+
+#ex-06{
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: content-box;
+}
+

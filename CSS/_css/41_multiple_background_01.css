@@ -1,0 +1,55 @@
+#imgback-01{
+    background-image: url(../_images/img_flwr.gif), url(../_images/paper.gif); /*background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;*/
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+#imgback-02{
+    border: 1px solid black;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+#imgback-03{
+    border: 1px solid black;
+    background: url(../_images/img_flwr.gif);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+#imgback-04{
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#imgback-05{
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#imgback-06{
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url(../_images/img_flwr.gif);
+    background-repeat: no-repeat;
+}
+
+#imgback-07{
+    background: url(../_images/img_tree.png) left top no-repeat, 
+                url(../_images/img_flwr.gif) right bottom no-repeat,
+                url(../_images/paper.gif) left top repeat;
+    padding: 15px;
+    background-size: 50px, 130px, auto;
+}

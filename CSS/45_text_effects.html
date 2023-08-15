@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effects</title>
+    <link rel="stylesheet" href="_css/45_text_effects.css">
+</head>
+<body>
+    <h1>Text Effects</h1>
+    <h2>Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes</h2>
+    <h2>Text Overflow</h2>
+    <p>The CSS <strong>text-overflow</strong> property specifies how overflowed content that is not displayed should be signaled to the user.</p>
+    <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+    <h3>text-overflow: clip:</h3>
+    <p class="ex-01">This is some long text that will not fit in the box</p>
+    <h3>text-overflow: ellipsis (...):</h3>
+    <p class="ex-02">This is some long text that will not fit in the box.</p>
+    <p>The following example shows how you can display the overflowed content when <b>hovering over</b> the element:</p>
+    <p class="ex-03" style="text-overflow: clip;">This is some long text that will not fit in the box.</p>
+    <p class="ex-03" style="text-overflow: ellipsis;">This is some long text that will not fit in the box.</p>
+    <hr>
+    <h2>Word Wrapping</h2>
+    <p>The CSS <strong>word-wrap</strong> property allows long words to be able to be broken and wrap onto the next line. </p>
+    <p>If a word is too long to fit within an area, it expands outside:</p>
+    <p class="ex-04">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    <p>The <b>word-wrap</b> property allows you to force the text to wrap - even if it means splitting it in the middle of a word:</p>
+    <p class="ex-05">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    <hr>
+    <h2>CSS Word Breaking</h2>
+    <p>The CSS <strong>word-break</strong> property specifies line breaking rules.</p>
+    <p>Quebra a linha depois de uma palavra completa.</p>
+    <p class="ex-06">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit debitis id pariatur reprehenderit incidunt quidem alias inventore nulla asperiores aliquid. Quibusdam illum laboriosam eius officia atque odio facere neque sed!</p>
+    <p>Quebra a linha em qualquer letra, mesmo cortando a palavra.</p>
+    <p class="ex-07">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit debitis id pariatur reprehenderit incidunt quidem alias inventore nulla asperiores aliquid. Quibusdam illum laboriosam eius officia atque odio facere neque sed!</p>
+    <hr>
+    <h2>Writing Mode</h2>
+    <p>The CSS <strong>writing-mode</strong> property specifies whether lines of text are laid out horizontally or vertically.</p>
+    <p>The following example shows some different writing modes:</p>
+    <p class="ex-08">Some text with default writing-mode.</p>
+    <p>Some text with a span element with a <span class="ex-09">vertical-rl</span> writing-mode.</p>
+    <p class="ex-10">Some text with writing-mode: vertical-rl.</p>
+    <hr>
+    <h2>text-justify Property</h2>
+    <p>Specifies how justified text should be aligned and spaced</p>
+    <h3>Syntax</h3>
+    <code>
+        text-justify: auto|inter-word|inter-character|none|initial|inherit;
+    </code>
+    <p>Example <br> Set the justification method to "inter-word" when text-align is set to "justify":</p>
+    <p class="ex-11">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+</body>
+</html>

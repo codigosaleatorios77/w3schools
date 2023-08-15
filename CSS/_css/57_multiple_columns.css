@@ -1,0 +1,44 @@
+.news-01{
+    column-count: 3;
+}
+
+.news-02{
+    column-count: 3;
+    column-gap: 40px;
+}
+
+.news-03{
+    columns: 4;
+    column-gap: 20px;
+    column-rule-style: solid;
+    column-rule-color: 2px;
+    column-rule-color: purple;
+    /*    column-rule: 2px solid purple;*/
+}
+
+.news-04{
+    columns: 3;
+    column-gap: 10px;
+    column-rule: 2px solid darkblue;
+}
+
+.news-04 h2{
+    column-span: all;
+}
+
+.news-05{
+    column-width: 100px;
+}
+
+
+.news-06{
+    column-count: 3;
+    height: 100px;
+    column-fill: auto;
+}
+
+.news-07{
+    column-count: 3;
+    height: 100px;
+    column-fill: balance;
+}

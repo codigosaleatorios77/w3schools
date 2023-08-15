@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes</title>
+    <style>
+        a.link_01:link{
+            color: red;
+        }
+        a.link_01:visited{
+            color: green;
+        }
+        a.link_01:hover {
+            color: hotpink;
+        }
+        a.link_01:active{
+            color: blue;
+        }
+        a.highlight:hover{
+            color: #116190;
+            font-size: 1.375em;
+        }
+        .div_hover{
+            background-color: blue;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        .div_hover:hover{
+            background-color: rgb(140, 44, 159);
+        }
+        .div_hover_02 p{
+            display: none;
+            background-color: lightslategray;
+            padding: 20px;
+        }
+        .div_hover_02:hover p{
+            display: block;
+            cursor: pointer;
+        }
+        .first_child_01 p:first-child{
+            color: rgb(57, 57, 151);
+        }
+        p.first_child_02 i:first-child{
+            color: #116190;
+        }
+        .first_child_03 p:first-child i{
+            color: rgb(14, 67, 240);
+        }
+        p:lang(it){
+            background-color: green;
+            color: white;
+            font-size: 1.25em;
+        }
+        input:focus{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-classes</h1>
+    <p>A pseudo-class is used to define a special state of an element.</p>
+    <h2>Syntax</h2>
+    <p>The syntax of pseudo-classes:</p>
+    <pre>
+        <code>
+            selector:pseudo-class {
+                property: value;
+            }
+        </code>
+    </pre>
+    <h2>Anchor Pseudo-classes</h2>
+    <p>Links can be displayed in different ways:</p>
+    <h3>Styling a link depending on state</h3>
+    <p><b><a class="link_01" href="https://www.bing.com/" target="_blank">This is a link</a></b></p>
+    <p>a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p>a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    <hr>
+    <h2>Pseudo-classes and HTML Classes</h2>
+    <p>When you hover over the first link below, it will change color and font size:</p>
+    <p><a  class="highlight" href="#">CSS Syntax</a></p>
+    <hr>
+    <h2>Hover on &lt;div&gt;</h2>
+    <p>An example of using the :hover pseudo-class on a &lt;div&gt; element:</p>
+    <div class="div_hover">Mouse over Me</div>
+    <hr>
+    <h2>Simple Tooltip Hover</h2>
+    <p>Hover over a &lt;div&gt; element to show a &lt;p&gt; element (like a tooltip):</p>
+    <div class="div_hover_02"><b>Hover over this div element to show the p element</b>
+        <p >Hello There !!! <br>&#128075;&#128527;</p>
+    </div>
+    <hr>
+    <h2>CSS - The :first-child Pseudo-class</h2>
+    <p>The <b>:first-child</b> pseudo-class matches a specified element that is the first child of another element.</p>
+    <h3>Match the first &lt;p&gt; element</h3>
+    <p>In the following example, the selector matches any &lt;p&gt; element that is the first child of any element:</p>
+    <div class="first_child_01">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, veritatis ratione. Corrupti eius rem odio vel odit, aperiam illum, unde magni illo autem aliquid distinctio laborum atque repellendus repudiandae ullam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis eaque doloribus pariatur incidunt cupiditate, alias repellendus deserunt consectetur, magni velit nostrum quod temporibus illum similique impedit! Harum, laudantium suscipit?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil accusantium, nulla voluptatem praesentium libero. Nulla in explicabo, modi fuga ut ad asperiores nostrum cumque! Ut repellat earum omnis harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla culpa necessitatibus dolore incidunt sunt voluptas magni repellat totam, suscipit voluptates dolor quis minus quod a, facere veritatis consequatur debitis.</p>
+        </div>
+    </div>
+    <h3>Match the first &lt;i&gt; element in all &lt;p&gt; elements</h3>
+    <p>In the following example, the selector matches the first &lt;i&gt; element in all &lt;p&gt; elements:</p>
+    <p class="first_child_02">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p class="first_child_02">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <h3>Match all &lt;i&gt; elements in all first child &lt;p&gt; elements</h3>
+    <p>In the following example, the selector matches all &lt;i&gt; elements in &lt;p&gt; elements that are the first child of another element:</p>
+    <div class="first_child_03">
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <div>
+            <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+            <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        </div>
+    </div>
+    <h2>CSS - The :lang Pseudo-class</h2>
+    <p>The <b>:lang</b> pseudo-class allows you to define special rules for different languages.</p>
+    <p>I live in Italy &#127829;.</p>
+    <p lang="it">Ciao bella!</p>
+    <hr>
+    <h2>Use of :focus</h2>
+    <p>Use of the :focus pseudo-class. <br> Click in the input to see: </p>
+    <form action="/action_page.php" method="get">
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

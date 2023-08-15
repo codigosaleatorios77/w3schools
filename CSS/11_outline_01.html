@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline</title>
+    <style>
+        p#exe01{
+            border: 2px solid black;
+            outline: 10px solid rgb(74, 74, 147) ;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        p.out{
+            border: 2px solid black;
+            outline-color: goldenrod;
+            outline-width: 5px;
+        }
+        p.dotted{
+            outline-style: dotted;
+        }
+        p.dashed{
+            outline-style: dashed;
+        }
+        p.solid{
+            outline-style: solid;
+        }
+        p.double{
+            outline-style: double;
+        }
+        p.groove{
+            outline-style: groove;
+        }
+        p.ridge{
+            outline-style: ridge;
+        }
+        p.inset{
+            outline-style: inset;
+        }
+        p.outset{
+            outline-style: outset;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Outline</h1>
+    <p>An <strong>outline</strong> is a line drawn outside the element's border.</p>
+    <p id="exe01">This element has a black border and a blue outline with a width of 10px.</p>
+    <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".</p>
+    <p>CSS has the following outline properties:</p>
+    <ul>
+        <li><b>outline-style</b></li>
+        <li><b>outline-color</b></li>
+        <li><b>outline-width</b></li>
+        <li><b>outline-offset</b></li>
+        <li><b>outline</b></li>
+    </ul>
+    <p>Outline differs from borders!<br>Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.</p>
+    <hr>
+    <h2>CSS Outline Style</h2>
+    <p>The <b>outline-style</b> property specifies the style of the outline, and can have one of the following values:</p>
+    <ul>
+        <li><b>dotted</b> - Defines a dotted outline</li>
+        <li><b>dashed</b> - Defines a dashed outline</li>
+        <li><b>solid</b> - Defines a solid outline</li>
+        <li><b>double</b> - Defines a double outline</li>
+        <li><b>groove</b> - Defines a 3D grooved outline</li>
+        <li><b>ridge</b> - Defines a 3D ridged outline</li>
+        <li><b>inset</b> - Defines a 3D inset outline</li>
+        <li><b>outset</b> - Defines a 3D outset outline</li>
+        <li><b>none</b> - Defines no outline</li>
+        <li><b>hidden</b> - Defines a hidden outline</li>
+    </ul>
+    <p><span style="font-size: 20px;">Example</span><br>Demonstration of the different outline styles:</p>
+    <p class="out dotted">A dotted outline</p>
+    <p class="out dashed">A dashed outline</p>
+    <p class="out solid">A solid outline</p>
+    <p class="out double">A double outline</p>
+    <p class="out groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="out ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="out inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="out outset">An outset outline. The effect depends on the outline-color value.</p>
+</body>
+</html>

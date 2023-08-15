@@ -1,0 +1,82 @@
+#rcor-1{
+    border-radius: 25px;
+    background-color: rgb(26, 106, 197);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcor-2{
+    border-radius: 25px;
+    border: 2px solid rgb(26, 106, 197);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcor-3{
+    border-radius: 25px;
+    background: url(../_images/paper.gif);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#rcor-4{
+    /*border-radius: 15px 50px 30px 5px;*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    width: 200px;
+    height: 150px;
+    background-color: green;
+}
+
+#rcor-5{
+    border-radius:15px 50px 30px ;
+    width: 200px;
+    height: 150px;
+    background-color: yellow;
+}
+
+#rcor-6{
+    border-radius: 15px 50px;
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    
+}
+
+#rcor-7{
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    background-color: gray;
+}
+
+#rcor-8{
+    border-radius: 50px / 15px;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(113, 136, 22);
+}
+
+#rcor-9{
+    border-radius: 15px 50px;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(144, 15, 15);
+}
+
+#rcor-10{
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(109, 17, 183);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic - main</title>
+    <style>
+        main {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        main > h1, p, .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser {
+        background: white;
+        }
+
+        .browser > p{
+        margin: 4px;
+        font-size: 90%;
+        }
+        .browser > h2{
+        margin: 4px;
+        font-size: 95%;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML &lt;main&gt; Element</h2>
+    <p>The <strong>&lt;main&gt;</strong> tag specifies the main content of a document.</p>
+    <p>The content inside the &lt;main&gt; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</p>
+    <p><span style="font-size: 20px;">Example</span><br>Specify the main content of the document:</p>
+    <main>
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </main>
+</body>
+</html>

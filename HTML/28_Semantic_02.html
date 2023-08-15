@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic - Article</title>
+    <style>
+        .all-browsers{
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers > h2, .browser{
+            margin: 10px;
+            padding: 5px;
+        }
+        .browser{
+            background-color: white;
+        }
+        .browser > p, h3 {
+            margin: 4px;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML &lt;article&gt; Element</h1>
+    <p>The <strong>&lt;article&gt;</strong> element specifies independent, self-contained content.</p>
+    <p>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</p>
+    <p>Examples of where the &lt;article&gt; element can be used:</p>
+    <ul>
+        <li>Forum posts</li>
+        <li>Blog posts</li>
+        <li>User comments</li>
+        <li>Product cards</li>
+        <li>Newspaper articles</li>
+    </ul>
+    <p>Three articles with independent, self-contained content:</p>
+    <div class="all-browsers">
+        <h2>Most Popular Browsers</h2>
+        <article class="browser">
+            <h3>Google Chrome</h3>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+            <h3>Mozilla Firefox</h3>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h3>Microsoft Edge</h3>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </div>
+</body>
+</html>

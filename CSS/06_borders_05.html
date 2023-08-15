@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shorthand Border Property</title>
+    <style>
+        p.border-short{
+            border: 5px solid red;
+        }
+        p.border-left{
+            border-left: 6px solid red;
+            background-color: lightgrey;
+        }
+        p.border-bottom{
+            border-bottom: 6px solid red;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Border - Shorthand Property</h1>
+    <p>To shorten the code, it is also possible to specify all the individual border properties in one property.</p>
+    <p>The <strong>border</strong> property is a shorthand property for the following individual border properties:</p>
+    <ul>
+        <li><b>border-width</b></li>
+        <li><b>border-style</b> (required)</li> 
+        <li><b>border-style</b></li>
+    </ul>
+    <h2>The border Property</h2>
+    <p class="border-short">This property is a shorthand property for <b>border-width, border-style, and border-color</b>.</p>
+    <h2>The border-left Property</h2>
+    <p>can also specify all the individual border properties for just one side:</p>
+    <p class="border-left">This property is a shorthand property for <b>border-left-width, border-left-style, and border-left-color</b>.</p>
+    <h2>The border-bottom Property</h2>
+    <p class="border-bottom">This property is a shorthand property for <b>border-bottom-width, border-bottom-style, and border-bottom-color</b>.</p>
+</body>
+</html>

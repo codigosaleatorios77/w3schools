@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline Offset</title>
+    <style>
+        p.ex01{
+            margin: 30px;
+            border: 1px solid black;
+            outline: 1px solid goldenrod;
+            outline-offset: 15px;
+        }
+        p.ex02{
+            margin: 30px;
+            background: skyblue;
+            border: 1px solid black;
+            outline: 1px solid goldenrod;
+            outline-offset: 15px;       
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Outline Offset</h1>
+    <p>The <strong>outline-offset</strong> property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.</p>
+    <p class="ex01">This paragraph has an outline 15px outside the border edge.</p>
+    <br>
+    <p class="ex02">This paragraph has an outline of 15px outside the border edge.</p>
+    <hr>
+    <h3>CSS Outline Properties</h3>
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>outline</td>
+            <td>A shorthand property for setting outline-width, outline-style, and outline-color in one declaration</td>
+        </tr>
+        <tr>
+            <td>outline-color</td>
+            <td>Sets the color of an outline</td>
+        </tr>
+        <tr>
+            <td>outline-offset</td>
+            <td>Specifies the space between an outline and the edge or border of an element</td>
+        </tr>
+        <tr>
+            <td>outline-style</td>
+            <td>Sets the style of an outline</td>
+        </tr>
+        <tr>
+            <td>outline-width</td>
+            <td>Sets the width of an outline</td>
+        </tr>
+    </table>
+</body>
+</html>

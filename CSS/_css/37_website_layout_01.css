@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+#header {
+    background-color: #83eccc;
+    padding: 20px;
+    text-align: center;
+}
+#topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+#topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#topnav a:hover{
+    background-color: #4f8d7a;
+}

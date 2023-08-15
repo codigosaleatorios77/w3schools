@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links</title>
+    <style>
+        a.ex01{
+            color: aqua;
+        }
+        a.ex02:link{        /* unvisited link */
+            color: red;
+        }
+        a.ex02:visited{     /* visited link */
+            color: green;
+        }
+        a.ex02:hover{       /* mouse over link */
+            color: hotpink;
+        }
+        a.ex02:active{      /* selected link */
+            color: blue;
+        }
+        a.ex03:link{
+            text-decoration: none;
+        }
+        a.ex03:visited{
+            text-decoration: none;
+        }
+        a.ex03:hover{
+            text-decoration: underline;
+        }
+        a.ex03:active{
+            text-decoration: underline;
+        }
+        a.ex04:link{
+            background-color: yellow;
+        }
+        a.ex04:visited{
+            background-color: cyan;
+        }
+        a.ex04:hover{
+            background-color: lightgreen;
+        }
+        a.ex04:active{
+            background-color: hotpink;
+        }
+        a.btn01:link, a.btn01:visited{
+            background-color: #3698f4;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a.btn01:hover, a.btn01:active{
+            background-color: blue;
+        }
+        a.one:link {color:#ff0000;}
+        a.one:visited {color:#0000ff;}
+        a.one:hover {color:#ffcc00;}
+
+        a.two:link {color:#ff0000;}
+        a.two:visited {color:#0000ff;}
+        a.two:hover {font-size:150%;}
+
+        a.three:link {color:#ff0000;}
+        a.three:visited {color:#0000ff;}
+        a.three:hover {background:#66ff66;}
+
+        a.four:link {color:#ff0000;}
+        a.four:visited {color:#0000ff;}
+        a.four:hover {font-family:monospace;}
+
+        a.five:link {color:#ff0000;text-decoration:none;}
+        a.five:visited {color:#0000ff;text-decoration:none;}
+        a.five:hover {text-decoration:underline;}
+
+        a.btn02:link, a.btn02:visited{
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a.btn02:hover, a.btn02:active{
+            background-color: seagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Links</h1>
+    <p>With CSS, links can be styled in many different ways.</p>
+    <h2>Styling Links</h2>
+    <p><strong>Links</strong> can be styled with any CSS property (e.g. <b>color, font-family, background, etc</b>.).</p>
+    <p>Style a link with a color</p>
+    <p><b><a class="ex01" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_all" target="_blank">This is a link</a></b></p>
+    <p>In addition, links can be styled differently depending on what state they are in.</p>
+    <p>The four links states are: </p>
+    <ul>
+        <li><b>a:link</b> - a normal, unvisited link</li>
+        <li><b>a:visited</b> - a link the user has visited</li>
+        <li><b>a:hover</b> - a link when the user mouses over it</li>
+        <li><b>a:active</b> - a link the moment it is clicked</li>
+    </ul>
+    <h3>Styling a link depending on state</h3>
+    <p><b><a class="ex02" href="https://www.facebook.com/w3schoolscom/" target="_blank">This is a link</a></b></p>
+    <p>When setting the style for several link states, there are some order rules:</p>
+    <ul>
+        <li><b>a:hover</b> MUST come after <b>a:link and a:visited</b></li>
+        <li><b>a:active</b> MUST come after <b>a:hover</b></li>
+    </ul>
+    <hr>
+    <h2>Text Decoration</h2>
+    <p>The text-decoration property is mostly used to remove underlines from links:</p>
+    <h3>Styling a link with text-decoration property</h3>
+    <p><b><a class="ex03" href="https://www.facebook.com/w3schoolcom/" target="_blank">This is a link</a></b></p>
+    <hr>
+    <h2>Background Color</h2>
+    <p>The <b>background-color</b> property can be used to specify a background color for links:</p>
+    <h3>Styling a link with background-color property</h3>
+    <p><b><a class="ex04" href="https://www.facebook.com/w3scholcom/" target="_blank">This is a link</a></b></p>
+    <hr>
+    <h2>Link Buttons</h2>
+    <p>This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons:</p>
+    <h3>Link Button</h3>
+    <p>A link styled as a button:</p>
+    <a class="btn01" href="https://www.facebook.com/w3scholcom/" target="_blank">This is a link</a>
+    <hr>
+    <h2>More Examples</h2>
+    <p>This example demonstrates how to add other styles to hyperlinks:</p>
+    <h3>Styling Links</h3>
+    <p>Mouse over the links and watch them change layout:</p>
+    <p><b><a class="one" href="https://www.linkedin.com/company/w3schools.com/" target="_blank">This link changes color</a></b></p>
+    <p><b><a class="two" href="https://www.linkedin.com/company/w3schools.com/" target="_blank">This link changes font-size</a></b></p>
+    <p><b><a class="three" href="https://www.linkedin.com/company/w3schools.com/" target="_blank">This link changes background-color</a></b></p>
+    <p><b><a class="four" href="https://www.linkedin.com/company/w3schools.com/" target="_blank">This link changes font-family</a></b></p>
+    <p><b><a class="five" href="https://www.linkedin.com/company/w3schools.com/" target="_blank">This link changes text-decoration</a></b></p>
+    <hr>
+    <p>Another example of how to create link boxes/buttons:</p>
+    <h3>Link Button</h3>
+    <a class="btn02" href="https://www.facebook.com/w3scholcom/" target="_blank">This is a link</a>
+    <hr>
+    <p>This example demonstrates the different types of cursors (can be useful for links):</p>
+    <h3>The cursor Property</h3>
+    <p>Mouse over the words to change the cursor.</p>
+    <span style="cursor:auto">auto</span><br>
+    <span style="cursor:crosshair">crosshair</span><br>
+    <span style="cursor:default">default</span><br>
+    <span style="cursor:e-resize">e-resize</span><br>
+    <span style="cursor:help">help</span><br>
+    <span style="cursor:move">move</span><br>
+    <span style="cursor:n-resize">n-resize</span><br>
+    <span style="cursor:ne-resize">ne-resize</span><br>
+    <span style="cursor:nw-resize">nw-resize</span><br>
+    <span style="cursor:pointer">pointer</span><br>
+    <span style="cursor:progress">progress</span><br>
+    <span style="cursor:s-resize">s-resize</span><br>
+    <span style="cursor:se-resize">se-resize</span><br>
+    <span style="cursor:sw-resize">sw-resize</span><br>
+    <span style="cursor:text">text</span><br>
+    <span style="cursor:w-resize">w-resize</span><br>
+    <span style="cursor:wait">wait</span><br>
+
+</body>
+</html>

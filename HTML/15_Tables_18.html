@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - Caption</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table Caption</h2>
+    <p>To add a caption to a table, use the <strong>caption tag</strong>.</p>
+    <table style="width: 100%;">
+        <!--
+            can add a caption that serves as a heading for the entire table
+            To add a caption to a table, use the <caption> tag
+            The <caption> tag should be inserted immediately after the <table> tag.
+        -->
+        <caption>Monthly Savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+</body>
+</html>

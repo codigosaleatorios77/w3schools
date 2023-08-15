@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The display Property</title>
+    <style>
+        .ex01 li{
+            display: inline;
+        }
+        .ex02{
+            display: block;
+        }
+        .ex03{
+            display: block;
+        }
+        .ex04{
+            display: none;
+        }
+        .ex05{
+            visibility: hidden;
+        }
+        .imgbox{
+            float: left;
+            text-align: center;
+            width: 200px;
+            border: 1px solid gray;
+            margin: 4px;
+            padding: 6px;
+        }
+
+        button{
+            width: 100%;
+        }
+        #panel, .flip {
+            font-size: 1em;
+            padding: 10px;
+            text-align: center;
+            background-color: #4c84af;
+            color: white;
+            border: solid 1px #a6d8a8;
+            margin: 0 0 0 700px;
+        }
+        #panel{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    <h2>The display Property</h2>
+    <p>The <strong>display</strong> property specifies if/how an element is displayed.</p>
+    <p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is <strong>block</strong> or <strong>inline</strong>.</p>
+    <h2>Block-level Elements</h2>
+    <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+    <div style="border: 2px solid green;"> The &lt;div&gt; element is a block-level element.</div>
+    <p>Examples of block-level elements:</p>
+    <ul>
+        <li>&lt;div&gt;</li>
+        <li>&lt;h1&gt; - &lt;h2&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;form&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;section&gt;</li>
+    </ul>
+    <hr>
+    <h2>Inline Elements</h2>
+    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+    <p>This is <span style="border: 2px solid green;">an inline &lt;span&gt; element inside</span> a paragraph.</p>
+    <p>Examples of inline elements:</p>
+    <ul>
+        <li>&lt;span&gt;</li>
+        <li>&lt;a&gt;</li>
+        <li>&lt;img&gt;</li>
+    </ul>
+    <hr>
+    <h2>Display: none;</h2>
+    <p><strong>display: none;</strong> is commonly used with JavaScript to hide and show elements without deleting and recreating them.</p>
+    <p>The <b>&lt;script&gt;</b> element uses <b>display: none;</b> as default. </p>
+    <hr>
+    <h2>Override The Default Display Value</h2>
+    <p>Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.</p>
+    <p>A common example is making inline &lt;li&gt; elements for horizontal menus:</p>
+    <p><b>Display a list of links as a horizontal menu:</b></p>
+    <ul class="ex01">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+    <p>Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it.</p>
+    <p><b>Display span elements as block elements:</b></p>
+    <span class="ex02">A display property with</span><span class="ex02">a value of "block" results in</span><span class="ex02">line break between each span elements.</span>
+    <p><b>Display links as block elements</b></p>
+    <a class="ex03" href="#">HTML</a><a class="ex03" href="#">CSS</a><a class="ex03" href="#">JavaScript</a>
+    <hr>
+    <h2>Hide an Element - display:none or visibility:hidden?</h2>
+    <p>Hiding an element can be done by setting the <b>display</b> property to <b>none</b>. <br>The element will be hidden, and the page will be displayed as if the element is not there:</p>
+    <h1>This is a visible heading</h1>
+    <h1 class="ex04">This is a hidden heading</h1>
+    <p>Notice that the <b>h1</b> element with <b>display: none;</b> does not take up any space.</p>
+    <p><strong>visibility:hidden;</strong> also hides an element.</p>
+    <p>However, the element will still take up the same space as before. The element will be hidden, but still affect the layout:</p>
+    <h1>This is a visible heading</h1>
+    <h1 class="ex05">This is a hidden heading</h1>
+    <p>Notice that the hidden heading still takes up space.</p>
+    <hr>
+    <h2>Difference between display:none and visiblity: hidden</h2>
+    <p><b>visibility:hidden</b> hides the element, but it still takes up space in the layout.</p>
+    <p><b>display:none</b> removes the element from the document. It does not take up any space.</p>
+    <div class="imgbox" id="imgbox01">
+        <strong>display:none</strong> <br>
+        <img src="_images/img_5terre.jpg" alt="Italy" width="100%">
+        <button onclick="removeElement()">Remove</button>
+    </div>
+    <div class="imgbox" id="imgbox02">
+        <strong>visibility:hidden</strong> <br>
+        <img src="_images/img_lights.jpg" alt="Lights" width="100%">
+        <button onclick="hideElemeny()">Hide</button>
+    </div>
+    <div class="imgbox">
+        <b>Reset</b> <br>
+        <img src="_images/img_forest.jpg" alt="Forest" width="100%">
+        <button onclick="reset()">Reset All</button>
+    </div>
+    <p class="flip" onclick="show()">Click to show panel</p>
+    <div id="panel">
+        <p>This panel contains a div element, which is hidden by default <b>(display: none)</b>.</p>
+        <p>It is styled with CSS and we use JavaScript to show it (<b>display: block</b>).</p>
+        <p>How it works: Notice that the p element with <b>class="flip"</b> has an <b>onclick</b> attribute attached to it. When the user clicks on the p element,
+        a function called <b>show()</b> is executed, which changes the style of the div with <b>id="panel"</b> from <b>display:none (hidden)</b> to <b>display:block (visible)</b>.</p>
+        <hr style="color: white;">
+        <p onclick="hideblock()">Click to hide the panel</p>
+    </div>
+
+    <script>
+        function removeElement() {
+            document.getElementById("imgbox01").style.display = "none";
+        }
+        function hideElemeny(){
+            document.getElementById("imgbox02").style.visibility = "hidden";
+        }
+        function reset() {
+            document.getElementById("imgbox01").style.display = "block";
+            document.getElementById("imgbox02").style.visibility = "visible";
+        }
+
+        function show() {
+            document.getElementById("panel").style.display="block";   
+        }
+
+        function hideblock() {
+            document.getElementById("panel").style.display = "none";
+        }
+    </script>
+
+
+</body>
+</html>

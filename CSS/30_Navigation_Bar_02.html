@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <style>
+        .vnb_01 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60px;
+        }
+        .vnb_01 li a{
+            display: block;
+            background-color: lightslategray;
+            color: white;
+        }
+        .vnb_02 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+        .vnb_02 li a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 1.25em;
+            padding: 8px 16px;
+        }
+        .vnb_02 li a:hover{
+            background-color: gray;
+            color: white;
+        }
+        .vnb_02 li a.active{
+            background-color: #04AA6D;
+            color: white;
+        }
+        .vnb_03 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            border: 1px solid #555;
+        }
+        .vnb_03 li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .vnb_03 li{
+            text-align: center;
+            border-bottom: 1px solid #555;
+        }
+        .vnb_03 li:last-child{
+            border-bottom: none;
+        }
+        .vnb_03 li a.active_02{
+            background-color: #04AA6D;
+            color: white;
+        }
+        .vnb_03 li a:hover:not(.active_02){
+            background-color:#555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vertical Navigation Bar</h1>
+    <p>To build a vertical navigation bar,can style the &lt;a&gt; elements inside the list:</p>
+    <div class="vnb_01">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <p><b>display: block;</b> - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want)</p>
+    <p><b>width: 60px;</b> - Block elements take up the full width available by default. We want to specify a 60 pixels width</p>
+    <p> can also set the width of &lt;ul&gt;, and remove the width of &lt;a&gt;, as they will take up the full width available when displayed as block elements.This will produce the same result.</p>
+    <hr>
+    <h2>Vertical Navigation Bar Examples</h2>
+    <p>Create a basic vertical navigation bar with a gray background color and change the background color of the links when the user moves the mouse over them:</p>
+    <div class="vnb_02">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Active/Current Navigation Link</h3>
+    <p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+    <div class="vnb_02">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Center Links & Add Borders</h3>
+    <p>Add <b>text-align:center</b> to &lt;li&gt; or &lt;a&gt; to center the links.</p>
+    <p>Add the <b>border</b> property to &lt;ul&gt; add a border around the navbar. If you also want borders inside the navbar, add a border-bottom to all &lt;li&gt; elements, except for the last one:</p>
+    <div class="vnb_03">
+        <ul>
+            <li><a href="#" class="active_02">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Spacing</title>
+    <style>
+        p.text-i{
+            text-indent: 50px;
+        }
+        .small{
+            line-height: 0.7;
+        }
+        .big{
+            line-height: 1.8;
+        }
+        .one{
+            word-spacing: 10px;
+        }
+        .two{
+            word-spacing: -2px;
+        }
+        p.a{
+            white-space: nowrap;
+        }
+        p.b{
+            white-space: normal;
+        }
+        p.c{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Spacing</h1>
+    <h2>Text Indentation</h2>
+    <p>The <strong>text-indent</strong> property is used to specify the indentation of the first line of a text:</p>
+    <p class="text-i">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia tempora reiciendis dolor totam, nemo consequatur voluptatibus distinctio quibusdam adipisci, laboriosam ad, dolore debitis iure velit consectetur? Accusantium odio tempora sint!
+    Reiciendis quo soluta ea aut cupiditate impedit ipsam voluptas temporibus! Architecto fugiat libero repudiandae rerum, totam molestias ipsam eveniet adipisci dolore quod praesentium laudantium in, beatae voluptate vero, fuga qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et voluptatibus doloremque voluptatem! Iste suscipit rerum id voluptas quis ipsa perferendis? Accusantium magni atque beatae quas corrupti distinctio sed laudantium.
+    Harum, et expedita nulla unde hic quos corrupti ipsum vel earum, eius cum, aliquid quibusdam id aperiam exercitationem? Saepe nulla maxime, ut vitae nesciunt molestiae non neque quasi harum omnis.</p>
+    <hr>
+    <h2>Letter Spacing</h2>
+    <p>The letter-spacing property is used to specify the space between the characters in a text.</p>
+    <h2>Using letter-spacing</h2>
+    <h3 style="letter-spacing: 5px;">This is heading 2</h3>
+    <h3 style="letter-spacing: -2px;">This is heading 3</h3>
+    <hr>
+    <h2>Line Height</h2>
+    <p>The <strong>line-height</strong> property is used to specify the space between lines:</p>
+    <p>This is a paragraph with a standard line-height.<br>The default line height in most browsers is about 110% to 120%.<br></p>
+    <p class="small">This is a paragraph with a smaller line-height.<br>This is a paragraph with a smaller line-height.<br></p>
+    <p class="big">This is a paragraph with a bigger line-height.<br>This is a paragraph with a bigger line-height.<br></p>
+    <hr>
+    <h2>Word Spacing</h2>
+    <p>The <strong>word-spacing</strong> property is used to specify the space between the words in a text.</p>
+    <p>This is a paragraph with normal word spacing.</p>
+    <p class="one">This is a paragraph with larger word spacing.</p>
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+    <hr>
+    <h2>White Space</h2>
+    <p>The <strong>white-space</strong> property specifies how white-space inside an element is handled.</p>
+    <h3>white-space: nowrap:</h3>
+    <p class="a">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+    <h3>white-space: normal:</h3>
+    <p class="b">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+    <h3>white-space: pre:</h3>
+    <p class="c">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+</body>
+</html>

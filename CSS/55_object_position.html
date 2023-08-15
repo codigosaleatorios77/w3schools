@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-position Property</title>
+    <link rel="stylesheet" href="_css/55_object_position.css">
+</head>
+<body>
+    <h1>object-position Property</h1>
+    <p>The CSS object-position property is used to specify how an <img> or &lt;video&gt; should be positioned within its container.</p>
+    <p>The Image</p>
+    <p>Look at the following image from Paris, which is 400x300 pixels:</p>
+    <img src="_images/paris.jpg" alt="Paris" width="400" height="300">
+    <p>Next, we use <b>object-fit: cover;</b> to keep the aspect ratio and to fill the given dimension. However, the image will be clipped to fit, like this:</p>
+    <img src="_images/paris.jpg" alt="`Paris" width="400" height="300" class="img-01">
+    <h2>Using the object-position Property</h2>
+    <p>Let's say that the part of the image that is shown, is not positioned as we want. To position the image, we will use the <strong>object-position </strong>property.</p>
+    <h3>Syntax</h3>
+    <code> object-position: position|initial|inherit;</code>
+    <p>position: Specifies the position of the image or video inside its content box. First value controls the x-axis and the second value controls the y-axis. Can be a string (left, center or right), or a number (in px or %). Negative values are allowed</p>
+    <p>Here we will use the <strong>object-position</strong> property to position the image so that the great old building is in center:</p>
+    <img src="_images/paris.jpg" alt="`Paris" width="400" height="300" class="img-02">
+    <p>Here we will use the object-position property to position the image so that the famous Eiffel Tower is in center:</p>
+    <img src="_images/paris.jpg" alt="`Paris" width="400" height="300" class="img-03">
+
+
+</body>
+</html>

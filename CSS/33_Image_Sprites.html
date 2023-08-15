@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprites</title>
+    <style>
+        #home{
+            width: 46px;
+            height: 46px;
+            background: url(_images/img_navsprites.gif) 0 0;
+        }
+        #next{
+            width: 43px;
+            height: 44px;
+            background: url(_images/img_navsprites.gif) -91px 0;
+        }
+        .navlist{
+            position: relative;
+            width: 600px;
+            height: 60px;
+        }
+        .navlist li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+        }
+        .navlist li, .navlist a{
+            height: 44px;
+            display: block;
+        }
+        .home{
+            left: 0px;
+            width: 46px;
+            background: url(_images/img_navsprites.gif) 0 0;
+        }
+        .prev{
+            left: 63px;
+            width: 43px;
+            background: url(_images/img_navsprites.gif) -47px 0;
+        }
+        .next{
+            left: 129px;
+            width: 43px;
+            background: url(_images/img_navsprites.gif) -91px 0;
+        }
+
+        .home a:hover{
+            background: url(_images/img_navsprites_hover.gif) 0 -45px;
+        }
+        .prev a:hover{
+            background: url(_images/img_navsprites_hover.gif) -47px -45px;
+        }
+        .next a:hover{
+            background: url(_images/img_navsprites_hover.gif) -91px -45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Sprites</h1>
+    <p>An image sprite is a collection of images put into a single image.</p>
+    <p>A web page with many images can take a long time to load and generates multiple server requests.</p>
+    <p>Using image sprites will reduce the number of server requests and save bandwidth.</p>
+    <h2>Image Sprites - Simple Example</h2>
+    <p>Instead of using three separate images, we use this single image ("<b>img_navsprites.gif</b>"):</p>
+    <img src="_images/img_navsprites.gif" alt="Sprites">
+    <p>With CSS, we can show just the part of the image we need.</p>
+    <p>In the example the CSS specifies which part of the "img_navsprites.gif" image to show:</p>
+    <img id="home" src="_images/img_transparent.gif" alt="inicial image" width="1" height="1">
+    <br>
+    <img id="next" src="_images/img_transparent.gif" alt="next image" width="1" height="1">
+    <h3>Example explained:</h3>
+    <ul>
+        <li><b>&lt;img id="home" src="img_trans.gif"&gt;</b> - Only defines a small transparent image because the src attribute cannot be empty. The displayed image will be the background image we specify in CSS</li>
+        <li><b>width: 46px; height: 44px;</b> - Defines the portion of the image we want to use</li>
+        <li><b>background: url(img_navsprites.gif) 0 0;</b> - Defines the background image and its position (left 0px, top 0px)</li>
+    </ul>
+    <hr>
+    <h2>Image Sprites - Create a Navigation List</h2>
+    <p>Use the sprite image ("img_navsprites.gif") to create a navigation list.</p>
+    <p>We will use an HTML list, because it can be a link and also supports a background image:</p>
+    <ul class="navlist">
+        <li class="home"><a href="#"></a></li>
+        <li class="prev"><a href="#"></a></li>
+        <li class="next"><a href="#"></a></li>
+    </ul>
+    <h3>Example explained:</h3>
+    <ul>
+        <li><b>.navlist {position:relative;}</b> - position is set to relative to allow absolute positioning inside it</li>
+        <li><b>.navlist li {margin:0;padding:0;list-style:none;position:absolute;top:0;}</b> - margin and padding are set to 0, list-style is removed, and all list items are absolute positioned</li>
+        <li><b>.navlist li, #navlist a {height:44px;display:block;}</b> - the height of all the images is 44px</li>
+    </ul>
+    <p>Now start to position and style for each specific part:</p>
+    <ul>
+        <li><b>.home {left:0px;width:46px;}</b> - Positioned all the way to the left, and the width of the image is 46px</li>
+        <li><b>.home {background:url(img_navsprites.gif) 0 0;}</b> - Defines the background image and its position (left 0px, top 0px)</li>
+        <li><b>.prev {left:63px;width:43px;}</b> - Positioned 63px to the right (#home width 46px + some extra space between items), and the width is 43px</li>
+        <li><b>.prev {background:url('img_navsprites.gif') -47px 0;} </b>- Defines the background image 47px to the right (.home width 46px + 1px line divider)</li>
+        <li><b>.next {left:129px;width:43px;}</b>- Positioned 129px to the right (start of .prev is 63px + .prev width 43px + extra space), and the width is 43px</li>
+        <li><b>.next {background:url('img_navsprites.gif') -91px 0;}</b> - Defines the background image 91px to the right (.home width 46px + 1px line divider + .prev width 43px + 1px line divider)</li>
+    </ul>
+    <hr>
+    <h2>Image Sprites - Hover Effect</h2>
+    <p>Add a hover effect to our navigation list.</p>
+    <p>Our new image ("img_navsprites_hover.gif") contains three navigation images and three images to use for hover effects:</p>
+    <img src="_images/img_navsprites_hover.gif" alt="Sprites">
+    <p>Because this is one single image, and not six separate files, there will be no loading delay when a user hovers over the image.</p>
+    <ul class="navlist">
+        <li class="home"><a href="#"></a></li>
+        <li class="prev"><a href="#"></a></li>
+        <li class="next"><a href="#"></a></li>
+    </ul>
+    <p>Example explained:</p>
+    <ul>
+        <li>
+            <b>.home a:hover {background: url('img_navsprites_hover.gif') 0 -45px;}</b> - For all three hover images we specify the same background position, only 45px further down
+        </li>
+    </ul>
+</body>
+</html>

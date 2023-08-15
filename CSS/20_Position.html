@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The position Property</title>
+    <style>
+        div.static{
+            position: static;
+            border: 3px solid #2157ad;
+        }
+        div.relative{
+            position: relative;
+            max-width: 600px;
+            left: 700px;
+            border: 3px solid #2157ad;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            max-width: 300px;
+            border: 3px solid #100d7a;
+            background-color: #08224b;
+            color: white;
+        }
+        .fixed a{
+            color: white;
+            text-decoration: none;
+        }
+        .relative-02{
+            position: relative;
+            width: 800px;
+            height: 400px;
+            border: 3px solid #73AD21;
+        }
+        .absolute{
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 400px;
+            height: 100px;
+            border: 3px solid #100d7a;
+            background-color: rgba(71, 105, 255, 0.866);
+            color: white;
+        }
+        .sticky{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #0d7a3c;
+            border: 2px solid #4CAF50;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>The position Property</h1>
+    <p>The <strong>position</strong> property specifies the type of positioning method used for an element.</p>
+    <p>There are five different position values: </p>
+    <ul>
+        <li><b>static</b></li>
+        <li><b>relative</b></li>
+        <li><b>fixed</b></li>
+        <li><b>absolute</b></li>
+        <li><b>sticky</b></li>
+    </ul>
+    <p>Elements are then positioned using the <b>top, bottom, left, and right</b> properties. However, these properties will not work unless the <b>position</b> property is set first. They also work differently depending on the position value.</p>
+    <hr>
+    <h2>position: static;</h2>
+    <p>HTML elements are positioned static by default.</p>
+    <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+    <p>An element with <strong>position: static;</strong> is not positioned in any special way; it is always positioned according to the normal flow of the page</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis provident exercitationem nisi atque nam expedita repellendus error quae dolores id eos mollitia ratione, quod minima, natus consequatur eveniet adipisci. Aliquam.
+    Deserunt, ipsum sint. Expedita quas reiciendis adipisci eligendi ex ipsum rem eveniet unde! Repellendus necessitatibus a optio illo error, minus consequatur maxime animi odit omnis quam vel sunt magnam et!
+    Explicabo in dolores mollitia eaque accusamus nisi natus officiis veniam quis reprehenderit ipsum quasi quod dolorum saepe voluptatum commodi dicta tempora assumenda, eveniet laboriosam sunt, sapiente blanditiis. Similique, beatae ex!
+    Nemo exercitationem eaque tenetur possimus veniam voluptatem dolore pariatur culpa minima! Ipsum consequuntur harum quam dolorum atque sint molestiae quos accusamus, laboriosam nisi ad assumenda ducimus autem! Amet, incidunt adipisci?
+    Consequuntur id distinctio eos nobis harum expedita, fugit minus dolorem alias dolor est pariatur consequatur eius tempora voluptatem! Dolore rem, ducimus aliquam similique necessitatibus obcaecati quibusdam laboriosam quaerat quia alias.</p>
+    <div class="static"><b>This div element has position: static;</b><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque sint eum dignissimos totam hic laboriosam consequuntur. Odio dolor excepturi hic pariatur ullam praesentium, velit architecto. Ullam ducimus quis explicabo.
+    Soluta culpa blanditiis quidem minima voluptatibus commodi nisi accusamus totam debitis maiores exercitationem cupiditate voluptatum nihil, illum itaque quae officia aut nostrum aperiam eligendi veniam ullam reiciendis, animi veritatis. Aut?
+    Ratione temporibus voluptatum facilis, eum, aspernatur dolorem eaque voluptatibus eius dolores harum iusto accusantium corporis pariatur ullam saepe? Corrupti porro laborum fuga reiciendis quae nesciunt placeat laboriosam sequi saepe ex!</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum amet natus magni, consequatur rerum excepturi voluptate similique totam eligendi, quam quae voluptatem voluptatum magnam! Numquam, quasi. Officia libero tenetur voluptas?
+    Reiciendis eveniet, tempora cum, in laudantium esse a dignissimos, nam porro nisi dolores! Inventore ipsa quia architecto, ratione neque quis voluptates officiis at consequuntur placeat cumque molestiae itaque voluptate nobis.
+    Earum, culpa recusandae nobis animi minus quae, expedita quaerat odio repellat tempore doloribus sunt ut ratione laudantium ullam quam deserunt aspernatur officia dolorum beatae saepe corrupti. Labore consequatur possimus dolor.
+    Temporibus, delectus omnis! Nemo, neque qui exercitationem ipsum similique quibusdam eius est, assumenda repellendus vel iste et incidunt cupiditate nisi, commodi eveniet laboriosam eligendi mollitia magnam aliquid! Et, doloremque maiores.
+    Aliquam praesentium magni ipsam ipsa, quisquam dolores perspiciatis maiores minus saepe modi, veritatis consectetur soluta voluptatem porro qui id explicabo iusto quod molestiae asperiores illo atque temporibus quas. Neque, et?</p>
+    <hr>
+    <h2>position: relative;</h2>
+    <p>An element with <strong>position: relative;</strong> is positioned relative to its normal position.</p>
+    <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor assumenda cum officiis deleniti aperiam autem ex! Nesciunt, perspiciatis doloribus. Deleniti, tempora magni quos autem sunt ad deserunt optio debitis.
+    Sit accusantium itaque placeat aut qui dolore quas necessitatibus iusto maxime odio eligendi, laudantium cum, aliquam nihil aliquid saepe blanditiis quidem voluptatem iste soluta, dolores provident assumenda! Deserunt, officia magni!
+    Alias natus facere deserunt eveniet molestias labore soluta. In a eligendi eius cupiditate iusto, fugiat iste dolorem autem earum. Harum similique inventore sint recusandae nostrum ipsam beatae assumenda officia ipsa.
+    Natus dolor voluptates officia eos, eligendi, dignissimos voluptatibus dolorum suscipit eveniet velit atque, maiores libero. Magni provident reprehenderit fugiat, saepe illo, soluta tenetur voluptate, voluptates consectetur libero quidem eligendi accusamus?
+    Ad, placeat reprehenderit. Blanditiis iure fuga quod voluptas possimus soluta, tempore eum corrupti doloremque placeat facilis neque voluptatem! Assumenda neque reiciendis sunt quia eveniet illum eaque fuga error! Esse, recusandae.</p>
+    <div class="relative"><b>This div element has position: relative;</b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, autem mollitia alias unde ad nesciunt id fugiat repellendus. Eligendi odio libero cupiditate voluptate accusantium, velit quia quaerat. Odio, nisi error!
+    Assumenda, quae dolore! Quaerat quam ipsa molestiae? Sit, repellendus odit voluptatem pariatur deleniti nihil saepe sint inventore voluptates animi est ut reiciendis assumenda corporis ratione, facere voluptatum eum totam libero!
+    Consectetur nostrum nisi voluptatum fugit mollitia? Quam modi ullam, hic maxime sequi molestiae tempore optio numquam ipsa suscipit molestias aut perspiciatis rem delectus autem facilis, quis beatae deserunt laboriosam id.</div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, repudiandae atque! Ipsa quam sequi aspernatur autem perspiciatis saepe. Eius, deserunt. Reprehenderit, recusandae hic repellendus saepe qui neque quasi culpa possimus?
+    Pariatur aliquid officia quod blanditiis dicta nobis sunt asperiores dolores. Optio, nemo velit! Modi autem optio quos perspiciatis nostrum aspernatur ipsa, soluta eos ad ex? Minima tenetur qui repellendus commodi.
+    Nemo cupiditate expedita nihil labore qui explicabo vel necessitatibus cumque in natus temporibus quae quo, saepe laudantium aut distinctio aliquam quidem reprehenderit. Perspiciatis ex commodi, obcaecati accusamus voluptates quia dicta.
+    Ut dolorum quae odio, expedita praesentium dolorem neque molestiae ea molestias maxime incidunt nihil eaque sunt culpa earum sequi numquam tenetur nobis, magnam corporis, soluta perferendis eum laboriosam debitis? A?
+    Veritatis aliquid placeat sint inventore quod, quam exercitationem obcaecati, ad voluptas, expedita ratione qui minima nobis molestias modi harum. Recusandae ea odio iure non, cum pariatur? Similique nihil consequuntur ratione.</p>
+    <hr>
+    <h2 id="fix">position: fixed;</h2>
+    <p>An element with <strong>position: fixed;</strong> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+    <p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quisquam cum alias odit vero veritatis harum quam maxime recusandae sunt aut sed, error repellendus autem facilis ipsum qui quos sit.
+    Eaque consequuntur error quasi corrupti, autem dolorum, eum, dicta rem iusto sint vero distinctio? Exercitationem vero mollitia tenetur harum laborum autem fuga voluptatibus, odit ex! Ipsa eligendi odio voluptatum sit.
+    Quam iusto nam, asperiores ipsam qui consectetur omnis saepe fugiat accusamus sapiente temporibus voluptatum voluptatem id repellat architecto sunt odit illum officiis illo. Delectus quis facere suscipit illum, dolor maxime.
+    Reprehenderit atque nesciunt, reiciendis rem quas assumenda dolorem eveniet commodi eligendi velit asperiores repellat vel eum facilis in distinctio officia a doloribus quaerat soluta tempora repellendus quam iure corrupti. Totam!
+    Sed dolorem officia omnis. Nulla ipsum, cupiditate ullam nesciunt impedit odio. Facere ab exercitationem tenetur reprehenderit quam quae, voluptatem error commodi odit accusantium ea, officiis, soluta expedita. Sunt, laboriosam nobis?</p>
+    <p class="fixed">This div element has <strong>position: fixed;</strong><br><a href="#fix">click back to fixed</a><br></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nostrum provident laborum modi delectus, aut, unde aperiam voluptatibus, iste asperiores aspernatur aliquid? Vitae harum at quidem. Commodi perspiciatis quos sapiente?
+    Repellendus explicabo dignissimos minima ratione hic voluptates ipsam? Nam veritatis nemo sed assumenda delectus. Doloribus, placeat! Sequi veniam illo voluptates sed quas fuga, quod totam laboriosam quidem, tenetur vitae dignissimos.
+    Corporis exercitationem labore et dignissimos excepturi, eveniet ab. Beatae non molestias perspiciatis sint expedita delectus deleniti ad libero molestiae at. A iusto deserunt atque assumenda ipsa fugiat facere ad temporibus.
+    Reiciendis necessitatibus a quos. Quos distinctio eveniet laborum magnam commodi maiores sequi, officia libero sunt excepturi enim, a mollitia. Deleniti assumenda nisi ducimus incidunt! Incidunt quae tempore tempora odit ducimus!
+    In earum inventore eum omnis atque suscipit aliquam quam voluptatibus recusandae unde deserunt neque assumenda odio possimus vero obcaecati, vitae dolore sit dolorem temporibus fuga eos ratione accusantium? Mollitia, voluptatibus.</p>
+    <hr>
+    <h2>position: absolute;</h2>
+    <p>An element with <strong>position: absolute;</strong> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+    <p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+    <p>In the example bellow the absolut element its inside of the relative element.</p>
+    <div class="relative-02">
+        <b>This div element has position: relative;</b><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex id perspiciatis mollitia doloribus eius beatae quia, odio porro sunt doloremque asperiores quam, delectus, culpa libero dolor quos molestiae. Officia, explicabo!
+        Soluta cum atque consectetur quisquam, ducimus cupiditate quae voluptates, et sint dolorem voluptatum! Sunt eum perferendis omnis? Nam rem id porro, minus eligendi doloremque neque quos amet modi tenetur dolor.
+        Aspernatur ex vitae commodi cum voluptate fugiat dolores at. Natus non distinctio accusantium obcaecati illum, saepe libero quod minima officiis voluptatem magni doloremque rem aliquid, sequi ratione enim minus quidem.
+        Magni repellendus est nobis dolorem fugit minus dolores illo eos non aspernatur sed voluptatibus, atque porro quo consequatur aperiam eveniet nihil sint quam soluta! Dolorem dolore adipisci omnis blanditiis reprehenderit?
+        Quidem cumque, rerum eius delectus adipisci nemo molestiae accusamus officia facere, eos nisi suscipit enim tempora dignissimos atque expedita rem dolor libero eveniet sit doloremque eaque porro voluptatem. Nesciunt, voluptas?
+        <div class="absolute">
+            <b>This div element has position: absolute;</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta. Natus voluptatem vero magni, fugit quisquam totam ducimus ad perferendis consequuntur possimus ullam consequatur, sequi distinctio accusantium? Dicta, ab esse.
+        </div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ex aspernatur quis voluptatem, labore necessitatibus reprehenderit a. Molestias quos aliquid facilis nulla. Corrupti, omnis delectus. Harum incidunt repudiandae accusantium laudantium.
+        Accusamus numquam quos magni consequuntur ipsam rerum expedita deserunt, aspernatur nostrum dolorem, provident maiores dicta quidem quod eum, laudantium sunt! Reiciendis, possimus? Eveniet at rem iure similique quos dignissimos dolore.
+        Dignissimos quae beatae eaque fugit qui, et animi recusandae doloremque nisi fuga iusto exercitationem nobis ab expedita veritatis tempora deserunt alias amet, quidem dolor. Voluptatum nam enim dolorum maxime neque?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci consequatur aperiam omnis delectus laborum ipsam esse, consectetur id ad saepe rerum ut sunt illum ex, accusamus pariatur quia tempora?
+        Harum velit porro nobis officiis, accusamus optio cum architecto natus ipsum dolorem nulla vero similique amet! Explicabo, delectus. Distinctio cupiditate doloribus fuga, pariatur libero enim quisquam! Laborum beatae vitae consequuntur.
+    </div>
+    <hr>
+    <h2>position: sticky;</h2>
+    <p>An element with <strong>position: sticky;</strong> is positioned based on the user's scroll position.</p>
+    <p>A sticky element toggles between <b>relative</b> and <b>fixed</b>, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+    <p>Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix. You must also specify at least one of <b>top, right, bottom or left</b> for sticky positioning to work.</p>
+    <div class="sticky">I am sticky!</div>
+    <div>
+        In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.br <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolore modi, consequuntur, exercitationem incidunt voluptas explicabo facilis ut optio fuga, officiis excepturi. Laboriosam ab iure natus, culpa vel perspiciatis aliquam?
+        Omnis sunt libero illum atque obcaecati quasi quaerat tenetur a optio adipisci eius tempora sint harum tempore maxime odit autem commodi labore, exercitationem excepturi quod quia, sapiente voluptas quos. Hic.
+        Provident magni aliquid, ex consequatur cum maxime sapiente iusto? Mollitia repellendus at consequatur eaque excepturi sed reprehenderit assumenda delectus similique, quibusdam provident alias, enim nostrum? Nam dolores eligendi nemo consequuntur.
+        Vero, doloribus. Rerum fugiat incidunt ex temporibus enim sequi necessitatibus beatae nihil sit nemo ullam eveniet quaerat error ad, dolores aspernatur officiis ea provident reiciendis cum minima optio nobis veritatis.
+        Quasi mollitia atque eum maiores, placeat fuga quam enim explicabo ut velit quas beatae nisi possimus vitae similique esse eligendi dolorem libero. Fugiat voluptatem deleniti cum nihil, consectetur eaque nulla.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, molestiae deleniti dignissimos nulla impedit quis? Veritatis nesciunt amet exercitationem quaerat quam minus dolor. Quos exercitationem reiciendis non excepturi! Natus, aperiam!
+        Nobis, veniam distinctio quae ab officiis dolorum facilis consequatur voluptatibus ducimus reprehenderit alias provident. Temporibus aperiam ea dolores, omnis distinctio fugit ullam reiciendis ex deleniti itaque porro atque pariatur ipsum.
+        Nesciunt minima velit eligendi. Animi iure dolore eligendi omnis a. Recusandae numquam amet suscipit voluptatum, odio ea impedit. Amet totam quisquam eius corporis architecto repellendus. Ipsa quam blanditiis reiciendis tempore!
+        Et, esse. Optio dicta autem iure assumenda minima asperiores labore cumque explicabo at harum, facilis culpa amet repudiandae id eum sapiente! Corporis voluptatem deserunt maiores ratione cupiditate eveniet incidunt blanditiis!
+        Quos saepe officiis expedita veniam temporibus aperiam cum alias, adipisci praesentium magni quidem at? Repudiandae qui enim, nihil error vel ad. Cum quos provident itaque dicta autem magnam dignissimos optio!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nostrum unde suscipit modi, nesciunt, delectus numquam neque ipsum laudantium eum accusantium animi fugit dolor quibusdam? Error repellendus perspiciatis eaque blanditiis.
+        Ratione vitae quidem, dicta a eius soluta recusandae sit officia veniam rerum. Veritatis error at maxime suscipit ipsum eius repudiandae, necessitatibus eveniet incidunt dolores pariatur aperiam qui magni animi commodi.
+        A reprehenderit perspiciatis totam accusantium doloremque, iure expedita. Deserunt porro similique beatae ipsam odio illum, quod quos praesentium laboriosam optio dolor incidunt quae autem excepturi aliquid harum magni, velit architecto.
+        Praesentium natus perferendis odit, repellat impedit quos corrupti architecto, voluptatem est maiores sed commodi ab, modi quam minus consequuntur nisi. Voluptatibus fugiat rem molestias aperiam ut assumenda nobis quos vitae.
+        Voluptates quas quaerat quisquam hic explicabo, laudantium maxime ea iste at cum a dicta ducimus totam excepturi ipsam corporis esse. Similique, velit labore explicabo hic assumenda et fuga officiis beatae?
+        Commodi, maxime odio. Totam, animi non nobis fugiat fugit excepturi nesciunt culpa saepe assumenda? Beatae deleniti, quisquam velit explicabo veritatis ab facere delectus recusandae quam voluptate ipsa magni, perspiciatis nulla?
+        Maxime facilis iusto maiores. Enim aliquam eum quasi facere facilis ipsum sequi iure distinctio odit animi nisi quisquam reiciendis sint temporibus quia, laboriosam porro explicabo accusamus, cum maxime quidem adipisci.
+        Adipisci quae nesciunt, culpa necessitatibus ad vel tenetur voluptates aliquid quos provident sequi vero voluptate nobis! Quasi atque eveniet magni fugiat nobis expedita quisquam nostrum tempora quod! Eius, similique delectus.
+        Doloremque libero blanditiis sunt iusto. Voluptatem sed dolores enim. Perferendis nemo soluta quas sapiente magnam unde voluptates asperiores magni, laborum impedit nihil rerum. Ad ducimus, excepturi perferendis iste sit eius!
+        Accusamus dolorem minus numquam nihil libero velit ullam, inventore architecto fugiat, earum suscipit, dolor doloremque explicabo natus? Similique eum ipsa adipisci quo, voluptas a necessitatibus animi laborum, sint ipsam nostrum.
+    </div>
+</body>
+</html>

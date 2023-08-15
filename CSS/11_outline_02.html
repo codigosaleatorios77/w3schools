@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline Width</title>
+    <style>
+        p#out{
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: gold;
+        }
+        p.ex01{
+            outline-width: thin;
+        }
+        p.ex02{
+            outline-width: medium;
+        }
+        p.ex03{
+            outline-width: thick;
+        }
+        p.ex04{
+            outline-width: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Outline Width</h1>
+    <p>The <strong>outline-width</strong> property specifies the width of the outline, and can have one of the following values:</p>
+    <ul>
+        <li>thin (typically 1px)</li>
+        <li>medium (typically 3px)</li>
+        <li>thick (typically 5px)</li>
+        <li>A specific size (in px, pt, cm, em, etc)</li>
+    </ul>
+    <p>Example:</p>
+    <p class="ex01" id="out">A thin outline.</p>
+    <p class="ex02" id="out">A medium outline.</p>
+    <p class="ex03" id="out">A thick outline.</p>
+    <p class="ex04" id="out">A 4px thick outline.</p>
+</body>
+</html>

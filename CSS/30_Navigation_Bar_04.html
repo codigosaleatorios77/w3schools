@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+        .hnb_01 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .hnb_01 li{
+            display: inline;
+        }
+
+        .hnb_02 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #dddddd;
+        }
+        .hnb_02 li{
+            float: left;
+        }
+        .hnb_02 li a{
+            display: block;
+            padding: 8px;
+            /*background-color: #dddddd;*/
+        }
+
+        .hnb_03 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .hnb_03 li{
+            float: left;
+        }
+
+        .hnb_03 li a{
+            display: block;
+            text-align: center;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .hnb_03 li a:hover{
+            background-color: #111;
+        }
+
+        .hnb_04 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .hnb_04 li{
+            float: left;
+        }
+
+        .hnb_04 li a{
+            display: block;
+            text-align: center;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .hnb_04 li a:hover:not(.active){
+            background-color: #111;
+        }
+        .active {
+            background-color: #041daa;
+        }
+
+        .hnb_05 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .hnb_05 li{
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        .hnb_05:last-child{
+            border-right: none;
+        }
+
+        .hnb_05 li a{
+            display: block;
+            text-align: center;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .hnb_05 li a:hover:not(.active){
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Horizontal Navigation Bar</h1>
+    <p>There are two ways to create a <b>horizontal navigation bar</b>. Using <strong>inline</strong> or <strong>floating</strong> list items.</p>
+    <h2>Inline List Items</h2>
+    <p>One way to build a horizontal navigation bar is to specify the &lt;li&gt; elements as inline</p>
+    <div class="hnb_01">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <p><strong>display: inline;</strong> - By default, &lt;li&gt; elements are block elements. Here, we remove the line breaks before and after each list item, to display them on one line</p>
+    <h2>Floating List Items</h2>
+    <p>Another way of creating a horizontal navigation bar is to float the &lt;li&gt; elements, and specify a layout for the navigation links:</p>
+    <h2>Floating List Items</h2>
+    <p>Another way of creating a horizontal navigation bar is to float the &lt;li&gt; elements, and specify a layout for the navigation links:</p>
+    <div class="hnb_02">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <p>A <b>background color</b> is added to the links to show the link area. The whole link area is clickable, not just the text.</p>
+    <p><b>overflow:hidden</b> is added to the ul element to prevent li elements from going outside of the list.</p>
+    <ul>
+        <li><b>float: left;</b> - Use float to get block elements to float next to each other</li>
+        <li><b>display: block;</b> - Allows us to specify padding (and height, width, margins, etc. if you want)</li>
+        <li><b>padding: 8px;</b> - Specify some padding between each &lt;a&gt; element, to make them look good</li>
+        <li><b>background-color: #dddddd;</b> - Add a gray background-color to each &lt;a&gt; element</li>
+    </ul>
+    <p>Add the background-color to &lt;ul&gt; instead of each &lt;a&gt; element if you want a full-width background color</p>
+    <hr>
+    <h2>Horizontal Navigation Bar Examples</h2>
+    <p>Create a basic horizontal navigation bar with a dark background color and change the background color of the links when the user moves the mouse over them:</p>
+    <div class="hnb_03">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Active/Current Navigation Link</h3>
+    <div class="hnb_04">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#" >News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Right-Align Links</h3>
+    <p>Right-align links by floating the <b>list items (li)</b> to the right (<b>float:right;</b>):</p>
+    <div class="hnb_04">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" >News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li style="float: right;"><a class="active" href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Border Dividers</h3>
+    <p>Add the border-right property to &lt;li&gt; to create link dividers:</p>
+    <div class="hnb_05">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" >News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li style="float: right;"><a href="#">About</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id Attribute</title>
+</head>
+<body>
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the <strong>getElementById()</strong> method:</p>
+    
+    <h1 id="myHeader">Nobody knows where you are...</h1>
+    <button onclick="newText()">Cotinue...</button>
+    <script>
+        function newText() {
+            document.getElementById("myHeader").innerHTML = "How near or how far";
+        }
+    </script>
+
+    <!--        
+        The id attribute is used to specify a unique id for an HTML element
+        The value of the id attribute must be unique within the HTML document
+        The id attribute is used by CSS and JavaScript to style/select a specific element
+        The value of the id attribute is case sensitive
+        The id attribute is also used to create HTML bookmarks
+        JavaScript can access an element with a specific id with the getElementById() method
+    -->
+</body>
+</html>

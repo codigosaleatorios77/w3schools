@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Videos</title>
+    <link rel="stylesheet" href="_css/63_responsive_04.css">
+</head>
+<body>
+    <h1>Responsive Web Design - Videos</h1>
+    <h2>Using The width Property</h2>
+    <p>If the width property is set to <b>100%</b>, the video player will be responsive and scale up and down:</p>
+    <video class="video-01" width="400" controls>
+        <source src="_videos/mov_bbb.mp4" type="video/mp4">
+        <source src="_videos/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+    <p>Notice that in the example above, the video player can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the <strong>max-width</strong> property instead.</p>
+    <h2>Using The max-width Property</h2>
+    <p>If the <strong>max-width</strong> property is set to 100%, the video player will scale down if it has to, but never scale up to be larger than its original size:</p>
+    <video class="video-02" width="400" controls>
+        <source src="_videos/mov_bbb.mp4" type="video/mp4">
+        <source src="_videos/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+</body>
+</html>

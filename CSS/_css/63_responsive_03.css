@@ -1,0 +1,62 @@
+.img-01{
+    width: 100%;
+    height: auto;
+}
+
+.img-02{
+    max-width: 100%;
+    height: auto;
+}
+
+.div-img01{
+    width: 100%;
+    height: 400px;
+    background-image: url('../_images/img_flowers.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid purple;
+}
+
+.div-img02{
+    width: 100%;
+    height: 400px;
+    background-image: url('../_images/img_flowers.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid purple;
+}
+
+.div-img03{
+    width: 100%;
+    height: 400px;
+    background-image: url('../_images/img_flowers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid purple;
+}
+
+.div-img04{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url('../_images/img_smallflower.jpg');
+}
+
+@media only screen and (min-width: 400px) {
+    .div-img04{
+        background-image: url('../_images/img_flowers.jpg');
+    }
+}
+
+.div-img05{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url('../_images/img_smallflower.jpg');
+}
+
+@media only screen and (min-device-with: 400px) {
+    .div-img05{
+        background-image: url('../_images/img_flowers.jpg');
+    }
+}

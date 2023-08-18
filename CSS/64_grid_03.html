@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="_css/64_grid_03.css">
+</head>
+<body>
+    
+    <h2>Child Elements (Items)</h2>
+    <p>A grid container contains grid items.</p>
+    <p>By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.</p>
+    <hr>
+    <h2>The grid-column Property:</h2>
+    <p>The <strong>grid-column</strong> property defines on which column(s) to place an item.</p>
+    <p>You define where the item will start, and where the item will end.</p>
+    <p>The <strong>grid-column</strong> property is a shorthand property for the <strong>grid-column-start</strong> and the <strong>grid-column-end</strong> properties</p>
+    <p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span.</p>
+    <p>Make "item1" start on column 1 and end before column 5:</p>
+    <p>Use the grid-column property to specify where to place an item.</p>
+    <p>Item1 will start on column 1 and end before column 5:</p>
+    <div class="grid-container">
+        <div class="item1-1-1">1</div>
+        <div class="item1-1-2">2</div>
+        <div class="item1-1-3">3</div>
+        <div class="item1-1-4">4</div>
+        <div class="item1-1-5">5</div>
+        <div class="item1-1-6">6</div>
+        <div class="item1-1-7">7</div>
+        <div class="item1-1-8">8</div>
+        <div class="item1-1-9">9</div>
+        <div class="item1-1-10">10</div>
+        <div class="item1-1-11">11</div>
+        <div class="item1-1-12">12</div>
+        <div class="item1-1-13">13</div>
+        <div class="item1-1-14">14</div>
+        <div class="item1-1-15">15</div>
+    </div>
+    <p>Item1 will start on column-line 1 and span 3 columns:</p>
+    <div class="grid-container-2">
+        <div class="item1-2-1">1</div>
+        <div class="item1-2-2">2</div>
+        <div class="item1-2-3">3</div>
+        <div class="item1-2-4">4</div>
+        <div class="item1-2-5">5</div>
+        <div class="item1-2-6">6</div>
+        <div class="item1-2-7">7</div>
+        <div class="item1-2-8">8</div>
+        <div class="item1-2-9">9</div>
+        <div class="item1-2-10">10</div>
+        <div class="item1-2-11">11</div>
+        <div class="item1-2-12">12</div>
+        <div class="item1-2-13">13</div>
+        <div class="item1-2-14">14</div>
+        <div class="item1-2-15">15</div>
+        <div class="item1-2-16">16</div>
+    </div>
+    <p>Item2 will start on column line 2 and span 3 columns:</p>
+    <div class="grid-container-3">
+        <div class="item1-3-1">1</div>
+        <div class="item1-3-2">2</div>
+        <div class="item1-3-3">3</div>
+        <div class="item1-3-4">4</div>
+        <div class="item1-3-5">5</div>
+        <div class="item1-3-6">6</div>
+        <div class="item1-3-7">7</div>
+        <div class="item1-3-8">8</div>
+        <div class="item1-3-9">9</div>
+        <div class="item1-3-10">10</div>
+        <div class="item1-3-11">11</div>
+        <div class="item1-3-12">12</div>
+        <div class="item1-3-13">13</div>
+        <div class="item1-3-14">14</div>
+        <div class="item1-3-15">15</div>
+        <div class="item1-3-16">16</div>
+    </div>
+    <hr>
+    <h2>The grid-row Property:</h2>
+    <p>The <strong>grid-row</strong> property defines on which row to place an item.</p>
+    <p>You define where the item will start, and where the item will end.</p>
+    <p>The <strong>grid-row</strong> property is a shorthand property for the <strong>grid-row-start</strong> and the <strong>grid-row-end</strong> properties.</p>
+    <p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</p>
+    <p>Item1 will start on row-line 1 and end on row-line 4:</p>
+    <div class="grid-container-4">
+        <div class="item1-4-1">1</div>
+        <div class="item1-4-2">2</div>
+        <div class="item1-4-3">3</div>
+        <div class="item1-4-4">4</div>
+        <div class="item1-4-5">5</div>
+        <div class="item1-4-6">6</div>
+        <div class="item1-4-7">7</div>
+        <div class="item1-4-8">8</div>
+        <div class="item1-4-9">9</div>
+        <div class="item1-4-10">10</div>
+        <div class="item1-4-11">11</div>
+        <div class="item1-4-12">12</div>
+        <div class="item1-4-13">13</div>
+        <div class="item1-4-14">14</div>
+        <div class="item1-4-15">15</div>
+        <div class="item1-4-16">16</div>
+    </div> 
+    <p>Item1 will start on row 1 and span 2 rows:</p>
+    <div class="grid-container-5">
+        <div class="item1-5-1">1</div>
+        <div class="item1-5-2">2</div>
+        <div class="item1-5-3">3</div>
+        <div class="item1-5-4">4</div>
+        <div class="item1-5-5">5</div>
+        <div class="item1-5-6">6</div>
+        <div class="item1-5-7">7</div>
+        <div class="item1-5-8">8</div>
+        <div class="item1-5-9">9</div>
+        <div class="item1-5-10">10</div>
+        <div class="item1-5-11">11</div>
+        <div class="item1-5-12">12</div>
+        <div class="item1-5-13">13</div>
+        <div class="item1-5-14">14</div>
+        <div class="item1-5-15">15</div>
+        <div class="item1-5-16">16</div>
+        <div class="item1-5-17">17</div>
+    </div> 
+    <hr>
+    <h2>The grid-area Property</h2>
+    <p>The <strong>grid-area</strong> property can be used as a shorthand property for the <strong>grid-row-start</strong>, <strong>grid-column-start</strong>, <strong>grid-row-end</strong> and the <strong>grid-column-end</strong> properties.</p>
+    <p>You can use the grid-area property to specify where to place an item.</p>
+    <p>The syntax is:</p>
+    <p>grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
+    <p>Item8 will start on row-line 1 and column-line 2, and end on row-line 5 column-line 6:</p>
+    <div class="grid-container-6">
+        <div class="item1-6-1">1</div>
+        <div class="item1-6-2">2</div>
+        <div class="item1-6-3">3</div>
+        <div class="item1-6-4">4</div>
+        <div class="item1-6-5">5</div>
+        <div class="item1-6-6">6</div>
+        <div class="item1-6-7">7</div>
+        <div class="item1-6-8">8</div>
+        <div class="item1-6-9">9</div>
+        <div class="item1-6-10">10</div>
+        <div class="item1-6-11">11</div>
+        <div class="item1-6-12">12</div>
+        <div class="item1-6-13">13</div>
+        <div class="item1-6-14">14</div>
+        <div class="item1-6-15">15</div>
+    </div>
+    <p>You can use the grid-area property to specify where to place an item.</p>
+    <p>The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
+    <p>Item8 will start on row-line 2 and column-line 1, and span 2 rows and 3 columns:</p>
+    <div class="grid-container-7">
+        <div class="item1-7-1">1</div>
+        <div class="item1-7-2">2</div>
+        <div class="item1-7-3">3</div>
+        <div class="item1-7-4">4</div>
+        <div class="item1-7-5">5</div>
+        <div class="item1-7-6">6</div>
+        <div class="item1-7-7">7</div>
+        <div class="item1-7-8">8</div>
+        <div class="item1-7-9">9</div>
+        <div class="item1-7-10">10</div>
+        <div class="item1-7-11">11</div>
+        <div class="item1-7-12">12</div>
+        <div class="item1-7-13">13</div>
+    </div>
+    <hr>
+    <h2>Naming Grid Items</h2>
+    <p>The <strong>grid-area</strong> property can also be used to assign names to grid items.</p>
+    <p>Named grid items can be referred to by the grid-template-areas property of the grid container.</p>
+    <p>You can use the grid-area property to name grid items.</p>
+    <p>You can refer to the name when you set up the grid layout, by using the grid-template-areas property on the grid container.</p>
+    <p>item1-8-1, is called "myArea" and will take up the place of all five columns:</p>
+    <div class="grid-container-8">
+        <div class="item1-8-1">1</div>
+        <div class="item1-8-2">2</div>
+        <div class="item1-8-3">3</div>
+        <div class="item1-8-4">4</div>
+        <div class="item1-8-5">5</div>
+        <div class="item1-8-6">6</div>
+    </div>
+    <p>Each row is defined by apostrophes (' ')</p>
+    <p>The columns in each row is defined inside the apostrophes, separated by a space.</p>
+    <p>A period sign represents a grid item with no name.</p>
+    <p>You can refer to the name when you set up the grid layout, by using the grid-template-areas property on the grid container.</p>
+    <p>item1-9-1, is called "myArea2" and will take up the place of two columns (out of five):</p>
+    <div class="grid-container-9">
+        <div class="item1-9-1">1</div>
+        <div class="item1-9-2">2</div>
+        <div class="item1-9-3">3</div>
+        <div class="item1-9-4">4</div>
+        <div class="item1-9-5">5</div>
+        <div class="item1-9-6">6</div>
+        <div class="item1-9-7">7</div>
+        <div class="item1-9-8">8</div>
+        <div class="item1-9-9">9</div>
+    </div>
+    <p>To define two rows, define the column of the second row inside another set of apostrophes:</p>
+    <p>Item1, is called "myArea3" and will take up the place of two columns (out of five), and will span two rows:</p>
+    <div class="grid-container-10">
+        <div class="item1-10-1">1</div>
+        <div class="item1-10-2">2</div>
+        <div class="item1-10-3">3</div>
+        <div class="item1-10-4">4</div>
+        <div class="item1-10-5">5</div>
+        <div class="item1-10-6">6</div>
+        <div class="item1-10-7">7</div>
+    </div>
+    <p>Name all items, and make a ready-to-use webpage template:</p>
+    <p>This grid layout contains six columns and three rows:</p>
+    <div class="grid-container-11">
+        <div class="item1-11-1">Header</div>
+        <div class="item1-11-2">Menu</div>
+        <div class="item1-11-3">Main</div>
+        <div class="item1-11-4">Right</div>
+        <div class="item1-11-5">Footer</div>
+    </div>
+    <hr>
+    <h2>The Order of the Items</h2>
+    <p>The Grid Layout allows us to position the items anywhere we like.</p>
+    <p>The first item in the HTML code does not have to appear as the first item in the grid.</p>
+    <h3>Sort the Items</h3>
+    <p>The grid items do not have to be displayed in the same order as they are written in the HTML code.</p>
+    <div class="grid-container-12">
+        <div class="item1-12-1">1</div>
+        <div class="item1-12-2">2</div>
+        <div class="item1-12-3">3</div>
+        <div class="item1-12-4">4</div>
+        <div class="item1-12-5">5</div>
+        <div class="item1-12-6">6</div>
+    </div>
+    <p>You can re-arrange the order for certain screen sizes, by using media queries:</p>
+    <h3>Re-arange the Order on Small Devices</h3>
+    <p>Resize the window to 600 pixels see the effect.</p>
+    <div class="grid-container-13">
+        <div class="item1-13-1">1</div>
+        <div class="item1-13-2">2</div>
+        <div class="item1-13-3">3</div>
+        <div class="item1-13-4">4</div>
+        <div class="item1-13-5">5</div>
+        <div class="item1-13-6">6</div>
+    </div>
+</body>
+</html>

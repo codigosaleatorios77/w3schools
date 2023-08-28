@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output</title>
+</head>
+<body>
+    <h1>JavaScript Output</h1>
+    <h2>JavaScript Display Possibilities</h2>
+    <p>JavaScript can "display" data in different ways:</p>
+    <ul>
+        <li>Writing into an HTML element, using <strong>innerHTML</strong>.</li>
+        <li>Writing into the HTML output using <strong>document.write()</strong>.</li>
+        <li>Writing into an alert box, using <strong>window.alert()</strong>.</li>
+        <li>Writing into the browser console, <strong>using console.log()</strong>.</li>
+    </ul>
+    <hr>
+    <h2>Using innerHTML</h2>
+    <p>To access an HTML element, JavaScript can use the <strong>document.getElementById(id)</strong> method. </p>
+    <p>The id attribute defines the HTML element. The <strong>innerHTML</strong> property defines the HTML content:</p>
+    <p> 5 + 6:</p>
+    <p id="demo_01"></p>
+    <hr>
+    <h2>Using document.write()</h2>
+    <p>For testing purposes, it is convenient to use <strong>document.write()</strong>:</p>
+    <p>Never call document.write after the document has finished loading. It will overwrite the whole document.</p>
+    <p> 5 + 6:</p>
+    <script>
+        document.write(5+6);
+    </script>
+    <hr>
+    <h2>Using window.alert()</h2>
+    <p>You can use an alert box to display data:</p>
+    <p> 5 + 6:</p>
+    <p>You can skip the <b>window</b> keyword.</p>
+    <p>In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the <b>window</b> keyword is optional</p>
+    <hr>
+    <h2>Using console.log()</h2>
+    <p>For debugging purposes, you can call the <strong>console.log()</strong> method in the browser to display data.</p>
+    <p> 5 + 6:</p>
+    <p>Veja a resposta no console</p>
+    <hr>
+    <h2>JavaScript Print</h2>
+    <p>JavaScript does not have any print object or print methods.</p>
+    <p>You cannot access output devices from JavaScript.</p>
+    <p>The only exception is that you can call the <strong>window.print()</strong> method in the browser to print the content of the current window.</p>
+    
+
+    <script src="_js/01_Output.js"></script>
+    
+</body>
+</html>
